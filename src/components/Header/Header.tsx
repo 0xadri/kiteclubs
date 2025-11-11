@@ -1,17 +1,26 @@
 const Header = () => {
-  return ( <>
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
+  return (
+    <header className="sticky top-0 z-50 bg-surf-sand/80 backdrop-blur-md border-b border-surf-driftwood/30 shadow-sm">
       <nav className="max-w-7xl mx-auto flex items-center justify-between p-4">
-        <div className="text-lg font-bold text-primary">Kite Clubs</div>
+        {/* Logo / Brand */}
+        <div className="text-lg font-bold text-surf-navy tracking-wide">
+          Kite Clubs
+        </div>
+
+        {/* Navigation Links */}
         <ul className="hidden md:flex gap-6">
-          <li><a href="#features" className="hover:text-primary">Features</a></li>
-          <li><a href="#pricing" className="hover:text-primary">Pricing</a></li>
-          <li><a href="#contact" className="hover:text-primary">Contact</a></li>
+          <li><a href="#features" className="text-surf-navy hover:text-surf-aqua transition">Features</a></li>
+          <li><a href="#pricing" className="text-surf-navy hover:text-surf-aqua transition">Pricing</a></li>
+          <li><a href="#contact" className="text-surf-navy hover:text-surf-aqua transition">Contact</a></li>
         </ul>
-        <button className="md:hidden p-2 rounded hover:bg-gray-100">☰</button>
+
+        {/* Mobile Menu Button */}
+        <button className="md:hidden p-2 rounded-lg text-surf-navy hover:bg-surf-seafoam/50 transition">
+          ☰
+        </button>
       </nav>
     </header>
-  </> );
+  );
 }
 
 export default Header;

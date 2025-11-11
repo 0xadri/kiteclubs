@@ -15,6 +15,7 @@
 - Component: Hero (section): basics
 - Component: Benefits (section): basics
 - Component: HowItWorks (section): basics
+- Tailwind: add custom colors
 
 ### 🏗️ PROG
 
