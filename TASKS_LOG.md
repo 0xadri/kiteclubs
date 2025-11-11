@@ -19,12 +19,11 @@
 
 ### 🏗️ PROG
 
-- none
+- Add prettier
 
 ### 📋 MUST
 
 - Mobile-first Responsive UX: flexbox layout, etc
-- Add prettier
 - Add react-router-dom
 - Clean Organization for: Architecture
 - State Mgmt: Add Redux
