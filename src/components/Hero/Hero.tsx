@@ -1,5 +1,5 @@
 const Hero = () => {
-  return (     
+  return (
     <section className="flex flex-col items-center justify-center text-center min-h-[80vh] px-6 bg-surf-sand/80">
       <h1 className="text-5xl md:text-6xl font-bold mb-4">
         Kitesurf In <span className="text-primary">Good Company</span>
@@ -13,8 +13,8 @@ const Hero = () => {
       >
         Get Started
       </a>
-    </section> 
+    </section>
   );
-}
- 
+};
+
 export default Hero;

@@ -9,9 +9,30 @@ const Header = () => {
 
         {/* Navigation Links */}
         <ul className="hidden md:flex gap-6">
-          <li><a href="#features" className="text-surf-navy hover:text-surf-aqua transition">Features</a></li>
-          <li><a href="#pricing" className="text-surf-navy hover:text-surf-aqua transition">Pricing</a></li>
-          <li><a href="#contact" className="text-surf-navy hover:text-surf-aqua transition">Contact</a></li>
+          <li>
+            <a
+              href="#features"
+              className="text-surf-navy hover:text-surf-aqua transition"
+            >
+              Features
+            </a>
+          </li>
+          <li>
+            <a
+              href="#pricing"
+              className="text-surf-navy hover:text-surf-aqua transition"
+            >
+              Pricing
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              className="text-surf-navy hover:text-surf-aqua transition"
+            >
+              Contact
+            </a>
+          </li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -21,6 +42,6 @@ const Header = () => {
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

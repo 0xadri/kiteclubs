@@ -1,12 +1,12 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --color-surf-aqua: #3DDAD7;
-  --color-surf-seafoam: #9EF8E6;
-  --color-surf-sand: #F4E4C1;
-  --color-surf-driftwood: #C6A984;
-  --color-surf-coral: #FF6B6B;
-  --color-surf-navy: #1A3C40;
+  --color-surf-aqua: #3ddad7;
+  --color-surf-seafoam: #9ef8e6;
+  --color-surf-sand: #f4e4c1;
+  --color-surf-driftwood: #c6a984;
+  --color-surf-coral: #ff6b6b;
+  --color-surf-navy: #1a3c40;
 }
 
 :root {
@@ -34,4 +34,3 @@
 .card {
   padding: 2em;
 }
-
