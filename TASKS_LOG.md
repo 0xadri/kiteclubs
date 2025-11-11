@@ -16,25 +16,27 @@
 - Component: Benefits (section): basics
 - Component: HowItWorks (section): basics
 - Tailwind: add custom colors
+- Add prettier
 
 ### 🏗️ PROG
 
-- Add prettier
+- Add react-router-dom
+- Page: List Of Trips
 
 ### 📋 MUST
 
 - Mobile-first Responsive UX: flexbox layout, etc
-- Add react-router-dom
 - Clean Organization for: Architecture
 - State Mgmt: Add Redux
 - API: isolated in custom hooks or services
 - API: add Axios
 - API: HTTP response validation (status code checks)
+- TST: Add Jest
+- TST: Add basic tests
 - URL: URL-based routing (can bookmark specific view, browser back button works)
-- View: list of trips page
-- View: trip details page
-- View: list of users page
-- View: user details page
+- Page: trip details
+- Page: list of users
+- Page: user details
 - CSS: Basic Styling
 - Error State (for each view)
 - Loading State (for each view)
