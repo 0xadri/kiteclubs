@@ -6,7 +6,7 @@ import { Outlet } from 'react-router';
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Outlet />
       <Footer />
     </>
