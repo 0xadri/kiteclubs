@@ -17,11 +17,13 @@
 - Component: HowItWorks (section): basics
 - Tailwind: add custom colors
 - Add prettier
+- Add React Router (react-router-dom)
 
 ### 🏗️ PROG
 
-- Add react-router-dom
-- Page: List Of Trips
+- Page: Trips
+- Component: Dynamic Search Of Trips
+- Component: List Of Trips
 
 ### 📋 MUST
 
