@@ -1,41 +1,46 @@
 const HowItWorks = () => {
+  const steps = [
+    {
+      number: 1,
+      title: 'Search for rides',
+      description: 'Find rides to your favorite kite spots',
+      icon: '🔍',
+    },
+    {
+      number: 2,
+      title: 'Book your seat',
+      description: 'Reserve your spot and split the cost',
+      icon: '🎫',
+    },
+    {
+      number: 3,
+      title: 'Hit the water',
+      description: 'Meet your crew and ride the wind',
+      icon: '🪁',
+    },
+  ];
+
   return (
-    <section id="how-it-works" className="bg-surf-sand/80 py-16">
-      <div className="max-w-6xl mx-auto text-center px-6">
-        <h2 className="text-4xl font-bold mb-12">How It Works</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Step 1 */}
-          <div className="p-6 border rounded-2xl shadow hover:shadow-md transition">
-            <div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-primary text-white text-lg font-bold">
-              1
+    <section className="py-16 bg-white">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+          How It Works
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {steps.map((step) => (
+            <div key={step.number} className="text-center">
+              <div className="bg-gradient-to-br from-aqua-100 to-sand-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6 text-5xl">
+                {step.icon}
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                {step.number}. {step.title}
+              </h3>
+              <p className="text-gray-600">
+                {step.description}
+              </p>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Sign Up</h3>
-            <p className="text-gray-600">
-              Create your account in seconds and get instant access to all
-              features.
-            </p>
-          </div>
-          {/* Step 2 */}
-          <div className="p-6 border rounded-2xl shadow hover:shadow-md transition">
-            <div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-primary text-white text-lg font-bold">
-              2
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Customize</h3>
-            <p className="text-gray-600">
-              Set up your preferences and choose your design or workflow.
-            </p>
-          </div>
-          {/* Step 3 */}
-          <div className="p-6 border rounded-2xl shadow hover:shadow-md transition">
-            <div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-primary text-white text-lg font-bold">
-              3
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Launch</h3>
-            <p className="text-gray-600">
-              Go live and enjoy a fully functional, responsive experience
-              immediately.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>

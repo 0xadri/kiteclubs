@@ -1,14 +1,16 @@
 import Hero from '../../components/Hero/Hero';
-import Benefits from '../../components/Benefits/Benefits';
+import StatsBar from '../../components/StatsBar/StatsBar';
 import HowItWorks from '../../components/HowItWorks/HowItWorks';
+import FeaturedRides from '../../components/FeaturedRides/FeaturedRides';
 
 const Home = () => {
   return (
-    <>
+    <div className="min-h-screen">
       <Hero />
-      <Benefits />
+      <StatsBar />
       <HowItWorks />
-    </>
+      <FeaturedRides />
+    </div>
   );
 };
 
