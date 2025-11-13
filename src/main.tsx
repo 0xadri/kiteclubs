@@ -1,9 +1,18 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router';
+
 import App from './app/App.tsx';
-import { BrowserRouter, Routes, Route } from 'react-router';
 import Home from './pages/Home/Home';
 import Trips from './pages/Trips/Trips';
+
+if (import.meta.env.DEV) {
+  const { worker } = await import('./mocks/browser');
+
+  await worker.start({
+    onUnhandledRequest: 'bypass',
+  });
+}
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

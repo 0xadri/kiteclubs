@@ -1,8 +1,4 @@
-import type {
-  Trip,
-  TripResultsProp,
-  UseTripSearchResult,
-} from '../types';
+import type { Trip, TripResultsProp, UseTripSearchResult } from '../types';
 import { useTripSearch } from '../hooks/useTripSearch';
 import TripResultCard from './TripResultCard';
 
@@ -17,7 +13,7 @@ const TripResults = ({ filters }: TripResultsProp) => {
 
   return (
     <>
-      <ul>
+      <ul className="flex flex-col items-center justify-center gap-8 text-center py-8 px-6 bg-surf-sand/80">
         {isLoading && <p>Loading...</p>}
         {error && <p>Error: {error}</p>}
         {trips.map((trip: Trip) => (

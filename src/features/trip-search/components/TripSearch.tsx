@@ -8,11 +8,11 @@ const TripSearch = ({ filters, handleSearch }: TripSearchProps) => {
   return (
     <section className="flex flex-col items-center justify-center text-center py-8 px-6 bg-surf-sand/80">
       <form role="search" onSubmit={handleSubmit}>
-        <label htmlFor="city-search">Search Trip:</label>
+        <label htmlFor="departure">Search Trip:</label>
         <input
           type="text"
-          name="city-search"
-          id="city-search"
+          name="departure"
+          id="departure"
           value={filters.departure}
           onChange={(e) => handleSearch(e.target.value)}
           placeholder="Search..."

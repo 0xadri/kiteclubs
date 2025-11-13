@@ -22,8 +22,12 @@
 ### 🏗️ PROG
 
 - Page: Trips
-- Component: Dynamic Search Of Trips
-- Component: List Of Trips
+- Trip Feature: Component: Dynamic Search Of Trips
+- Trip Feature: Component: List Of Trips
+- Trip Feature: Custom Hook: Trip Search
+- Trip Feature: Service: Trip API
+- Trip Feature: MSW: Mock Trip API
+- Trip Feature: Trip Details: Add: Driver, Return/OneWay.
 
 ### 📋 MUST
 

@@ -1,3 +1,4 @@
+import { CanceledError } from 'axios';
 import { useEffect, useState } from 'react';
 import { getTrips } from '../services/tripApi';
 import type { Trip, TripSearchParams, UseTripSearchResult } from '../types';
@@ -13,7 +14,7 @@ export function useTripSearch(params: TripSearchParams): UseTripSearchResult {
 
   useEffect(() => {
     // Don’t run if no filters provided
-    if (!params.destination && !params.dateRange) return;
+    if (!params.departure) return;
 
     const controller = new AbortController(); // allows request cancellation
 
@@ -24,10 +25,17 @@ export function useTripSearch(params: TripSearchParams): UseTripSearchResult {
 
         const data = await getTrips(params, controller.signal);
         setTrips(data);
-      } catch (err: any) {
-        if (err.name === 'CanceledError') return; // Ignore canceled requests
+      } catch (err: unknown) {
+        if (err instanceof CanceledError) return; // Ignore canceled requests
+
         console.error('Trip search failed:', err);
-        setError(err.message || 'Something went wrong.');
+
+        if (err instanceof Error) {
+          setError(err.message);
+          return;
+        }
+
+        setError('Something went wrong.');
       } finally {
         setIsLoading(false);
       }

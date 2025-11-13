@@ -9,13 +9,11 @@ export interface Trip {
 
 export interface TripSearchParams {
   departure?: string;
-  destination?: string;
-  dateRange?: string;
 }
 
 export interface TripSearchProps {
   filters: TripSearchParams;
-  handleSearch: Function;
+  handleSearch: (value: string) => void;
 }
 
 export interface TripResultsProp {
@@ -29,7 +27,5 @@ export interface UseTripSearchResult {
 }
 
 export interface TripResultCardProps {
-  key: string;
   trip: Trip;
 }
-
