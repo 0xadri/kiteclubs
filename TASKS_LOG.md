@@ -25,10 +25,10 @@
 - Trip Feature: Service: Trip API
 - Trip Feature: MSW: Mock Trip API
 - Trip Feature: Trip Details: Add: Driver, Return/OneWay.
+- Trip Feature: Mock Trip API: Add More Data
 
 ### 🏗️ PROG
 
-- Trip Feature: Mock Trip API: Add More Data
 - Trip Feature: URL: Save Search Params & Show Relevant Results
 
 ### 📋 MUST
