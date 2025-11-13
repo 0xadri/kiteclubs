@@ -18,9 +18,6 @@
 - Tailwind: add custom colors
 - Add prettier
 - Add React Router (react-router-dom)
-
-### 🏗️ PROG
-
 - Page: Trips
 - Trip Feature: Component: Dynamic Search Of Trips
 - Trip Feature: Component: List Of Trips
@@ -28,6 +25,11 @@
 - Trip Feature: Service: Trip API
 - Trip Feature: MSW: Mock Trip API
 - Trip Feature: Trip Details: Add: Driver, Return/OneWay.
+
+### 🏗️ PROG
+
+- Trip Feature: Mock Trip API: Add More Data
+- Trip Feature: URL: Save Search Params & Show Relevant Results
 
 ### 📋 MUST
 
