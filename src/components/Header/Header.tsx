@@ -1,10 +1,10 @@
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 bg-surf-sand/80 backdrop-blur-md border-b border-surf-driftwood/30 shadow-sm">
+    <header className="sticky top-0 z-50 bg-white/60 backdrop-blur-sm border-b border-gray-200/50 shadow-sm">
       <nav className="max-w-7xl mx-auto flex items-center justify-between p-4">
         {/* Logo / Brand */}
-        <div className="text-lg font-bold text-surf-navy tracking-wide">
-          Kite Clubs
+        <div className="text-lg font-regular text-gray-800 tracking-wide">
+          ✣ KiteCrew
         </div>
 
         {/* Navigation Links */}
@@ -12,7 +12,7 @@ const Header = () => {
           <li>
             <a
               href="#features"
-              className="text-surf-navy hover:text-surf-aqua transition"
+              className="text-gray-800 font-regular hover:text-aqua-600 transition-colors"
             >
               Features
             </a>
@@ -20,7 +20,7 @@ const Header = () => {
           <li>
             <a
               href="#pricing"
-              className="text-surf-navy hover:text-surf-aqua transition"
+              className="text-gray-800 font-regular hover:text-aqua-600 transition-colors"
             >
               Pricing
             </a>
@@ -28,7 +28,7 @@ const Header = () => {
           <li>
             <a
               href="#contact"
-              className="text-surf-navy hover:text-surf-aqua transition"
+              className="text-gray-800 font-regular hover:text-aqua-600 transition-colors"
             >
               Contact
             </a>
@@ -36,7 +36,7 @@ const Header = () => {
         </ul>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden p-2 rounded-lg text-surf-navy hover:bg-surf-seafoam/50 transition">
+        <button className="md:hidden p-2 rounded-lg text-gray-800 hover:bg-gray-100/50 transition-colors">
           ☰
         </button>
       </nav>
