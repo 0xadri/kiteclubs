@@ -15,7 +15,7 @@ export interface TripSearchParams {
 
 export interface TripSearchProps {
   filters: TripSearchParams;
-  handleSearch: (field: keyof TripSearchParams, value: string) => void;
+  handleSubmit: (filters: TripSearchParams) => void;
 }
 
 export interface TripResultsProp {
