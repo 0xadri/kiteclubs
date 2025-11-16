@@ -4,9 +4,12 @@ export interface Trip {
   destination: string;
   startDate: string;
   endDate: string;
+  departureTime: string;
+  returnTripETA: string;
   price: number;
   return: boolean;
   priceCurrency: string;
+  title: string;
   description: string;
   exactPickupPoint: string;
   seats: number;
