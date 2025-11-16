@@ -12,15 +12,32 @@ const TripResults = ({ filters }: TripResultsProp) => {
     useTripSearch(filters);
 
   return (
-    <>
-      <ul className="flex flex-col items-center justify-center gap-8 text-center py-8 px-6 bg-surf-sand/80">
-        {isLoading && <p>Loading...</p>}
-        {error && <p>Error: {error}</p>}
-        {trips.map((trip: Trip) => (
-          <TripResultCard key={trip.id} trip={trip} />
-        ))}
-      </ul>
-    </>
+    <section className="bg-sand-50 py-12">
+      <div className="max-w-6xl mx-auto px-4">
+        {isLoading && (
+          <div className="text-center py-12">
+            <p className="text-xl text-gray-600">Loading trips...</p>
+          </div>
+        )}
+        {error && (
+          <div className="text-center py-12">
+            <p className="text-xl text-red-600">Error: {error}</p>
+          </div>
+        )}
+        {!isLoading && !error && trips.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-xl text-gray-600">No trips found. Try adjusting your search.</p>
+          </div>
+        )}
+        {!isLoading && !error && trips.length > 0 && (
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {trips.map((trip: Trip) => (
+              <TripResultCard key={trip.id} trip={trip} />
+            ))}
+          </ul>
+        )}
+      </div>
+    </section>
   );
 };
 

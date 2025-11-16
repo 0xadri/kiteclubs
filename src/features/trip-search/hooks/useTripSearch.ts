@@ -13,8 +13,8 @@ export function useTripSearch(params: TripSearchParams): UseTripSearchResult {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    // Don’t run if no filters provided
-    if (!params.departure) return;
+    // Don't run if no filters provided
+    if (!params.departure && !params.destination && !params.date) return;
 
     const controller = new AbortController(); // allows request cancellation
 

@@ -8,21 +8,23 @@ const Trips = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [filters, setFilters] = useState<TripSearchParams>(() => ({
     departure: searchParams.get('departure') ?? '',
+    destination: searchParams.get('destination') ?? '',
+    date: searchParams.get('date') ?? '',
   }));
 
-  const handleSearch = (term: string) => {
+  const handleSearch = (field: keyof TripSearchParams, value: string) => {
     setFilters((filters) => ({
-      ...filters, // Clone object for immutability (Shallow Clone)
-      ['departure']: term, // Add/Update Property
+      ...filters,
+      [field]: value,
     }));
 
     setSearchParams((prev) => {
       const next = new URLSearchParams(prev);
 
-      if (term) {
-        next.set('departure', term);
+      if (value) {
+        next.set(field, value);
       } else {
-        next.delete('departure');
+        next.delete(field);
       }
 
       return next;
@@ -30,24 +32,34 @@ const Trips = () => {
   };
 
   useEffect(() => {
-    const departureParam = searchParams.get('departure');
+    const departureParam = searchParams.get('departure') ?? '';
+    const destinationParam = searchParams.get('destination') ?? '';
+    const dateParam = searchParams.get('date') ?? '';
 
     setFilters((filters) => {
-      const nextDeparture = departureParam ?? '';
+      const nextFilters: TripSearchParams = {
+        departure: departureParam,
+        destination: destinationParam,
+        date: dateParam,
+      };
 
-      if (filters.departure === nextDeparture) {
+      if (
+        filters.departure === nextFilters.departure &&
+        filters.destination === nextFilters.destination &&
+        filters.date === nextFilters.date
+      ) {
         return filters;
       }
 
-      return { ...filters, departure: nextDeparture };
+      return nextFilters;
     });
   }, [searchParams]);
 
   return (
-    <>
+    <div className="min-h-screen">
       <TripSearch filters={filters} handleSearch={handleSearch} />
       <TripResults filters={filters} />
-    </>
+    </div>
   );
 };
 
