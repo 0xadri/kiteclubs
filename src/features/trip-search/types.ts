@@ -5,6 +5,11 @@ export interface Trip {
   startDate: string;
   endDate: string;
   price: number;
+  return: boolean;
+  priceCurrency: string;
+  description: string;
+  exactPickupPoint: string;
+  seats: number;
 }
 
 export interface TripSearchParams {
