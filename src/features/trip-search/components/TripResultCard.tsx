@@ -96,7 +96,7 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
           </div>
           
           <div className="flex flex-col items-end gap-2">
-            <div className="flex items-center gap-1 text-base text-gray-700">
+            <div className={`flex items-center gap-1 text-sm ${trip.seats === 1 ? 'text-red-600' : 'text-gray-700'}`}>
               <span className="font-medium">Seats Left:</span>
               <span>{trip.seats}</span>
             </div>

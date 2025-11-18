@@ -31,9 +31,30 @@ const TripResults = ({ filters }: TripResultsProp) => {
         )}
         {!isLoading && !error && trips.length > 0 && (
           <ul className="grid grid-cols-1 gap-6">
-            {trips.map((trip: Trip) => (
-              <TripResultCard key={trip.id} trip={trip} />
-            ))}
+            {trips
+              .sort((a: Trip, b: Trip) => {
+                // First, sort by departure time
+                const timeA = a.departureTime;
+                const timeB = b.departureTime;
+                const timeComparison = timeA.localeCompare(timeB);
+                
+                // If times are different, return the time comparison
+                if (timeComparison !== 0) {
+                  return timeComparison;
+                }
+                
+                // If times are the same, sort by route (departure first, then destination)
+                const departureComparison = a.departure.localeCompare(b.departure);
+                if (departureComparison !== 0) {
+                  return departureComparison;
+                }
+                
+                // If departure is also the same, sort by destination
+                return a.destination.localeCompare(b.destination);
+              })
+              .map((trip: Trip) => (
+                <TripResultCard key={trip.id} trip={trip} />
+              ))}
           </ul>
         )}
       </div>
