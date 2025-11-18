@@ -22,10 +22,15 @@ const truncateDescription = (description: string, wordLimit: number = 10): strin
   return words.slice(0, wordLimit).join(' ') + '...';
 };
 
+const getFirstName = (fullName: string): string => {
+  return fullName.trim().split(/\s+/)[0] || fullName;
+};
+
 const TripResultCard = ({ trip }: TripResultCardProps) => {
   const isDayTrip = trip.return && trip.startDate === trip.endDate;
   const currencySymbol = getCurrencySymbol(trip.priceCurrency);
   const truncatedDescription = truncateDescription(trip.description, 10);
+  const firstName = getFirstName(trip.driverName);
 
   return (
     <li className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-200">
@@ -53,26 +58,26 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
 
         {/* Main Content */}
         <div className="flex-1 space-y-4">
-          {/* Route Header */}
-          <h2 className="text-2xl font-bold text-gray-900">
-            {trip.departure} 🡒 {trip.destination}
-          </h2>
-
-          {/* Driver Info Row */}
-          <div className="flex items-center gap-4 text-sm text-gray-700">
-            <div className="flex items-center gap-1">
+          {/* Route Header with Driver Info in Top Right */}
+          <div className="flex items-start justify-between gap-4">
+            <h2 className="text-2xl font-bold text-gray-900">
+              {trip.departure} 🡒 {trip.destination}
+            </h2>
+            <div className="flex items-center gap-1 text-base text-gray-700">
               <span>👤</span>
-              <span>{trip.driverName}</span>
+              <span>{firstName}</span>
               <span className="flex items-center gap-1 ml-1">
                 <span>⭐</span>
                 <span>{trip.driverRating.toFixed(1)}</span>
                 <span>({trip.driverTripsCompleted})</span>
               </span>
             </div>
-            <div className="flex items-center gap-1">
-              <span className="font-medium">Seats Left:</span>
-              <span>{trip.seats}</span>
-            </div>
+          </div>
+
+          {/* Seats Left */}
+          <div className="flex items-center gap-1 text-base text-gray-700">
+            <span className="font-medium">Seats Left:</span>
+            <span>{trip.seats}</span>
           </div>
 
           {/* Title and Description - Muted */}
