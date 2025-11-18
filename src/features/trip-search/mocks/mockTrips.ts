@@ -18,6 +18,7 @@ export const mockTrips: Trip[] = [
     seats: 3,
     driverName: 'Alex Martinez',
     driverRating: 4.8,
+    driverTripsCompleted: 23,
   },
   {
     id: 'trip-2',
@@ -36,6 +37,7 @@ export const mockTrips: Trip[] = [
     seats: 2,
     driverName: 'Sarah Johnson',
     driverRating: 4.9,
+    driverTripsCompleted: 31,
   },
   {
     id: 'trip-3',
@@ -54,6 +56,7 @@ export const mockTrips: Trip[] = [
     seats: 4,
     driverName: 'Carlos Rodriguez',
     driverRating: 4.7,
+    driverTripsCompleted: 18,
   },
   {
     id: 'trip-4',
@@ -72,6 +75,7 @@ export const mockTrips: Trip[] = [
     seats: 1,
     driverName: 'Alex Martinez',
     driverRating: 4.5,
+    driverTripsCompleted: 23,
   },
   {
     id: 'trip-5',
@@ -90,6 +94,7 @@ export const mockTrips: Trip[] = [
     seats: 2,
     driverName: 'Sarah Johnson',
     driverRating: 4.6,
+    driverTripsCompleted: 31,
   },
   {
     id: 'trip-6',
@@ -108,6 +113,7 @@ export const mockTrips: Trip[] = [
     seats: 3,
     driverName: 'Carlos Rodriguez',
     driverRating: 4.7,
+    driverTripsCompleted: 18,
   },
   {
     id: 'trip-7',
@@ -126,6 +132,7 @@ export const mockTrips: Trip[] = [
     seats: 4,
     driverName: 'Emma Wilson',
     driverRating: 4.8,
+    driverTripsCompleted: 27,
   },
   {
     id: 'trip-8',
@@ -144,6 +151,7 @@ export const mockTrips: Trip[] = [
     seats: 1,
     driverName: 'David Brown',
     driverRating: 4.9,
+    driverTripsCompleted: 35,
   },
   {
     id: 'trip-9',
@@ -162,6 +170,7 @@ export const mockTrips: Trip[] = [
     seats: 2,
     driverName: 'Maria Garcia',
     driverRating: 5.0,
+    driverTripsCompleted: 42,
   },
   {
     id: 'trip-10',
@@ -180,6 +189,7 @@ export const mockTrips: Trip[] = [
     seats: 3,
     driverName: 'James Taylor',
     driverRating: 4.5,
+    driverTripsCompleted: 15,
   },
   {
     id: 'trip-11',
@@ -198,6 +208,7 @@ export const mockTrips: Trip[] = [
     seats: 4,
     driverName: 'Laura Anderson',
     driverRating: 4.6,
+    driverTripsCompleted: 19,
   },
   {
     id: 'trip-12',
@@ -216,6 +227,7 @@ export const mockTrips: Trip[] = [
     seats: 1,
     driverName: 'Michael Lee',
     driverRating: 4.7,
+    driverTripsCompleted: 22,
   },
   {
     id: 'trip-13',
@@ -234,6 +246,7 @@ export const mockTrips: Trip[] = [
     seats: 2,
     driverName: 'Sophie Martin',
     driverRating: 4.8,
+    driverTripsCompleted: 28,
   },
   {
     id: 'trip-14',
@@ -252,6 +265,7 @@ export const mockTrips: Trip[] = [
     seats: 3,
     driverName: 'Robert White',
     driverRating: 4.9,
+    driverTripsCompleted: 33,
   },
   {
     id: 'trip-15',
@@ -270,6 +284,7 @@ export const mockTrips: Trip[] = [
     seats: 4,
     driverName: 'Anna Thompson',
     driverRating: 5.0,
+    driverTripsCompleted: 47,
   },
   {
     id: 'trip-16',
@@ -288,6 +303,7 @@ export const mockTrips: Trip[] = [
     seats: 1,
     driverName: 'Daniel Harris',
     driverRating: 4.5,
+    driverTripsCompleted: 12,
   },
   {
     id: 'trip-17',
@@ -306,6 +322,7 @@ export const mockTrips: Trip[] = [
     seats: 2,
     driverName: 'Olivia Clark',
     driverRating: 4.6,
+    driverTripsCompleted: 16,
   },
   {
     id: 'trip-18',
@@ -324,6 +341,7 @@ export const mockTrips: Trip[] = [
     seats: 3,
     driverName: 'Thomas Lewis',
     driverRating: 4.7,
+    driverTripsCompleted: 21,
   },
   {
     id: 'trip-19',
@@ -342,6 +360,7 @@ export const mockTrips: Trip[] = [
     seats: 4,
     driverName: 'Isabella Walker',
     driverRating: 4.8,
+    driverTripsCompleted: 26,
   },
   {
     id: 'trip-20',
@@ -360,6 +379,7 @@ export const mockTrips: Trip[] = [
     seats: 1,
     driverName: 'Christopher Hall',
     driverRating: 4.9,
+    driverTripsCompleted: 32,
   },
   {
     id: 'trip-21',
@@ -378,6 +398,7 @@ export const mockTrips: Trip[] = [
     seats: 2,
     driverName: 'Mia Young',
     driverRating: 5.0,
+    driverTripsCompleted: 45,
   },
   {
     id: 'trip-22',
@@ -396,6 +417,7 @@ export const mockTrips: Trip[] = [
     seats: 3,
     driverName: 'Matthew King',
     driverRating: 4.5,
+    driverTripsCompleted: 14,
   },
   {
     id: 'trip-23',
@@ -414,6 +436,7 @@ export const mockTrips: Trip[] = [
     seats: 4,
     driverName: 'Charlotte Wright',
     driverRating: 4.6,
+    driverTripsCompleted: 17,
   },
   {
     id: 'trip-24',
@@ -432,6 +455,7 @@ export const mockTrips: Trip[] = [
     seats: 1,
     driverName: 'Andrew Lopez',
     driverRating: 4.7,
+    driverTripsCompleted: 20,
   },
   {
     id: 'trip-25',
@@ -450,6 +474,7 @@ export const mockTrips: Trip[] = [
     seats: 2,
     driverName: 'Amelia Hill',
     driverRating: 4.8,
+    driverTripsCompleted: 25,
   },
   {
     id: 'trip-26',
@@ -468,6 +493,7 @@ export const mockTrips: Trip[] = [
     seats: 3,
     driverName: 'Joseph Green',
     driverRating: 4.9,
+    driverTripsCompleted: 30,
   },
   {
     id: 'trip-27',
@@ -486,6 +512,7 @@ export const mockTrips: Trip[] = [
     seats: 4,
     driverName: 'Harper Adams',
     driverRating: 5.0,
+    driverTripsCompleted: 50,
   },
   {
     id: 'trip-28',
@@ -504,6 +531,7 @@ export const mockTrips: Trip[] = [
     seats: 1,
     driverName: 'William Baker',
     driverRating: 4.5,
+    driverTripsCompleted: 11,
   },
   {
     id: 'trip-29',
@@ -522,6 +550,7 @@ export const mockTrips: Trip[] = [
     seats: 2,
     driverName: 'Evelyn Nelson',
     driverRating: 4.6,
+    driverTripsCompleted: 13,
   },
   {
     id: 'trip-30',
@@ -540,6 +569,7 @@ export const mockTrips: Trip[] = [
     seats: 3,
     driverName: 'Benjamin Carter',
     driverRating: 4.7,
+    driverTripsCompleted: 24,
   },
   {
     id: 'trip-31',
@@ -558,6 +588,7 @@ export const mockTrips: Trip[] = [
     seats: 4,
     driverName: 'Abigail Mitchell',
     driverRating: 4.8,
+    driverTripsCompleted: 29,
   },
   {
     id: 'trip-32',
@@ -576,6 +607,7 @@ export const mockTrips: Trip[] = [
     seats: 1,
     driverName: 'Samuel Perez',
     driverRating: 4.9,
+    driverTripsCompleted: 34,
   },
   {
     id: 'trip-33',
@@ -594,6 +626,7 @@ export const mockTrips: Trip[] = [
     seats: 2,
     driverName: 'Emily Roberts',
     driverRating: 5.0,
+    driverTripsCompleted: 48,
   },
   {
     id: 'trip-34',
@@ -612,6 +645,7 @@ export const mockTrips: Trip[] = [
     seats: 3,
     driverName: 'Nicholas Turner',
     driverRating: 4.5,
+    driverTripsCompleted: 10,
   },
   {
     id: 'trip-35',
@@ -630,6 +664,7 @@ export const mockTrips: Trip[] = [
     seats: 4,
     driverName: 'Sofia Phillips',
     driverRating: 4.6,
+    driverTripsCompleted: 9,
   },
   {
     id: 'trip-36',
@@ -648,6 +683,7 @@ export const mockTrips: Trip[] = [
     seats: 1,
     driverName: 'Joshua Campbell',
     driverRating: 4.7,
+    driverTripsCompleted: 8,
   },
   {
     id: 'trip-37',
@@ -666,6 +702,7 @@ export const mockTrips: Trip[] = [
     seats: 2,
     driverName: 'Aria Parker',
     driverRating: 4.8,
+    driverTripsCompleted: 36,
   },
   {
     id: 'trip-38',
@@ -684,6 +721,7 @@ export const mockTrips: Trip[] = [
     seats: 3,
     driverName: 'Ryan Evans',
     driverRating: 4.9,
+    driverTripsCompleted: 38,
   },
   {
     id: 'trip-39',
@@ -702,6 +740,7 @@ export const mockTrips: Trip[] = [
     seats: 4,
     driverName: 'Lily Edwards',
     driverRating: 5.0,
+    driverTripsCompleted: 52,
   },
   {
     id: 'trip-40',
@@ -720,6 +759,7 @@ export const mockTrips: Trip[] = [
     seats: 3,
     driverName: 'Nathan Collins',
     driverRating: 4.5,
+    driverTripsCompleted: 7,
   },
   {
     id: 'trip-41',
@@ -738,6 +778,7 @@ export const mockTrips: Trip[] = [
     seats: 2,
     driverName: 'Zoe Stewart',
     driverRating: 4.6,
+    driverTripsCompleted: 6,
   },
   {
     id: 'trip-42',
@@ -756,6 +797,7 @@ export const mockTrips: Trip[] = [
     seats: 4,
     driverName: 'Jonathan Sanchez',
     driverRating: 4.7,
+    driverTripsCompleted: 5,
   },
   {
     id: 'trip-43',
@@ -774,6 +816,7 @@ export const mockTrips: Trip[] = [
     seats: 1,
     driverName: 'Chloe Morris',
     driverRating: 4.8,
+    driverTripsCompleted: 39,
   },
   {
     id: 'trip-44',
@@ -792,6 +835,7 @@ export const mockTrips: Trip[] = [
     seats: 2,
     driverName: 'Brandon Rogers',
     driverRating: 4.9,
+    driverTripsCompleted: 41,
   },
   {
     id: 'trip-45',
@@ -810,6 +854,7 @@ export const mockTrips: Trip[] = [
     seats: 3,
     driverName: 'Grace Reed',
     driverRating: 5.0,
+    driverTripsCompleted: 55,
   },
   {
     id: 'trip-46',
@@ -828,5 +873,6 @@ export const mockTrips: Trip[] = [
     seats: 4,
     driverName: 'Kevin Cook',
     driverRating: 4.5,
+    driverTripsCompleted: 4,
   },
 ];

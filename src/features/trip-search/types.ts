@@ -15,6 +15,7 @@ export interface Trip {
   seats: number;
   driverName: string;
   driverRating: number;
+  driverTripsCompleted: number;
 }
 
 export interface TripSearchParams {

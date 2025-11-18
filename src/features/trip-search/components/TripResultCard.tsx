@@ -61,14 +61,12 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
           {/* Driver Info Row */}
           <div className="flex items-center gap-4 text-sm text-gray-700">
             <div className="flex items-center gap-1">
-              <span className="font-medium">Driver:</span>
+              <span>👤</span>
               <span>{trip.driverName}</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <span className="font-medium">Rating:</span>
-              <span className="flex items-center gap-1">
+              <span className="flex items-center gap-1 ml-1">
                 <span>⭐</span>
                 <span>{trip.driverRating.toFixed(1)}</span>
+                <span>({trip.driverTripsCompleted})</span>
               </span>
             </div>
             <div className="flex items-center gap-1">
