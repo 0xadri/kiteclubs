@@ -16,6 +16,8 @@ export const mockTrips: Trip[] = [
     title: 'Tarifaaaa!',
     description: "Aloha! I'm super excited to head to Tarifa - it's always amazing to share this experience with other riders! Let's catch some epic wind together.\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 3,
+    driverName: 'Alex Martinez',
+    driverRating: 4.8,
   },
   {
     id: 'trip-2',
@@ -32,6 +34,8 @@ export const mockTrips: Trip[] = [
     title: 'Trip to Leucate',
     description: "Hey! Super stoked about this Leucate trip - it's going to be epic riding with fellow kiters!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 2,
+    driverName: 'Sarah Johnson',
+    driverRating: 4.9,
   },
   {
     id: 'trip-3',
@@ -48,6 +52,8 @@ export const mockTrips: Trip[] = [
     title: 'BCN to Lisboa',
     description: "Ola! Super pumped for this Lisbon adventure - nothing beats sharing the stoke with other riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 4,
+    driverName: 'Carlos Rodriguez',
+    driverRating: 4.7,
   },
   {
     id: 'trip-4',
@@ -64,6 +70,8 @@ export const mockTrips: Trip[] = [
     title: 'Vamos a Valdevaqueros',
     description: "¡Hola! I'm really excited about this Valdevaqueros trip - it'll be amazing to ride with you all!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 1,
+    driverName: 'Alex Martinez',
+    driverRating: 4.5,
   },
   {
     id: 'trip-5',
@@ -80,6 +88,8 @@ export const mockTrips: Trip[] = [
     title: 'Winter kitesurfing at Los Lances beach',
     description: "Hey riders! Super excited for this winter session at Los Lances - let's make the most of it together!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 2,
+    driverName: 'Sarah Johnson',
+    driverRating: 4.6,
   },
   {
     id: 'trip-6',
@@ -96,6 +106,8 @@ export const mockTrips: Trip[] = [
     title: 'New year kitesurfing trip to Caños',
     description: "Happy New Year! Super stoked to start 2026 with this amazing trip to Caños - can't wait to share this adventure!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 3,
+    driverName: 'Carlos Rodriguez',
+    driverRating: 4.7,
   },
   {
     id: 'trip-7',
@@ -112,6 +124,8 @@ export const mockTrips: Trip[] = [
     title: 'Weekend kitesurfing at Bolonia beach',
     description: "Hey! Weekend trips are the best - super excited to hit Bolonia with you all!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 4,
+    driverName: 'Emma Wilson',
+    driverRating: 4.8,
   },
   {
     id: 'trip-8',
@@ -128,6 +142,8 @@ export const mockTrips: Trip[] = [
     title: 'Spring kitesurfing adventure to La Barrosa',
     description: "Spring vibes! I'm really excited about this La Barrosa adventure - perfect conditions for sharing the ride!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 1,
+    driverName: 'David Brown',
+    driverRating: 4.9,
   },
   {
     id: 'trip-9',
@@ -144,6 +160,8 @@ export const mockTrips: Trip[] = [
     title: 'Easter kitesurfing trip to Castilnovo',
     description: "Easter adventure time! Super pumped for Castilnovo - always amazing to ride with fellow kiters!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 2,
+    driverName: 'Maria Garcia',
+    driverRating: 5.0,
   },
   {
     id: 'trip-10',
@@ -160,6 +178,8 @@ export const mockTrips: Trip[] = [
     title: 'May kitesurfing escape to El Palmar',
     description: "May is perfect for kiting! Super excited for this El Palmar trip - let's make it memorable together!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 3,
+    driverName: 'James Taylor',
+    driverRating: 4.5,
   },
   {
     id: 'trip-11',
@@ -176,6 +196,8 @@ export const mockTrips: Trip[] = [
     title: 'Kitesurfing journey to La Barca beach',
     description: "Hey riders! This La Barca journey is going to be epic - super stoked to share the experience with you!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 4,
+    driverName: 'Laura Anderson',
+    driverRating: 4.6,
   },
   {
     id: 'trip-12',
@@ -192,6 +214,8 @@ export const mockTrips: Trip[] = [
     title: 'Summer kitesurfing at Los Álamos',
     description: "Summer vibes! Super excited for Los Álamos - nothing beats summer kiting with other riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 1,
+    driverName: 'Michael Lee',
+    driverRating: 4.7,
   },
   {
     id: 'trip-13',
@@ -208,6 +232,8 @@ export const mockTrips: Trip[] = [
     title: 'June kitesurfing adventure to Cabo Pino',
     description: "June is prime kiting season! Super pumped for this Cabo Pino adventure - can't wait to ride with you all!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 2,
+    driverName: 'Sophie Martin',
+    driverRating: 4.8,
   },
   {
     id: 'trip-14',
@@ -224,6 +250,8 @@ export const mockTrips: Trip[] = [
     title: 'July kitesurfing trip to Los Monteros',
     description: "July heat! Super excited for Los Monteros - it's always amazing to share epic sessions with other riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 3,
+    driverName: 'Robert White',
+    driverRating: 4.9,
   },
   {
     id: 'trip-15',
@@ -240,6 +268,8 @@ export const mockTrips: Trip[] = [
     title: 'Summer kitesurfing at San Pedro',
     description: "Summer stoke! Super pumped for San Pedro - let's catch some amazing wind together!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 4,
+    driverName: 'Anna Thompson',
+    driverRating: 5.0,
   },
   {
     id: 'trip-16',
@@ -256,6 +286,8 @@ export const mockTrips: Trip[] = [
     title: 'August kitesurfing escape to Matalascañas',
     description: "August escape! Super excited about Matalascañas - perfect time to share this amazing spot with other riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 1,
+    driverName: 'Daniel Harris',
+    driverRating: 4.5,
   },
   {
     id: 'trip-17',
@@ -272,6 +304,8 @@ export const mockTrips: Trip[] = [
     title: 'Late summer kitesurfing at Mazagón',
     description: "Late summer vibes! Super stoked for this Mazagón trip - let's make the most of the season together!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 2,
+    driverName: 'Olivia Clark',
+    driverRating: 4.6,
   },
   {
     id: 'trip-18',
@@ -288,6 +322,8 @@ export const mockTrips: Trip[] = [
     title: 'September kitesurfing to Asturias',
     description: "September adventure! Super excited for Asturias - always an amazing experience sharing rides with fellow kiters!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 3,
+    driverName: 'Thomas Lewis',
+    driverRating: 4.7,
   },
   {
     id: 'trip-19',
@@ -304,6 +340,8 @@ export const mockTrips: Trip[] = [
     title: 'Autumn kitesurfing at San Lorenzo',
     description: "Autumn winds! Super pumped for San Lorenzo - it'll be amazing to share this autumn session with other riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 4,
+    driverName: 'Isabella Walker',
+    driverRating: 4.8,
   },
   {
     id: 'trip-20',
@@ -320,6 +358,8 @@ export const mockTrips: Trip[] = [
     title: 'October kitesurfing trip to Luanco',
     description: "October stoke! Super excited for Luanco - perfect conditions for sharing epic rides together!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 1,
+    driverName: 'Christopher Hall',
+    driverRating: 4.9,
   },
   {
     id: 'trip-21',
@@ -336,6 +376,8 @@ export const mockTrips: Trip[] = [
     title: 'Kitesurfing adventure to Los Peligros',
     description: "Adventure time! Super stoked for Los Peligros - it's always incredible to share the ride with other passionate riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 2,
+    driverName: 'Mia Young',
+    driverRating: 5.0,
   },
   {
     id: 'trip-22',
@@ -352,6 +394,8 @@ export const mockTrips: Trip[] = [
     title: 'Autumn kitesurfing at La Zurriola',
     description: "Autumn vibes! Super excited for La Zurriola - nothing beats sharing autumn kiting sessions with fellow riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 3,
+    driverName: 'Matthew King',
+    driverRating: 4.5,
   },
   {
     id: 'trip-23',
@@ -368,6 +412,8 @@ export const mockTrips: Trip[] = [
     title: 'November kitesurfing to Laida Beach',
     description: "November adventure! Super pumped for Laida Beach - always amazing to ride with other passionate kiters!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 4,
+    driverName: 'Charlotte Wright',
+    driverRating: 4.6,
   },
   {
     id: 'trip-24',
@@ -384,6 +430,8 @@ export const mockTrips: Trip[] = [
     title: 'Late autumn kitesurfing to Arousa',
     description: "Late autumn stoke! Super excited for Arousa - let's make the most of these amazing conditions together!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 1,
+    driverName: 'Andrew Lopez',
+    driverRating: 4.7,
   },
   {
     id: 'trip-25',
@@ -400,6 +448,8 @@ export const mockTrips: Trip[] = [
     title: 'December kitesurfing at Los Genoveses',
     description: "December vibes! Super stoked for Los Genoveses - it'll be amazing to share this winter session with other riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 2,
+    driverName: 'Amelia Hill',
+    driverRating: 4.8,
   },
   {
     id: 'trip-26',
@@ -416,6 +466,8 @@ export const mockTrips: Trip[] = [
     title: 'New year kitesurfing to Almadrabillas',
     description: "Happy New Year! Super excited to kick off 2026 with this Almadrabillas trip - can't wait to share the adventure!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 3,
+    driverName: 'Joseph Green',
+    driverRating: 4.9,
   },
   {
     id: 'trip-27',
@@ -432,6 +484,8 @@ export const mockTrips: Trip[] = [
     title: 'February kitesurfing at Carabineros',
     description: "February adventure! Super pumped for Carabineros - always amazing to share epic winter sessions with other riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 4,
+    driverName: 'Harper Adams',
+    driverRating: 5.0,
   },
   {
     id: 'trip-28',
@@ -448,6 +502,8 @@ export const mockTrips: Trip[] = [
     title: 'Spring kitesurfing trip to Torrenueva',
     description: "Spring vibes are back! Super excited for Torrenueva - it's going to be amazing sharing this trip with fellow kiters!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 1,
+    driverName: 'William Baker',
+    driverRating: 4.5,
   },
   {
     id: 'trip-29',
@@ -464,6 +520,8 @@ export const mockTrips: Trip[] = [
     title: 'Easter kitesurfing at La Manga',
     description: "Easter weekend! Super stoked for La Manga - perfect time to share this amazing spot with other riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 2,
+    driverName: 'Evelyn Nelson',
+    driverRating: 4.6,
   },
   {
     id: 'trip-30',
@@ -480,6 +538,8 @@ export const mockTrips: Trip[] = [
     title: 'April kitesurfing escape to La Mota',
     description: "April escape! Super excited for La Mota - it'll be incredible sharing this experience with other passionate riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 3,
+    driverName: 'Benjamin Carter',
+    driverRating: 4.7,
   },
   {
     id: 'trip-31',
@@ -496,6 +556,8 @@ export const mockTrips: Trip[] = [
     title: 'May kitesurfing journey to Santa Pola',
     description: "May is perfect! Super pumped for this Santa Pola journey - can't wait to share epic rides with you all!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 4,
+    driverName: 'Abigail Mitchell',
+    driverRating: 4.8,
   },
   {
     id: 'trip-32',
@@ -512,6 +574,8 @@ export const mockTrips: Trip[] = [
     title: 'Late May kitesurfing at Calpe',
     description: "Late May stoke! Super excited for Calpe - it's always amazing to share perfect conditions with other riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 1,
+    driverName: 'Samuel Perez',
+    driverRating: 4.9,
   },
   {
     id: 'trip-33',
@@ -528,6 +592,8 @@ export const mockTrips: Trip[] = [
     title: 'June kitesurfing adventure to Dénia',
     description: "June adventure time! Super stoked for Dénia - let's catch some amazing wind together with fellow riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 2,
+    driverName: 'Emily Roberts',
+    driverRating: 5.0,
   },
   {
     id: 'trip-34',
@@ -544,6 +610,8 @@ export const mockTrips: Trip[] = [
     title: 'Summer kitesurfing at Les Deveses',
     description: "Summer vibes! Super excited for Les Deveses - nothing beats sharing summer sessions with other passionate kiters!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 3,
+    driverName: 'Nicholas Turner',
+    driverRating: 4.5,
   },
   {
     id: 'trip-35',
@@ -560,6 +628,8 @@ export const mockTrips: Trip[] = [
     title: 'July kitesurfing trip to Mareny Blau',
     description: "July heat! Super pumped for Mareny Blau - it'll be amazing to share this epic session with other riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 4,
+    driverName: 'Sofia Phillips',
+    driverRating: 4.6,
   },
   {
     id: 'trip-36',
@@ -576,6 +646,8 @@ export const mockTrips: Trip[] = [
     title: 'Local kitesurfing trip to Castelldefels',
     description: "Local ride! Super excited for this Castelldefels trip - always fun to share local spots with other riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 1,
+    driverName: 'Joshua Campbell',
+    driverRating: 4.7,
   },
   {
     id: 'trip-37',
@@ -592,6 +664,8 @@ export const mockTrips: Trip[] = [
     title: 'August kitesurfing to Sant Pere',
     description: "August adventure! Super stoked for Sant Pere - it's going to be epic sharing this experience with fellow kiters!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 2,
+    driverName: 'Aria Parker',
+    driverRating: 4.8,
   },
   {
     id: 'trip-38',
@@ -608,6 +682,8 @@ export const mockTrips: Trip[] = [
     title: 'Late summer kitesurfing at Delta Ebro',
     description: "Late summer vibes! Super excited for Delta Ebro - always amazing to share rides with other passionate riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 3,
+    driverName: 'Ryan Evans',
+    driverRating: 4.9,
   },
   {
     id: 'trip-39',
@@ -624,6 +700,8 @@ export const mockTrips: Trip[] = [
     title: 'September kitesurfing to La Loteta',
     description: "September stoke! Super pumped for La Loteta - let's make the most of these amazing conditions together!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 4,
+    driverName: 'Lily Edwards',
+    driverRating: 5.0,
   },
   {
     id: 'trip-40',
@@ -640,6 +718,8 @@ export const mockTrips: Trip[] = [
     title: 'Weekend kitesurfing to Sant Pere',
     description: "Weekend vibes! Super excited for Sant Pere - it's always amazing to share weekend sessions with other riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 3,
+    driverName: 'Nathan Collins',
+    driverRating: 4.5,
   },
   {
     id: 'trip-41',
@@ -656,6 +736,8 @@ export const mockTrips: Trip[] = [
     title: 'Early morning kitesurfing trip to Sant Pere',
     description: "Early bird session! Super stoked for this morning trip to Sant Pere - perfect conditions for sharing epic rides!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 2,
+    driverName: 'Zoe Stewart',
+    driverRating: 4.6,
   },
   {
     id: 'trip-42',
@@ -672,6 +754,8 @@ export const mockTrips: Trip[] = [
     title: 'Kitesurfing adventure to Sant Pere',
     description: "Adventure awaits! Super excited for this Sant Pere trip - it's going to be incredible sharing the experience with fellow kiters!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 4,
+    driverName: 'Jonathan Sanchez',
+    driverRating: 4.7,
   },
   {
     id: 'trip-43',
@@ -688,6 +772,8 @@ export const mockTrips: Trip[] = [
     title: 'Morning kitesurfing session at Sant Pere',
     description: "Morning session! Super pumped for Sant Pere - always amazing to share early sessions with other passionate riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 1,
+    driverName: 'Chloe Morris',
+    driverRating: 4.8,
   },
   {
     id: 'trip-44',
@@ -704,6 +790,8 @@ export const mockTrips: Trip[] = [
     title: 'Weekend escape to Sant Pere',
     description: "Weekend escape! Super excited for Sant Pere - perfect time to unwind and share amazing rides with other riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 2,
+    driverName: 'Brandon Rogers',
+    driverRating: 4.9,
   },
   {
     id: 'trip-45',
@@ -720,6 +808,8 @@ export const mockTrips: Trip[] = [
     title: 'Post-Christmas kitesurfing trip to Sant Pere',
     description: "Post-Christmas ride! Super stoked for this Sant Pere trip - perfect way to end the year sharing epic sessions with other riders!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 3,
+    driverName: 'Grace Reed',
+    driverRating: 5.0,
   },
   {
     id: 'trip-46',
@@ -736,5 +826,7 @@ export const mockTrips: Trip[] = [
     title: 'New Year kitesurfing at Sant Pere',
     description: "Happy New Year! Super excited to start 2026 at Sant Pere - it's going to be amazing sharing this first ride of the year with fellow kiters!\n\nEach person can bring:\n\n- 1 large kite bag (2-3 kites inside)\n\n- 1 twin-tip board\n\n- 1 small backpack (for food & water)\n\n- pls, do not bring a board bag\n\nI can also let you know closer to the trip if we have space for more kite bags.\n\nIf you have a special request (i.e. extra detour or extra luggage), ask BEFORE you book.\n\nThanks",
     seats: 4,
+    driverName: 'Kevin Cook',
+    driverRating: 4.5,
   },
 ];

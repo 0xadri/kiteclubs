@@ -13,6 +13,8 @@ export interface Trip {
   description: string;
   exactPickupPoint: string;
   seats: number;
+  driverName: string;
+  driverRating: number;
 }
 
 export interface TripSearchParams {
