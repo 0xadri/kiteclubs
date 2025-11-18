@@ -29,58 +29,70 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
 
   return (
     <li className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-200">
-      <div className="space-y-4">
-        <div>
-          <h3 className="text-xl font-semibold text-gray-800 mb-1">
-            {trip.title}
-          </h3>
-          <p className="text-lg text-gray-600">
+      <div className="flex gap-6">
+        {/* Left Sidebar: Price + Badges */}
+        <div className="flex flex-col items-center justify-start space-y-3 pr-6 border-r border-gray-200">
+          <div className="text-center">
+            <p className="text-3xl font-bold text-aqua-600">
+              {currencySymbol}{trip.price}
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            {isDayTrip && (
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                Day Trip
+              </span>
+            )}
+            {trip.return && (
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                Return
+              </span>
+            )}
+          </div>
+        </div>
+
+        {/* Main Content */}
+        <div className="flex-1 space-y-4">
+          {/* Route Header */}
+          <h2 className="text-2xl font-bold text-gray-900">
             {trip.departure} 🡒 {trip.destination}
-          </p>
-        </div>
-        
-        <p className="text-gray-600">
-          {truncatedDescription}
-        </p>
-        
-        <div className="flex gap-2 items-center">
-          <p className="text-2xl mr-3 font-bold text-aqua-600">
-            {currencySymbol}{trip.price}
-          </p>
-          {isDayTrip && (
-            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
-              Day Trip
-            </span>
-          )}
-          {trip.return && (
-            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
-              Return
-            </span>
-          )}
-        </div>
-        
-        <div className="flex items-center gap-4 text-sm text-gray-700">
-          <div className="flex items-center gap-1">
-            <span className="font-medium">Driver:</span>
-            <span>{trip.driverName}</span>
+          </h2>
+
+          {/* Driver Info Row */}
+          <div className="flex items-center gap-4 text-sm text-gray-700">
+            <div className="flex items-center gap-1">
+              <span className="font-medium">Driver:</span>
+              <span>{trip.driverName}</span>
+            </div>
+            <div className="flex items-center gap-1">
+              <span className="font-medium">Rating:</span>
+              <span className="flex items-center gap-1">
+                <span>⭐</span>
+                <span>{trip.driverRating.toFixed(1)}</span>
+              </span>
+            </div>
+            <div className="flex items-center gap-1">
+              <span className="font-medium">Seats Left:</span>
+              <span>{trip.seats}</span>
+            </div>
           </div>
-          <div className="flex items-center gap-1">
-            <span className="font-medium">Rating:</span>
-            <span className="flex items-center gap-1">
-              <span>⭐</span>
-              <span>{trip.driverRating.toFixed(1)}</span>
-            </span>
+
+          {/* Title and Description - Muted */}
+          <div className="space-y-1">
+            <h3 className="text-sm font-medium text-gray-400">
+              {trip.title}
+            </h3>
+            <p className="text-sm text-gray-500">
+              {truncatedDescription}
+            </p>
           </div>
-          <div className="flex items-center gap-1">
-            <span className="font-medium">Seats Left:</span>
-            <span>{trip.seats}</span>
+
+          {/* Button - Right Aligned */}
+          <div className="flex justify-end pt-2">
+            <button className="bg-aqua-600 hover:bg-aqua-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 text-sm">
+              Request To Join
+            </button>
           </div>
-        </div>
-        
-        <div className="pt-4 border-t border-gray-200">
-          <button className="w-full bg-aqua-600 hover:bg-aqua-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
-            Request To Join
-          </button>
         </div>
       </div>
     </li>
