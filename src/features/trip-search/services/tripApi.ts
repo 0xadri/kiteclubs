@@ -31,3 +31,17 @@ export async function getTrips(
 
   return response.data;
 }
+
+/**
+ * Fetch a single trip by ID.
+ */
+export async function getTripById(
+  id: string,
+  signal?: AbortSignal,
+): Promise<Trip> {
+  const response = await api.get<Trip>(`/trips/${id}`, {
+    signal,
+  });
+
+  return response.data;
+}

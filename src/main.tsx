@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router';
 import App from './app/App.tsx';
 import Home from './pages/Home/Home';
 import Trips from './pages/Trips/Trips';
+import Trip from './pages/Trip/Trip';
 
 if (import.meta.env.DEV) {
   const { worker } = await import('./mocks/browser');
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
           <Route path="trips" element={<Trips />} />
+          <Route path="trips/:tripId" element={<Trip />} />
         </Route>
 
         {/* <Route path="about" element={<About />} />

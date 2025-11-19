@@ -41,4 +41,15 @@ export const tripHandlers = [
       status: 200,
     });
   }),
+
+  http.get('/api/trips/:id', ({ params }) => {
+    const { id } = params;
+    const trip = mockTrips.find((t) => t.id === id);
+
+    if (!trip) {
+      return new HttpResponse(null, { status: 404 });
+    }
+
+    return HttpResponse.json(trip, { status: 200 });
+  }),
 ];
