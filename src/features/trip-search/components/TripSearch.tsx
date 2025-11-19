@@ -92,11 +92,12 @@ const TripSearch = ({ filters, handleSubmit }: TripSearchProps) => {
             <div className="flex flex-col md:items-center md:justify-center">
               <button
                 type="submit"
-                className="w-full md:w-auto md:h-full bg-aqua-500 hover:bg-aqua-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl flex items-center justify-center"
+                className="w-full md:w-auto md:h-full bg-aqua-500 hover:bg-aqua-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl flex items-center justify-center cursor-pointer"
               >
                 <span role="img" aria-label="Search trips">
                   🔍
                 </span>
+                <span className="ml-2">Search</span>
               </button>
             </div>
           </div>

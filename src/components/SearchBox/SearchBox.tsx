@@ -1,5 +1,13 @@
-import type { FormEvent } from 'react';
+import {
+  useMemo,
+  useState,
+  type ChangeEvent,
+  type FocusEvent,
+  type FormEvent,
+  type MouseEvent,
+} from 'react';
 import { useNavigate } from 'react-router';
+import { formatDateDisplay } from '../../features/trip-search/components/utils';
 
 const SearchBox = () => {
   const navigate = useNavigate();
@@ -9,6 +17,22 @@ const SearchBox = () => {
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
     return tomorrow.toISOString().split('T')[0];
+  };
+
+  const [dateValue, setDateValue] = useState(getTomorrowDate());
+  const dateDisplay = useMemo(() => formatDateDisplay(dateValue), [dateValue]);
+
+  const handleDateChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setDateValue(event.target.value);
+  };
+
+  const openDatePicker = (
+    event: FocusEvent<HTMLInputElement> | MouseEvent<HTMLInputElement>,
+  ) => {
+    const input = event.currentTarget as HTMLInputElement & {
+      showPicker?: () => void;
+    };
+    input.showPicker?.();
   };
 
   function onSubmit(event: FormEvent<HTMLFormElement>) {
@@ -40,7 +64,7 @@ const SearchBox = () => {
       onSubmit={onSubmit}
       className="w-full max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-6 md:p-8"
     >
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+      <div className="grid grid-cols-1 md:grid-cols-[repeat(2,minmax(0,1fr))_auto_auto] gap-4">
         <div className="flex flex-col">
           <input
             id="from"
@@ -61,23 +85,35 @@ const SearchBox = () => {
           />
         </div>
         
-        <div className="flex flex-col">
+        <div className="flex flex-col relative w-full md:w-auto md:self-center">
+          <div className="px-4 py-3 border border-gray-300 rounded-lg text-gray-900 font-medium bg-white pointer-events-none whitespace-nowrap">
+            {dateDisplay}
+          </div>
           <input
             id="date"
             type="date"
             name="date"
-            defaultValue={getTomorrowDate()}
-            className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-aqua-500 focus:border-transparent"
+            aria-label="Travel date"
+            value={dateValue}
+            onChange={handleDateChange}
+            onFocus={openDatePicker}
+            onClick={openDatePicker}
+            className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
           />
         </div>
+        
+        <div className="flex flex-col md:items-center md:justify-center">
+          <button
+            type="submit"
+            className="w-full md:w-auto md:h-full bg-aqua-500 hover:bg-aqua-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl flex items-center justify-center cursor-pointer"
+          >
+            <span role="img" aria-label="Search trips">
+              🔍
+            </span>
+            <span className="ml-2">Search</span>
+          </button>
+        </div>
       </div>
-      
-      <button
-        type="submit"
-        className="w-full bg-aqua-500 hover:bg-aqua-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
-      >
-        Find a Ride
-      </button>
     </form>
   );
 };
