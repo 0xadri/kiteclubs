@@ -14,7 +14,7 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
   const formattedDepartureTime = formatDepartureTime(trip.departureTime);
 
   return (
-    <li className="bg-white rounded-2xl shadow-md p-4 md:p-6 hover:shadow-xl transition-shadow duration-200 border border-gray-100">
+    <li className="bg-white rounded-2xl shadow-xl p-4 md:p-6 border border-gray-100">
       <div className="flex flex-col gap-0 md:grid md:grid-cols-[auto_1fr_auto] md:gap-4">
         {/* Column 1: Time + Badges */}
         <div className="flex items-center justify-between gap-4 md:flex-col md:items-center md:justify-start md:space-y-2 md:pr-6 md:border-r border-gray-200 pb-2 md:pb-0">
@@ -70,14 +70,14 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
               {currencySymbol}{trip.price}
             </p>
           </div>
-          
+
           {/* Desktop: Price at top */}
           <div className="hidden md:block text-center pb-0 mb-2">
             <p className="text-2xl font-bold text-aqua-600">
               {currencySymbol}{trip.price}
             </p>
           </div>
-          
+
           <div className="flex flex-col items-end gap-1.5 w-full">
             {/* Desktop: Seats Left */}
             <div className={`hidden md:flex items-center gap-1 text-sm text-gray-700 ${trip.seats === 1 ? 'text-red-600' : ''}`}>

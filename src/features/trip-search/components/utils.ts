@@ -1,3 +1,5 @@
+import type { Trip } from '../types';
+
 export const formatDateDisplay = (value: string) => {
   if (!value) {
     return 'Date';
@@ -62,3 +64,27 @@ export const formatDepartureTime = (timeString: string): string => {
   return timeString;
 };
 
+
+
+
+export const groupTrips = (trips: Trip[]) => {
+  return trips
+    .sort((a, b) => {
+      const dateComparison = a.startDate.localeCompare(b.startDate);
+      if (dateComparison !== 0) return dateComparison;
+      const timeComparison = a.departureTime.localeCompare(b.departureTime);
+      if (timeComparison !== 0) return timeComparison;
+      const departureComparison = a.departure.localeCompare(b.departure);
+      if (departureComparison !== 0) return departureComparison;
+      return a.destination.localeCompare(b.destination);
+    })
+    .reduce((acc: { date: string; trips: Trip[] }[], trip: Trip) => {
+      const lastGroup = acc[acc.length - 1];
+      if (lastGroup && lastGroup.date === trip.startDate) {
+        lastGroup.trips.push(trip);
+      } else {
+        acc.push({ date: trip.startDate, trips: [trip] });
+      }
+      return acc;
+    }, []);
+};
