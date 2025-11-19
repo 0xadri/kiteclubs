@@ -45,14 +45,14 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
               {trip.departure} 🡒 {trip.destination}
             </h2>
 
-            <div className="flex items-center gap-1 text-base text-gray-700">
-              <span>👤</span>
-              <span>{firstName}</span>
-              <span className="flex items-center gap-1 ml-1">
-                <span>⭐</span>
-                <span>{trip.driverRating.toFixed(1)}</span>
-                <span>({trip.driverTripsCompleted})</span>
-              </span>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-semibold text-lg">
+                {trip.driverName.charAt(0)}
+              </div>
+              <div>
+                <p className="text-base font-medium text-gray-800">{firstName}</p>
+                <p className="text-sm text-gray-500">⭐ {trip.driverRating.toFixed(1)} ({trip.driverTripsCompleted})</p>
+              </div>
             </div>
 
             <p className="hidden md:block text-sm text-gray-500">
@@ -87,7 +87,7 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
                 <span>{trip.seats}</span>
               </div>
               <div className="w-full md:w-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors duration-200 text-base text-center cursor-pointer">
-                Request To Join
+                Book
               </div>
             </div>
           </div>

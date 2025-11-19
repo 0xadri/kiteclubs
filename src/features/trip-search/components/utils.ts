@@ -53,7 +53,13 @@ export const truncateDescription = (
 };
 
 export const getFirstName = (fullName: string): string => {
-  return fullName.trim().split(/\s+/)[0] || fullName;
+  const nameParts = fullName.trim().split(/\s+/);
+  if (nameParts.length === 1) {
+    return nameParts[0];
+  }
+  const firstName = nameParts[0];
+  const lastNameInitial = nameParts[nameParts.length - 1].charAt(0);
+  return `${firstName} ${lastNameInitial}.`;
 };
 
 export const formatDepartureTime = (timeString: string): string => {
