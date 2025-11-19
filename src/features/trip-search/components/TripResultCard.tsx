@@ -1,39 +1,10 @@
 import type { TripResultCardProps } from '../types';
-
-const getCurrencySymbol = (currency: string): string => {
-  const currencyMap: Record<string, string> = {
-    euro: '€',
-    eur: '€',
-    dollar: '$',
-    usd: '$',
-    pound: '£',
-    gbp: '£',
-  };
-  
-  const normalized = currency.toLowerCase();
-  return currencyMap[normalized] || currency.toUpperCase();
-};
-
-const truncateDescription = (description: string, wordLimit: number = 10): string => {
-  const words = description.trim().split(/\s+/);
-  if (words.length <= wordLimit) {
-    return description;
-  }
-  return words.slice(0, wordLimit).join(' ') + '...';
-};
-
-const getFirstName = (fullName: string): string => {
-  return fullName.trim().split(/\s+/)[0] || fullName;
-};
-
-const formatDepartureTime = (timeString: string): string => {
-  // Extract time from format like '07:30:00+02:00' or '07:30:00'
-  const timeMatch = timeString.match(/^(\d{2}):(\d{2})/);
-  if (timeMatch) {
-    return `${timeMatch[1]}:${timeMatch[2]}`;
-  }
-  return timeString;
-};
+import {
+  formatDepartureTime,
+  getCurrencySymbol,
+  getFirstName,
+  truncateDescription,
+} from './utils';
 
 const TripResultCard = ({ trip }: TripResultCardProps) => {
   const isDayTrip = trip.return && trip.startDate === trip.endDate;

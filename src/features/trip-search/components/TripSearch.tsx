@@ -8,6 +8,7 @@ import {
   type MouseEvent,
 } from 'react';
 import type { TripSearchProps } from '../types';
+import { formatDateDisplay } from './utils';
 
 const TripSearch = ({ filters, handleSubmit }: TripSearchProps) => {
   const [dateValue, setDateValue] = useState(filters.date ?? '');
@@ -15,33 +16,6 @@ const TripSearch = ({ filters, handleSubmit }: TripSearchProps) => {
   useEffect(() => {
     setDateValue(filters.date ?? '');
   }, [filters.date]);
-
-  const formatDateDisplay = (value: string) => {
-    if (!value) {
-      return 'Date';
-    }
-
-    const date = new Date(`${value}T00:00:00`);
-    if (Number.isNaN(date.getTime())) {
-      return 'Date';
-    }
-
-    const weekdayFormatter = new Intl.DateTimeFormat('en-GB', {
-      weekday: 'short',
-    });
-    const dayFormatter = new Intl.DateTimeFormat('en-GB', {
-      day: '2-digit',
-    });
-    const monthFormatter = new Intl.DateTimeFormat('en-GB', {
-      month: '2-digit',
-    });
-
-    const weekday = weekdayFormatter.format(date);
-    const day = dayFormatter.format(date);
-    const month = monthFormatter.format(date);
-
-    return `${weekday}. ${day}/${month}`;
-  };
 
   const dateDisplay = useMemo(() => formatDateDisplay(dateValue), [dateValue]);
 
