@@ -1,4 +1,8 @@
-import type { Trip, TripResultsProp, UseTripSearchResult } from '../types';
+import type {
+  Trip,
+  TripResultsProp,
+  UseTripSearchResult,
+} from '../types';
 import { useTripSearch } from '../hooks/useTripSearch';
 import TripResultCard from './TripResultCard';
 
