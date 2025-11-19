@@ -694,7 +694,7 @@ export const mockTrips: Trip[] = [
     endDate: '2026-08-10',
     departureTime: '07:30:00+02:00',
     returnTripETA: '21:25:00+02:00',
-    price: 220,
+    price: 19,
     return: true,
     priceCurrency: 'euro',
     title: 'August kitesurfing to Sant Pere',
