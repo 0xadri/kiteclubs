@@ -8,6 +8,7 @@ import {
 } from 'react';
 import { useNavigate } from 'react-router';
 import { formatDateDisplay } from '../../features/trip-search/components/utils';
+import { buildSearchPath } from '../../pages/Search/utils';
 
 const SearchBox = () => {
   const navigate = useNavigate();
@@ -39,23 +40,17 @@ const SearchBox = () => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
-    const searchParams = new URLSearchParams();
-
     const departure = (formData.get('departure') as string)?.trim();
     const destination = (formData.get('destination') as string)?.trim();
     const date = (formData.get('date') as string)?.trim();
 
-    if (departure) {
-      searchParams.set('departure', departure);
-    }
-    if (destination) {
-      searchParams.set('destination', destination);
-    }
-    if (date) {
-      searchParams.set('date', date);
-    }
+    const path = buildSearchPath({
+      departure,
+      destination,
+      date,
+    });
 
-    navigate(`/search?${searchParams.toString()}`);
+    navigate(path);
   }
 
   return (

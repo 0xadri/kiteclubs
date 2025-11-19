@@ -22,6 +22,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
           <Route path="search" element={<Search />} />
+          <Route path="search/:tripRoute/:date" element={<Search />} />
           <Route path="trips/:tripId" element={<Trip />} />
         </Route>
 

@@ -1,30 +1,55 @@
 import type { TripSearchParams } from '../../features/trip-search/types';
 
+const toPascalCase = (str: string): string => {
+  if (!str) return '';
+  return str
+    .toLowerCase()
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+};
+
 export const getTripFilters = (
   searchParams: URLSearchParams,
-): TripSearchParams => ({
-  departure: searchParams.get('departure') ?? '',
-  destination: searchParams.get('destination') ?? '',
-  date: searchParams.get('date') ?? '',
-});
+  params?: { tripRoute?: string; date?: string },
+): TripSearchParams => {
+  if (params?.tripRoute && params?.date) {
+    const [departure, destination] = params.tripRoute.split('-');
+    return {
+      departure: departure === 'ANYWHERE' ? '' : toPascalCase(departure || ''),
+      destination: destination === 'ANYWHERE' ? '' : toPascalCase(destination || ''),
+      date: params.date || '',
+    };
+  }
 
-export const buildSearchParamsFromFilters = (
-  filters: TripSearchParams,
-): URLSearchParams => {
-  const next = new URLSearchParams();
+  return {
+    departure: searchParams.get('departure') ?? '',
+    destination: searchParams.get('destination') ?? '',
+    date: searchParams.get('date') ?? '',
+  };
+};
+
+export const buildSearchPath = (filters: TripSearchParams): string => {
+  const departure = filters.departure?.trim().toUpperCase() || 'ANYWHERE';
+  const destination = filters.destination?.trim().toUpperCase() || 'ANYWHERE';
+  const date = filters.date?.trim() || '';
+
+  // Always use the new URL format if we have a date
+  if (date) {
+    return `/search/${departure}-${destination}/${date}`;
+  }
+
+  // Fallback to query params only if no date is provided
+  const searchParams = new URLSearchParams();
 
   if (filters.departure) {
-    next.set('departure', filters.departure);
+    searchParams.set('departure', filters.departure);
   }
 
   if (filters.destination) {
-    next.set('destination', filters.destination);
+    searchParams.set('destination', filters.destination);
   }
 
-  if (filters.date) {
-    next.set('date', filters.date);
-  }
-
-  return next;
+  return `/search?${searchParams.toString()}`;
 };
 
