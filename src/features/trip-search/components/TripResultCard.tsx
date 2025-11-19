@@ -15,10 +15,10 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
 
   return (
     <li className="bg-white rounded-2xl shadow-md p-4 md:p-6 hover:shadow-xl transition-shadow duration-200 border border-gray-100">
-      <div className="flex flex-col gap-5 md:grid md:grid-cols-[auto_1fr_auto] md:gap-6">
+      <div className="flex flex-col gap-0 md:grid md:grid-cols-[auto_1fr_auto] md:gap-4">
         {/* Column 1: Time + Badges */}
-        <div className="flex items-center justify-between gap-4 md:flex-col md:items-center md:justify-start md:space-y-3 md:pr-6 md:border-r border-gray-200 pb-4 md:pb-0 border-b md:border-b-0">
-          <div className="text-center pb-0 mb-3">
+        <div className="flex items-center justify-between gap-4 md:flex-col md:items-center md:justify-start md:space-y-2 md:pr-6 md:border-r border-gray-200 pb-2 md:pb-0">
+          <div className="text-center pb-0 mb-0 md:mb-2" >
             <p className="text-2xl font-bold text-gray-900">
               {formattedDepartureTime}
             </p>
@@ -38,8 +38,8 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
         </div>
 
         {/* Column 2: Main Content */}
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900 pb-0 mb-3">
+        <div className="space-y-2">
+          <h2 className="md:block text-2xl font-bold text-gray-900 pb-0 mb-3">
             {trip.departure} 🡒 {trip.destination}
           </h2>
 
@@ -53,21 +53,34 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
             </span>
           </div>
 
-          <p className="text-sm text-gray-500">
+          <p className="hidden md:block text-sm text-gray-500">
             {trip.title}: <span className="font-medium text-gray-400">{truncatedDescription}</span>
           </p>
         </div>
 
         {/* Column 3: Price + Seats + Button */}
-        <div className="flex flex-col gap-3 md:items-end md:justify-between border-t md:border-t-0 md:border-l border-gray-200 pt-4 md:pt-0 md:pl-6">
-          <div className="text-center pb-0 mb-3">
+        <div className="flex flex-col gap-2 md:items-end md:justify-between pt-0 md:pt-2 md:pt-0 md:pl-6 md:border-l border-gray-200">
+          {/* Mobile: Seats Left and Price on same line */}
+          <div className="flex items-center justify-between w-full md:hidden">
+            <div className={`flex items-center gap-1 text-sm text-gray-700 ${trip.seats === 1 ? 'text-red-600' : ''}`}>
+              <span className="font-medium">Seats Left:</span>
+              <span>{trip.seats}</span>
+            </div>
             <p className="text-2xl font-bold text-aqua-600">
               {currencySymbol}{trip.price}
             </p>
           </div>
           
-          <div className="flex flex-col items-end gap-2 w-full">
-            <div className={`flex items-center gap-1 text-sm text-gray-700 justify-between w-full md:w-auto ${trip.seats === 1 ? 'text-red-600' : ''}`}>
+          {/* Desktop: Price at top */}
+          <div className="hidden md:block text-center pb-0 mb-2">
+            <p className="text-2xl font-bold text-aqua-600">
+              {currencySymbol}{trip.price}
+            </p>
+          </div>
+          
+          <div className="flex flex-col items-end gap-1.5 w-full">
+            {/* Desktop: Seats Left */}
+            <div className={`hidden md:flex items-center gap-1 text-sm text-gray-700 ${trip.seats === 1 ? 'text-red-600' : ''}`}>
               <span className="font-medium">Seats Left:</span>
               <span>{trip.seats}</span>
             </div>
