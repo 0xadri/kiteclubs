@@ -163,7 +163,7 @@ const Trip = () => {
                             {/* Pickup */}
                             <div className="space-y-2">
                                 <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">
-                                    Neighborhood
+                                    Pickup Area
                                 </h3>
                                 <a
                                     href={googleMapsUrl}
@@ -248,7 +248,7 @@ const Trip = () => {
                             {/* Riders */}
                             <div className="space-y-2">
                                 <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">
-                                    Riders
+                                    Riders Confirmed
                                 </h3>
                                 <div className="flex flex-wrap gap-2">
                                     {trip.riders.map((rider, index) => (
