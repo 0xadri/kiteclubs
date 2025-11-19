@@ -19,11 +19,8 @@ const TripSearch = ({ filters, handleSubmit }: TripSearchProps) => {
     <section className="relative bg-gradient-to-br from-aqua-500 via-aqua-400 to-sand-300 px-4 pt-24 pb-8">
       <div className="relative z-10 w-full max-w-6xl mx-auto">
         <form role="search" onSubmit={onSubmit} className="w-full max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-6 md:p-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-[repeat(3,minmax(0,1fr))_auto] gap-4">
             <div className="flex flex-col">
-              <label htmlFor="from" className="text-sm font-medium text-gray-700 mb-2">
-                From
-              </label>
               <input
                 id="from"
                 type="text"
@@ -35,9 +32,6 @@ const TripSearch = ({ filters, handleSubmit }: TripSearchProps) => {
             </div>
             
             <div className="flex flex-col">
-              <label htmlFor="to" className="text-sm font-medium text-gray-700 mb-2">
-                To
-              </label>
               <input
                 id="to"
                 type="text"
@@ -49,9 +43,6 @@ const TripSearch = ({ filters, handleSubmit }: TripSearchProps) => {
             </div>
             
             <div className="flex flex-col">
-              <label htmlFor="date" className="text-sm font-medium text-gray-700 mb-2">
-                Date
-              </label>
               <input
                 id="date"
                 type="date"
@@ -60,14 +51,18 @@ const TripSearch = ({ filters, handleSubmit }: TripSearchProps) => {
                 className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-aqua-500 focus:border-transparent"
               />
             </div>
+            
+            <div className="flex flex-col md:items-center md:justify-center">
+              <button
+                type="submit"
+                className="w-full md:w-auto md:h-full bg-aqua-500 hover:bg-aqua-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl flex items-center justify-center"
+              >
+                <span role="img" aria-label="Search trips">
+                  🔍
+                </span>
+              </button>
+            </div>
           </div>
-          
-          <button
-            type="submit"
-            className="w-full bg-aqua-500 hover:bg-aqua-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
-          >
-            Find a Ride
-          </button>
         </form>
       </div>
     </section>

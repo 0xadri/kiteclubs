@@ -43,16 +43,16 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
   const formattedDepartureTime = formatDepartureTime(trip.departureTime);
 
   return (
-    <li className="bg-white rounded-2xl shadow-md p-4 sm:p-6 hover:shadow-xl transition-shadow duration-200 border border-gray-100">
-      <div className="flex flex-col gap-5 sm:grid sm:grid-cols-[auto_1fr_auto] sm:gap-6">
+    <li className="bg-white rounded-2xl shadow-md p-4 md:p-6 hover:shadow-xl transition-shadow duration-200 border border-gray-100">
+      <div className="flex flex-col gap-5 md:grid md:grid-cols-[auto_1fr_auto] md:gap-6">
         {/* Column 1: Time + Badges */}
-        <div className="flex items-center justify-between gap-4 sm:flex-col sm:items-center sm:justify-start sm:space-y-3 sm:pr-6 sm:border-r border-gray-200 pb-4 sm:pb-0 border-b sm:border-b-0">
+        <div className="flex items-center justify-between gap-4 md:flex-col md:items-center md:justify-start md:space-y-3 md:pr-6 md:border-r border-gray-200 pb-4 md:pb-0 border-b md:border-b-0">
           <div className="text-center pb-0 mb-3">
             <p className="text-2xl font-bold text-gray-900">
               {formattedDepartureTime}
             </p>
           </div>
-          <div className="flex flex-row gap-2 sm:flex-col sm:gap-2">
+          <div className="flex flex-row gap-2 md:flex-col md:gap-2">
             {isDayTrip && (
               <span className="inline-flex items-center px-3 py-1 mb-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
                 Day Trip
@@ -88,7 +88,7 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
         </div>
 
         {/* Column 3: Price + Seats + Button */}
-        <div className="flex flex-col gap-3 sm:items-end sm:justify-between border-t sm:border-t-0 sm:border-l border-gray-200 pt-4 sm:pt-0 sm:pl-6">
+        <div className="flex flex-col gap-3 md:items-end md:justify-between border-t md:border-t-0 md:border-l border-gray-200 pt-4 md:pt-0 md:pl-6">
           <div className="text-center pb-0 mb-3">
             <p className="text-2xl font-bold text-aqua-600">
               {currencySymbol}{trip.price}
@@ -96,11 +96,11 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
           </div>
           
           <div className="flex flex-col items-end gap-2 w-full">
-            <div className={`flex items-center gap-1 text-sm text-gray-700 justify-between w-full sm:w-auto ${trip.seats === 1 ? 'text-red-600' : ''}`}>
+            <div className={`flex items-center gap-1 text-sm text-gray-700 justify-between w-full md:w-auto ${trip.seats === 1 ? 'text-red-600' : ''}`}>
               <span className="font-medium">Seats Left:</span>
               <span>{trip.seats}</span>
             </div>
-            <button className="w-full sm:w-auto bg-aqua-600 hover:bg-aqua-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors duration-200 text-base">
+            <button className="w-full md:w-auto bg-aqua-600 hover:bg-aqua-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors duration-200 text-base">
               Request To Join
             </button>
           </div>
