@@ -16,7 +16,7 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
 
   return (
     <li className="bg-white rounded-2xl shadow-xl border border-gray-100 transition-transform hover:scale-[1.01] duration-200">
-      <Link to={`/trips/${trip.id}`} className="block p-4 md:p-6">
+      <Link to={`/trip/${trip.id}`} className="block p-4 md:p-6">
         <div className="flex flex-col gap-0 md:grid md:grid-cols-[auto_1fr_auto] md:gap-4">
           {/* Column 1: Time + Badges */}
           <div className="flex items-center justify-between gap-4 md:flex-col md:items-center md:justify-start md:space-y-2 md:pr-6 md:border-r border-gray-200 pb-2 md:pb-0">

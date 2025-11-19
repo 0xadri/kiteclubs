@@ -2,7 +2,7 @@ import type { Trip } from '../types';
 
 export const mockTrips: Trip[] = [
   {
-    id: 'trip-1',
+    id: '4M5NJ8',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Tarifa',
@@ -21,7 +21,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 23,
   },
   {
-    id: 'trip-2',
+    id: 'SS861F',
     departure: 'Barcelona',
     exactPickupPoint: 'Sants Station, Barcelona',
     destination: 'Leucate',
@@ -40,7 +40,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 31,
   },
   {
-    id: 'trip-3',
+    id: 'RZHBU3',
     departure: 'Barcelona',
     exactPickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Lisbon',
@@ -59,7 +59,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 18,
   },
   {
-    id: 'trip-4',
+    id: 'XNNX4N',
     departure: 'Tarifa',
     exactPickupPoint: 'Old Town, Tarifa',
     destination: 'Valdevaqueros (Cádiz)',
@@ -78,7 +78,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 23,
   },
   {
-    id: 'trip-5',
+    id: '8DBBNE',
     departure: 'Tarifa',
     exactPickupPoint: 'Old Town, Tarifa',
     destination: 'Playa de Los Lances (Cádiz)',
@@ -97,7 +97,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 31,
   },
   {
-    id: 'trip-6',
+    id: 'BN2FG8',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Los Caños de Meca (Cádiz)',
@@ -116,7 +116,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 18,
   },
   {
-    id: 'trip-7',
+    id: '1YKAMW',
     departure: 'Barcelona',
     exactPickupPoint: 'Sants Station, Barcelona',
     destination: 'Bolonia (Cádiz)',
@@ -135,7 +135,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 27,
   },
   {
-    id: 'trip-8',
+    id: 'WCQ01P',
     departure: 'Barcelona',
     exactPickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Playa de La Barrosa (Cádiz)',
@@ -154,7 +154,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 35,
   },
   {
-    id: 'trip-9',
+    id: 'TQ0R60',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Playa de Castilnovo (Cádiz)',
@@ -173,7 +173,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 42,
   },
   {
-    id: 'trip-10',
+    id: 'QSDC7A',
     departure: 'Barcelona',
     exactPickupPoint: 'Port Olímpic, Barcelona',
     destination: 'Playa de El Palmar (Cádiz)',
@@ -192,7 +192,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 15,
   },
   {
-    id: 'trip-11',
+    id: '50AB7F',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Playa de La Barca (Málaga)',
@@ -211,7 +211,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 19,
   },
   {
-    id: 'trip-12',
+    id: '8168Y2',
     departure: 'Barcelona',
     exactPickupPoint: 'Sants Station, Barcelona',
     destination: 'Los Álamos (Málaga)',
@@ -230,7 +230,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 22,
   },
   {
-    id: 'trip-13',
+    id: 'FS5J45',
     departure: 'Barcelona',
     exactPickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Cabo Pino (Málaga)',
@@ -249,7 +249,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 28,
   },
   {
-    id: 'trip-14',
+    id: 'HJFKXB',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Los Monteros (Málaga)',
@@ -268,7 +268,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 33,
   },
   {
-    id: 'trip-15',
+    id: 'CIUPLA',
     departure: 'Barcelona',
     exactPickupPoint: 'Port Olímpic, Barcelona',
     destination: 'San Pedro del Alcántara (Málaga)',
@@ -287,7 +287,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 47,
   },
   {
-    id: 'trip-16',
+    id: 'SNSC19',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Playa de Matalascañas (Huelva)',
@@ -306,7 +306,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 12,
   },
   {
-    id: 'trip-17',
+    id: 'N7KCGJ',
     departure: 'Barcelona',
     exactPickupPoint: 'Sants Station, Barcelona',
     destination: 'Playa de Mazagón (Huelva)',
@@ -325,7 +325,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 16,
   },
   {
-    id: 'trip-18',
+    id: 'I3SKH5',
     departure: 'Barcelona',
     exactPickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Playa de Bolón (Asturias)',
@@ -344,7 +344,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 21,
   },
   {
-    id: 'trip-19',
+    id: '4RW7RS',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Playa de San Lorenzo (Asturias)',
@@ -363,7 +363,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 26,
   },
   {
-    id: 'trip-20',
+    id: 'BSENBB',
     departure: 'Barcelona',
     exactPickupPoint: 'Port Olímpic, Barcelona',
     destination: 'Playa de Luanco (Asturias)',
@@ -382,7 +382,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 32,
   },
   {
-    id: 'trip-21',
+    id: '1HTKLO',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Playa de Los Peligros (Cantabria)',
@@ -401,7 +401,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 45,
   },
   {
-    id: 'trip-22',
+    id: 'CY5A57',
     departure: 'Barcelona',
     exactPickupPoint: 'Sants Station, Barcelona',
     destination: 'La Zurriola (Guipúzcoa)',
@@ -420,7 +420,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 14,
   },
   {
-    id: 'trip-23',
+    id: '3HSUDC',
     departure: 'Barcelona',
     exactPickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Laida Beach (Vizcaya)',
@@ -439,7 +439,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 17,
   },
   {
-    id: 'trip-24',
+    id: 'ULVUAI',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Illa de Arousa (Pontevedra)',
@@ -458,7 +458,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 20,
   },
   {
-    id: 'trip-25',
+    id: '1D8VSA',
     departure: 'Barcelona',
     exactPickupPoint: 'Port Olímpic, Barcelona',
     destination: 'Playa de Los Genoveses (Almería)',
@@ -477,7 +477,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 25,
   },
   {
-    id: 'trip-26',
+    id: 'TDUUHI',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Playa de Las Almadrabillas (Almería)',
@@ -496,7 +496,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 30,
   },
   {
-    id: 'trip-27',
+    id: 'Z8ZOCR',
     departure: 'Barcelona',
     exactPickupPoint: 'Sants Station, Barcelona',
     destination: 'Playa de Las Carabineros (Almería)',
@@ -515,7 +515,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 50,
   },
   {
-    id: 'trip-28',
+    id: '4JXU5L',
     departure: 'Barcelona',
     exactPickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Torrenueva (Granada)',
@@ -534,7 +534,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 11,
   },
   {
-    id: 'trip-29',
+    id: 'HWSAV4',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'La Manga – Ensenada del Esparto (Murcia)',
@@ -553,7 +553,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 13,
   },
   {
-    id: 'trip-30',
+    id: '5BI0N2',
     departure: 'Barcelona',
     exactPickupPoint: 'Port Olímpic, Barcelona',
     destination: 'Playa de La Mota (Murcia)',
@@ -572,7 +572,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 24,
   },
   {
-    id: 'trip-31',
+    id: 'Q4VKZO',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Santa Pola (Alicante)',
@@ -591,7 +591,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 29,
   },
   {
-    id: 'trip-32',
+    id: 'VEC225',
     departure: 'Barcelona',
     exactPickupPoint: 'Sants Station, Barcelona',
     destination: 'Calpe (Alicante)',
@@ -610,7 +610,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 34,
   },
   {
-    id: 'trip-33',
+    id: 'DPLSU7',
     departure: 'Barcelona',
     exactPickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Dénia – Els Molins (Alicante)',
@@ -629,7 +629,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 48,
   },
   {
-    id: 'trip-34',
+    id: 'EB5ILC',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Les Deveses (Valencia)',
@@ -648,7 +648,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 10,
   },
   {
-    id: 'trip-35',
+    id: 'LC8P49',
     departure: 'Barcelona',
     exactPickupPoint: 'Port Olímpic, Barcelona',
     destination: 'El Mareny Blau (Valencia)',
@@ -667,7 +667,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 9,
   },
   {
-    id: 'trip-36',
+    id: 'GRWEAC',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Castelldefels (Barcelona)',
@@ -686,7 +686,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 8,
   },
   {
-    id: 'trip-37',
+    id: 'NMBC9C',
     departure: 'Barcelona',
     exactPickupPoint: 'Sants Station, Barcelona',
     destination: 'Sant Pere Pescador',
@@ -705,7 +705,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 36,
   },
   {
-    id: 'trip-38',
+    id: 'KATVHR',
     departure: 'Barcelona',
     exactPickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Delta del Ebro',
@@ -724,7 +724,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 38,
   },
   {
-    id: 'trip-39',
+    id: 'IAMA65',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'La Loteta (Zaragoza)',
@@ -743,7 +743,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 52,
   },
   {
-    id: 'trip-40',
+    id: 'G80E2O',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Sant Pere Pescador',
@@ -762,7 +762,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 7,
   },
   {
-    id: 'trip-41',
+    id: 'ZRU1FJ',
     departure: 'Barcelona',
     exactPickupPoint: 'Sants Station, Barcelona',
     destination: 'Sant Pere Pescador',
@@ -781,7 +781,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 6,
   },
   {
-    id: 'trip-42',
+    id: '7AR5NW',
     departure: 'Barcelona',
     exactPickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Sant Pere Pescador',
@@ -800,7 +800,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 5,
   },
   {
-    id: 'trip-43',
+    id: '5L2FZ8',
     departure: 'Barcelona',
     exactPickupPoint: 'Port Olímpic, Barcelona',
     destination: 'Sant Pere Pescador',
@@ -819,7 +819,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 39,
   },
   {
-    id: 'trip-44',
+    id: 'V8XBMI',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Sant Pere Pescador',
@@ -838,7 +838,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 41,
   },
   {
-    id: 'trip-45',
+    id: 'F8U41X',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Sant Pere Pescador',
@@ -857,7 +857,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 55,
   },
   {
-    id: 'trip-46',
+    id: 'SRXGD3',
     departure: 'Barcelona',
     exactPickupPoint: 'Sants Station, Barcelona',
     destination: 'Sant Pere Pescador',
@@ -876,7 +876,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 4,
   },
   {
-    id: 'trip-47',
+    id: 'W1KQ4S',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Leucate',
@@ -895,7 +895,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 19,
   },
   {
-    id: 'trip-48',
+    id: '8XVKB0',
     departure: 'Barcelona',
     exactPickupPoint: 'Sants Station, Barcelona',
     destination: 'Leucate',
@@ -914,7 +914,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 27,
   },
   {
-    id: 'trip-49',
+    id: 'IJGJL1',
     departure: 'Barcelona',
     exactPickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Leucate',
@@ -933,7 +933,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 21,
   },
   {
-    id: 'trip-50',
+    id: '8OLPNR',
     departure: 'Barcelona',
     exactPickupPoint: 'Port Olímpic, Barcelona',
     destination: 'Leucate',
@@ -952,7 +952,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 33,
   },
   {
-    id: 'trip-51',
+    id: 'QDFM1Q',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Leucate',
@@ -971,7 +971,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 18,
   },
   {
-    id: 'trip-52',
+    id: '48J3WA',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Leucate',
@@ -990,7 +990,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 40,
   },
   {
-    id: 'trip-53',
+    id: 'LB7JUK',
     departure: 'Barcelona',
     exactPickupPoint: 'Sants Station, Barcelona',
     destination: 'Leucate',
@@ -1009,7 +1009,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 17,
   },
   {
-    id: 'trip-54',
+    id: 'F1J95W',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Delta del Ebro',
@@ -1028,7 +1028,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 24,
   },
   {
-    id: 'trip-55',
+    id: 'M2SJVZ',
     departure: 'Barcelona',
     exactPickupPoint: 'Sants Station, Barcelona',
     destination: 'Delta del Ebro',
@@ -1047,7 +1047,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 16,
   },
   {
-    id: 'trip-56',
+    id: '7H68KU',
     departure: 'Barcelona',
     exactPickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Delta del Ebro',
@@ -1066,7 +1066,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 31,
   },
   {
-    id: 'trip-57',
+    id: '32OYR5',
     departure: 'Barcelona',
     exactPickupPoint: 'Port Olímpic, Barcelona',
     destination: 'Delta del Ebro',
@@ -1085,7 +1085,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 14,
   },
   {
-    id: 'trip-58',
+    id: 'UTGL5H',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Delta del Ebro',
@@ -1104,7 +1104,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 23,
   },
   {
-    id: 'trip-59',
+    id: 'JCAYM5',
     departure: 'Barcelona',
     exactPickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Delta del Ebro',
@@ -1123,7 +1123,7 @@ export const mockTrips: Trip[] = [
     driverTripsCompleted: 20,
   },
   {
-    id: 'trip-60',
+    id: '6XKJ81',
     departure: 'Barcelona',
     exactPickupPoint: 'Sants Station, Barcelona',
     destination: 'Delta del Ebro',
