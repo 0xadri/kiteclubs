@@ -5,6 +5,7 @@ import {
     formatDateDisplay,
     formatDepartureTime,
     getCurrencySymbol,
+    getFirstName,
 } from '../../features/trip-search/components/utils';
 
 const Trip = () => {
@@ -43,6 +44,7 @@ const Trip = () => {
 
     const isDayTrip = trip.return && trip.startDate === trip.endDate;
     const currencySymbol = getCurrencySymbol(trip.priceCurrency);
+    const firstName = getFirstName(trip.driverName);
     const formattedDepartureTime = formatDepartureTime(trip.departureTime);
     const dateDisplay = formatDateDisplay(trip.startDate);
 
@@ -101,6 +103,19 @@ const Trip = () => {
                                     {trip.departure} <span className="text-gray-400">🡒</span>{' '}
                                     {trip.destination}
                                 </h1>
+                                <div className="flex flex-wrap gap-2 mt-2">
+                                    {isDayTrip && (
+                                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                            Day Trip
+                                        </span>
+                                    )}
+                                    {trip.return && (
+                                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                            Return
+                                        </span>
+                                    )}
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -111,33 +126,14 @@ const Trip = () => {
             <main className="max-w-4xl mx-auto px-4 -mt-20 pb-20 relative z-20">
                 <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
                     <div className="p-6 md:p-8 space-y-8">
-                        {/* Header: Title & Tags */}
-                        <div className="space-y-4">
-                            <div className="flex flex-wrap gap-2">
-                                {isDayTrip && (
-                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                                        Day Trip
-                                    </span>
-                                )}
-                                {trip.return && (
-                                    <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
-                                        Return
-                                    </span>
-                                )}
-                            </div>
-                            <h2 className="text-2xl font-bold text-gray-900">{trip.title}</h2>
-                        </div>
-
-                        <hr className="border-gray-100" />
-
-                        {/* Driver Info */}
+                        {/* Header: Driver Info */}
                         <div className="flex items-center gap-4">
                             <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-md">
                                 {trip.driverName.charAt(0)}
                             </div>
                             <div>
                                 <p className="text-lg font-bold text-gray-900">
-                                    {trip.driverName}
+                                    {firstName}
                                 </p>
                                 <div className="flex items-center gap-1 text-gray-600">
                                     <span className="text-yellow-400">⭐</span>
@@ -149,6 +145,11 @@ const Trip = () => {
                                 </div>
                             </div>
                         </div>
+
+                        <hr className="border-gray-100" />
+
+                        {/* Title */}
+                        <h2 className="text-2xl font-bold text-gray-900 mb-2">{trip.title}</h2>
 
                         {/* Description */}
                         <div className="prose prose-purple max-w-none">
