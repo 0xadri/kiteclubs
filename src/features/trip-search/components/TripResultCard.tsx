@@ -59,9 +59,9 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
         </div>
 
         {/* Column 3: Price + Seats + Button */}
-        <div className="flex flex-col gap-2 md:items-end md:justify-between pt-0 md:pt-2 md:pt-0 md:pl-6 md:border-l border-gray-200">
+        <div className="flex flex-col gap-2 md:items-end md:justify-between pt-0 md:pl-6 md:border-l border-gray-200">
           {/* Mobile: Seats Left and Price on same line */}
-          <div className="flex items-center justify-between w-full md:hidden">
+          <div className="flex items-baseline justify-between w-full md:hidden">
             <div className={`flex items-center gap-1 text-sm text-gray-700 ${trip.seats === 1 ? 'text-red-600' : ''}`}>
               <span className="font-medium">Seats Left:</span>
               <span>{trip.seats}</span>
