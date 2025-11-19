@@ -11,7 +11,7 @@ export interface Trip {
   priceCurrency: string;
   title: string;
   description: string;
-  exactPickupPoint: string;
+  vaguePickupPoint: string;
   seats: number;
   driverName: string;
   driverRating: number;

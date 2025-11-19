@@ -4,7 +4,7 @@ export const mockTrips: Trip[] = [
   {
     id: '4M5NJ8',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Catalunya, Barcelona',
+    vaguePickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Tarifa',
     startDate: '2025-05-02',
     endDate: '2025-05-02',
@@ -23,7 +23,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'SS861F',
     departure: 'Barcelona',
-    exactPickupPoint: 'Sants Station, Barcelona',
+    vaguePickupPoint: 'Sants Station, Barcelona',
     destination: 'Leucate',
     startDate: '2025-06-15',
     endDate: '2025-06-15',
@@ -42,7 +42,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'RZHBU3',
     departure: 'Barcelona',
-    exactPickupPoint: 'El Prat Airport, Barcelona',
+    vaguePickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Lisbon',
     startDate: '2025-07-05',
     endDate: '2025-07-05',
@@ -61,7 +61,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'XNNX4N',
     departure: 'Tarifa',
-    exactPickupPoint: 'Old Town, Tarifa',
+    vaguePickupPoint: 'Old Town, Tarifa',
     destination: 'Valdevaqueros (Cádiz)',
     startDate: '2025-11-18',
     endDate: '2025-11-18',
@@ -80,7 +80,7 @@ export const mockTrips: Trip[] = [
   {
     id: '8DBBNE',
     departure: 'Tarifa',
-    exactPickupPoint: 'Old Town, Tarifa',
+    vaguePickupPoint: 'Old Town, Tarifa',
     destination: 'Playa de Los Lances (Cádiz)',
     startDate: '2025-12-05',
     endDate: '2025-12-05',
@@ -99,7 +99,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'BN2FG8',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Catalunya, Barcelona',
+    vaguePickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Los Caños de Meca (Cádiz)',
     startDate: '2026-01-14',
     endDate: '2026-01-14',
@@ -118,7 +118,7 @@ export const mockTrips: Trip[] = [
   {
     id: '1YKAMW',
     departure: 'Barcelona',
-    exactPickupPoint: 'Sants Station, Barcelona',
+    vaguePickupPoint: 'Sants Station, Barcelona',
     destination: 'Bolonia (Cádiz)',
     startDate: '2026-02-08',
     endDate: '2026-02-08',
@@ -137,7 +137,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'WCQ01P',
     departure: 'Barcelona',
-    exactPickupPoint: 'El Prat Airport, Barcelona',
+    vaguePickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Playa de La Barrosa (Cádiz)',
     startDate: '2026-03-04',
     endDate: '2026-03-04',
@@ -156,7 +156,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'TQ0R60',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Espanya, Barcelona',
+    vaguePickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Playa de Castilnovo (Cádiz)',
     startDate: '2026-04-12',
     endDate: '2026-04-12',
@@ -175,7 +175,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'QSDC7A',
     departure: 'Barcelona',
-    exactPickupPoint: 'Port Olímpic, Barcelona',
+    vaguePickupPoint: 'Port Olímpic, Barcelona',
     destination: 'Playa de El Palmar (Cádiz)',
     startDate: '2026-05-02',
     endDate: '2026-05-02',
@@ -194,7 +194,7 @@ export const mockTrips: Trip[] = [
   {
     id: '50AB7F',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Catalunya, Barcelona',
+    vaguePickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Playa de La Barca (Málaga)',
     startDate: '2026-05-19',
     endDate: '2026-05-19',
@@ -213,7 +213,7 @@ export const mockTrips: Trip[] = [
   {
     id: '8168Y2',
     departure: 'Barcelona',
-    exactPickupPoint: 'Sants Station, Barcelona',
+    vaguePickupPoint: 'Sants Station, Barcelona',
     destination: 'Los Álamos (Málaga)',
     startDate: '2026-06-06',
     endDate: '2026-06-06',
@@ -232,7 +232,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'FS5J45',
     departure: 'Barcelona',
-    exactPickupPoint: 'El Prat Airport, Barcelona',
+    vaguePickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Cabo Pino (Málaga)',
     startDate: '2026-06-25',
     endDate: '2026-06-25',
@@ -251,7 +251,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'HJFKXB',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Espanya, Barcelona',
+    vaguePickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Los Monteros (Málaga)',
     startDate: '2026-07-08',
     endDate: '2026-07-08',
@@ -270,7 +270,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'CIUPLA',
     departure: 'Barcelona',
-    exactPickupPoint: 'Port Olímpic, Barcelona',
+    vaguePickupPoint: 'Port Olímpic, Barcelona',
     destination: 'San Pedro del Alcántara (Málaga)',
     startDate: '2026-07-20',
     endDate: '2026-07-20',
@@ -289,7 +289,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'SNSC19',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Catalunya, Barcelona',
+    vaguePickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Playa de Matalascañas (Huelva)',
     startDate: '2026-08-03',
     endDate: '2026-08-03',
@@ -308,7 +308,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'N7KCGJ',
     departure: 'Barcelona',
-    exactPickupPoint: 'Sants Station, Barcelona',
+    vaguePickupPoint: 'Sants Station, Barcelona',
     destination: 'Playa de Mazagón (Huelva)',
     startDate: '2026-08-18',
     endDate: '2026-08-18',
@@ -327,7 +327,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'I3SKH5',
     departure: 'Barcelona',
-    exactPickupPoint: 'El Prat Airport, Barcelona',
+    vaguePickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Playa de Bolón (Asturias)',
     startDate: '2026-09-03',
     endDate: '2026-09-03',
@@ -346,7 +346,7 @@ export const mockTrips: Trip[] = [
   {
     id: '4RW7RS',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Espanya, Barcelona',
+    vaguePickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Playa de San Lorenzo (Asturias)',
     startDate: '2026-09-18',
     endDate: '2026-09-18',
@@ -365,7 +365,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'BSENBB',
     departure: 'Barcelona',
-    exactPickupPoint: 'Port Olímpic, Barcelona',
+    vaguePickupPoint: 'Port Olímpic, Barcelona',
     destination: 'Playa de Luanco (Asturias)',
     startDate: '2026-10-02',
     endDate: '2026-10-02',
@@ -384,7 +384,7 @@ export const mockTrips: Trip[] = [
   {
     id: '1HTKLO',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Catalunya, Barcelona',
+    vaguePickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Playa de Los Peligros (Cantabria)',
     startDate: '2026-10-16',
     endDate: '2026-10-16',
@@ -403,7 +403,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'CY5A57',
     departure: 'Barcelona',
-    exactPickupPoint: 'Sants Station, Barcelona',
+    vaguePickupPoint: 'Sants Station, Barcelona',
     destination: 'La Zurriola (Guipúzcoa)',
     startDate: '2026-10-30',
     endDate: '2026-10-30',
@@ -422,7 +422,7 @@ export const mockTrips: Trip[] = [
   {
     id: '3HSUDC',
     departure: 'Barcelona',
-    exactPickupPoint: 'El Prat Airport, Barcelona',
+    vaguePickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Laida Beach (Vizcaya)',
     startDate: '2026-11-12',
     endDate: '2026-11-12',
@@ -441,7 +441,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'ULVUAI',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Espanya, Barcelona',
+    vaguePickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Illa de Arousa (Pontevedra)',
     startDate: '2026-11-25',
     endDate: '2026-11-25',
@@ -460,7 +460,7 @@ export const mockTrips: Trip[] = [
   {
     id: '1D8VSA',
     departure: 'Barcelona',
-    exactPickupPoint: 'Port Olímpic, Barcelona',
+    vaguePickupPoint: 'Port Olímpic, Barcelona',
     destination: 'Playa de Los Genoveses (Almería)',
     startDate: '2025-12-15',
     endDate: '2025-12-15',
@@ -479,7 +479,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'TDUUHI',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Catalunya, Barcelona',
+    vaguePickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Playa de Las Almadrabillas (Almería)',
     startDate: '2026-01-06',
     endDate: '2026-01-06',
@@ -498,7 +498,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'Z8ZOCR',
     departure: 'Barcelona',
-    exactPickupPoint: 'Sants Station, Barcelona',
+    vaguePickupPoint: 'Sants Station, Barcelona',
     destination: 'Playa de Las Carabineros (Almería)',
     startDate: '2026-02-16',
     endDate: '2026-02-16',
@@ -517,7 +517,7 @@ export const mockTrips: Trip[] = [
   {
     id: '4JXU5L',
     departure: 'Barcelona',
-    exactPickupPoint: 'El Prat Airport, Barcelona',
+    vaguePickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Torrenueva (Granada)',
     startDate: '2026-03-12',
     endDate: '2026-03-12',
@@ -536,7 +536,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'HWSAV4',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Espanya, Barcelona',
+    vaguePickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'La Manga – Ensenada del Esparto (Murcia)',
     startDate: '2026-04-06',
     endDate: '2026-04-06',
@@ -555,7 +555,7 @@ export const mockTrips: Trip[] = [
   {
     id: '5BI0N2',
     departure: 'Barcelona',
-    exactPickupPoint: 'Port Olímpic, Barcelona',
+    vaguePickupPoint: 'Port Olímpic, Barcelona',
     destination: 'Playa de La Mota (Murcia)',
     startDate: '2026-04-21',
     endDate: '2026-04-21',
@@ -574,7 +574,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'Q4VKZO',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Catalunya, Barcelona',
+    vaguePickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Santa Pola (Alicante)',
     startDate: '2026-05-07',
     endDate: '2026-05-07',
@@ -593,7 +593,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'VEC225',
     departure: 'Barcelona',
-    exactPickupPoint: 'Sants Station, Barcelona',
+    vaguePickupPoint: 'Sants Station, Barcelona',
     destination: 'Calpe (Alicante)',
     startDate: '2026-05-22',
     endDate: '2026-05-22',
@@ -612,7 +612,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'DPLSU7',
     departure: 'Barcelona',
-    exactPickupPoint: 'El Prat Airport, Barcelona',
+    vaguePickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Dénia – Els Molins (Alicante)',
     startDate: '2026-06-08',
     endDate: '2026-06-08',
@@ -631,7 +631,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'EB5ILC',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Espanya, Barcelona',
+    vaguePickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Les Deveses (Valencia)',
     startDate: '2026-06-23',
     endDate: '2026-06-23',
@@ -650,7 +650,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'LC8P49',
     departure: 'Barcelona',
-    exactPickupPoint: 'Port Olímpic, Barcelona',
+    vaguePickupPoint: 'Port Olímpic, Barcelona',
     destination: 'El Mareny Blau (Valencia)',
     startDate: '2026-07-09',
     endDate: '2026-07-09',
@@ -669,7 +669,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'GRWEAC',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Catalunya, Barcelona',
+    vaguePickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Castelldefels (Barcelona)',
     startDate: '2026-07-24',
     endDate: '2026-07-24',
@@ -688,7 +688,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'NMBC9C',
     departure: 'Barcelona',
-    exactPickupPoint: 'Sants Station, Barcelona',
+    vaguePickupPoint: 'Sants Station, Barcelona',
     destination: 'Sant Pere Pescador',
     startDate: '2026-08-10',
     endDate: '2026-08-10',
@@ -707,7 +707,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'KATVHR',
     departure: 'Barcelona',
-    exactPickupPoint: 'El Prat Airport, Barcelona',
+    vaguePickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Delta del Ebro',
     startDate: '2026-08-27',
     endDate: '2026-08-27',
@@ -726,7 +726,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'IAMA65',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Espanya, Barcelona',
+    vaguePickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'La Loteta (Zaragoza)',
     startDate: '2026-09-14',
     endDate: '2026-09-14',
@@ -745,7 +745,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'G80E2O',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Catalunya, Barcelona',
+    vaguePickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Sant Pere Pescador',
     startDate: '2025-11-22',
     endDate: '2025-11-22',
@@ -764,7 +764,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'ZRU1FJ',
     departure: 'Barcelona',
-    exactPickupPoint: 'Sants Station, Barcelona',
+    vaguePickupPoint: 'Sants Station, Barcelona',
     destination: 'Sant Pere Pescador',
     startDate: '2025-11-28',
     endDate: '2025-11-28',
@@ -783,7 +783,7 @@ export const mockTrips: Trip[] = [
   {
     id: '7AR5NW',
     departure: 'Barcelona',
-    exactPickupPoint: 'El Prat Airport, Barcelona',
+    vaguePickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Sant Pere Pescador',
     startDate: '2025-12-05',
     endDate: '2025-12-05',
@@ -802,7 +802,7 @@ export const mockTrips: Trip[] = [
   {
     id: '5L2FZ8',
     departure: 'Barcelona',
-    exactPickupPoint: 'Port Olímpic, Barcelona',
+    vaguePickupPoint: 'Port Olímpic, Barcelona',
     destination: 'Sant Pere Pescador',
     startDate: '2025-12-12',
     endDate: '2025-12-12',
@@ -821,7 +821,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'V8XBMI',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Espanya, Barcelona',
+    vaguePickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Sant Pere Pescador',
     startDate: '2025-12-19',
     endDate: '2025-12-19',
@@ -840,7 +840,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'F8U41X',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Catalunya, Barcelona',
+    vaguePickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Sant Pere Pescador',
     startDate: '2025-12-26',
     endDate: '2025-12-26',
@@ -859,7 +859,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'SRXGD3',
     departure: 'Barcelona',
-    exactPickupPoint: 'Sants Station, Barcelona',
+    vaguePickupPoint: 'Sants Station, Barcelona',
     destination: 'Sant Pere Pescador',
     startDate: '2026-01-02',
     endDate: '2026-01-02',
@@ -878,7 +878,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'W1KQ4S',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Catalunya, Barcelona',
+    vaguePickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Leucate',
     startDate: '2025-11-23',
     endDate: '2025-11-23',
@@ -897,7 +897,7 @@ export const mockTrips: Trip[] = [
   {
     id: '8XVKB0',
     departure: 'Barcelona',
-    exactPickupPoint: 'Sants Station, Barcelona',
+    vaguePickupPoint: 'Sants Station, Barcelona',
     destination: 'Leucate',
     startDate: '2025-11-30',
     endDate: '2025-11-30',
@@ -916,7 +916,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'IJGJL1',
     departure: 'Barcelona',
-    exactPickupPoint: 'El Prat Airport, Barcelona',
+    vaguePickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Leucate',
     startDate: '2025-12-06',
     endDate: '2025-12-06',
@@ -935,7 +935,7 @@ export const mockTrips: Trip[] = [
   {
     id: '8OLPNR',
     departure: 'Barcelona',
-    exactPickupPoint: 'Port Olímpic, Barcelona',
+    vaguePickupPoint: 'Port Olímpic, Barcelona',
     destination: 'Leucate',
     startDate: '2025-12-13',
     endDate: '2025-12-13',
@@ -954,7 +954,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'QDFM1Q',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Espanya, Barcelona',
+    vaguePickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Leucate',
     startDate: '2025-12-21',
     endDate: '2025-12-21',
@@ -973,7 +973,7 @@ export const mockTrips: Trip[] = [
   {
     id: '48J3WA',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Catalunya, Barcelona',
+    vaguePickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Leucate',
     startDate: '2025-12-28',
     endDate: '2025-12-28',
@@ -992,7 +992,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'LB7JUK',
     departure: 'Barcelona',
-    exactPickupPoint: 'Sants Station, Barcelona',
+    vaguePickupPoint: 'Sants Station, Barcelona',
     destination: 'Leucate',
     startDate: '2026-01-04',
     endDate: '2026-01-04',
@@ -1011,7 +1011,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'F1J95W',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Catalunya, Barcelona',
+    vaguePickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Delta del Ebro',
     startDate: '2025-11-25',
     endDate: '2025-11-25',
@@ -1030,7 +1030,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'M2SJVZ',
     departure: 'Barcelona',
-    exactPickupPoint: 'Sants Station, Barcelona',
+    vaguePickupPoint: 'Sants Station, Barcelona',
     destination: 'Delta del Ebro',
     startDate: '2025-12-01',
     endDate: '2025-12-01',
@@ -1049,7 +1049,7 @@ export const mockTrips: Trip[] = [
   {
     id: '7H68KU',
     departure: 'Barcelona',
-    exactPickupPoint: 'El Prat Airport, Barcelona',
+    vaguePickupPoint: 'El Prat Airport, Barcelona',
     destination: 'Delta del Ebro',
     startDate: '2025-12-07',
     endDate: '2025-12-07',
@@ -1068,7 +1068,7 @@ export const mockTrips: Trip[] = [
   {
     id: '32OYR5',
     departure: 'Barcelona',
-    exactPickupPoint: 'Port Olímpic, Barcelona',
+    vaguePickupPoint: 'Port Olímpic, Barcelona',
     destination: 'Delta del Ebro',
     startDate: '2025-12-14',
     endDate: '2025-12-14',
@@ -1087,7 +1087,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'UTGL5H',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Espanya, Barcelona',
+    vaguePickupPoint: 'Plaça Espanya, Barcelona',
     destination: 'Delta del Ebro',
     startDate: '2025-12-23',
     endDate: '2025-12-23',
@@ -1106,7 +1106,7 @@ export const mockTrips: Trip[] = [
   {
     id: 'JCAYM5',
     departure: 'Barcelona',
-    exactPickupPoint: 'Plaça Catalunya, Barcelona',
+    vaguePickupPoint: 'Plaça Catalunya, Barcelona',
     destination: 'Delta del Ebro',
     startDate: '2025-12-30',
     endDate: '2025-12-30',
@@ -1125,7 +1125,7 @@ export const mockTrips: Trip[] = [
   {
     id: '6XKJ81',
     departure: 'Barcelona',
-    exactPickupPoint: 'Sants Station, Barcelona',
+    vaguePickupPoint: 'Sants Station, Barcelona',
     destination: 'Delta del Ebro',
     startDate: '2026-01-05',
     endDate: '2026-01-05',
