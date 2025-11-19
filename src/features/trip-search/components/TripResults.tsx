@@ -16,7 +16,7 @@ const TripResults = ({ filters }: TripResultsProp) => {
     useTripSearch(filters);
 
   return (
-    <section className="bg-sand-50 py-8">
+    <section className="bg-purple-50 py-8">
       <div className="max-w-6xl mx-auto px-4">
         {isLoading && (
           <div className="text-center py-12">

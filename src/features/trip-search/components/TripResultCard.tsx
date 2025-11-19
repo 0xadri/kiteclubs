@@ -68,14 +68,14 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
                 <span className="font-medium">Seats Left:</span>
                 <span>{trip.seats}</span>
               </div>
-              <p className="text-2xl font-bold text-aqua-600">
+              <p className="text-2xl font-bold text-purple-600">
                 {currencySymbol}{trip.price}
               </p>
             </div>
 
             {/* Desktop: Price at top */}
             <div className="hidden md:block text-center pb-0 mb-2">
-              <p className="text-2xl font-bold text-aqua-600">
+              <p className="text-2xl font-bold text-purple-600">
                 {currencySymbol}{trip.price}
               </p>
             </div>
@@ -86,7 +86,7 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
                 <span className="font-medium">Seats Left:</span>
                 <span>{trip.seats}</span>
               </div>
-              <div className="w-full md:w-auto bg-aqua-600 hover:bg-aqua-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors duration-200 text-base text-center cursor-pointer">
+              <div className="w-full md:w-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors duration-200 text-base text-center cursor-pointer">
                 Request To Join
               </div>
             </div>

@@ -66,7 +66,7 @@ const SearchBox = () => {
             type="text"
             name="departure"
             placeholder="Departure"
-            className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-aqua-500 focus:border-transparent"
+            className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
           />
         </div>
 
@@ -76,7 +76,7 @@ const SearchBox = () => {
             type="text"
             name="destination"
             placeholder="Destination"
-            className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-aqua-500 focus:border-transparent"
+            className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
           />
         </div>
 
@@ -100,7 +100,7 @@ const SearchBox = () => {
         <div className="flex flex-col md:items-center md:justify-center">
           <button
             type="submit"
-            className="w-full md:w-auto md:h-full bg-aqua-500 hover:bg-aqua-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl flex items-center justify-center cursor-pointer"
+            className="w-full md:w-auto md:h-full bg-purple-500 hover:bg-purple-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl flex items-center justify-center cursor-pointer"
           >
             <span role="img" aria-label="Search trips">
               🔍

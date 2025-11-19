@@ -26,11 +26,11 @@ const HowItWorks = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
           How It Works
         </h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step) => (
             <div key={step.number} className="text-center">
-              <div className="bg-gradient-to-br from-aqua-100 to-sand-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6 text-5xl">
+              <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6 text-5xl">
                 {step.icon}
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
