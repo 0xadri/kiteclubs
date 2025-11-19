@@ -16,6 +16,15 @@ export interface Trip {
   driverName: string;
   driverRating: number;
   driverTripsCompleted: number;
+  carBrand: string;
+  carModel: string;
+  carColor: string;
+  luggageAllowance: string;
+  riders: {
+    riderFirstName: string;
+    riderLastName: string;
+    riderTotalTripsDone: number;
+  }[];
 }
 
 export interface TripSearchParams {

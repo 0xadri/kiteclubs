@@ -19,6 +19,17 @@ export const mockTrips: Trip[] = [
     driverName: 'Alex Martinez',
     driverRating: 4.8,
     driverTripsCompleted: 23,
+    carBrand: 'Audi',
+    carModel: 'A4',
+    carColor: 'Dark Blue',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Daniel",
+                riderLastName: "Garcia",
+                riderTotalTripsDone: 41
+          }
+    ],
   },
   {
     id: 'SS861F',
@@ -38,6 +49,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Sarah Johnson',
     driverRating: 4.9,
     driverTripsCompleted: 31,
+    carBrand: 'Seat',
+    carModel: 'Leon',
+    carColor: 'Dark Blue',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Joseph",
+                riderLastName: "Johnson",
+                riderTotalTripsDone: 26
+          },
+          {
+                riderFirstName: "Amelia",
+                riderLastName: "Wilson",
+                riderTotalTripsDone: 15
+          }
+    ],
   },
   {
     id: 'RZHBU3',
@@ -57,6 +84,32 @@ export const mockTrips: Trip[] = [
     driverName: 'Carlos Rodriguez',
     driverRating: 4.7,
     driverTripsCompleted: 18,
+    carBrand: 'Renault',
+    carModel: 'Megane',
+    carColor: 'Grey',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "David",
+                riderLastName: "Moore",
+                riderTotalTripsDone: 22
+          },
+          {
+                riderFirstName: "James",
+                riderLastName: "Jackson",
+                riderTotalTripsDone: 12
+          },
+          {
+                riderFirstName: "Emma",
+                riderLastName: "Martinez",
+                riderTotalTripsDone: 30
+          },
+          {
+                riderFirstName: "Olivia",
+                riderLastName: "Thomas",
+                riderTotalTripsDone: 21
+          }
+    ],
   },
   {
     id: 'XNNX4N',
@@ -76,6 +129,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Alex Martinez',
     driverRating: 4.5,
     driverTripsCompleted: 23,
+    carBrand: 'Peugeot',
+    carModel: '308',
+    carColor: 'Dark Blue',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Mia",
+                riderLastName: "Johnson",
+                riderTotalTripsDone: 5
+          },
+          {
+                riderFirstName: "Sophia",
+                riderLastName: "Martin",
+                riderTotalTripsDone: 35
+          }
+    ],
   },
   {
     id: '8DBBNE',
@@ -95,6 +164,27 @@ export const mockTrips: Trip[] = [
     driverName: 'Sarah Johnson',
     driverRating: 4.6,
     driverTripsCompleted: 31,
+    carBrand: 'Mercedes-Benz',
+    carModel: 'A-Class',
+    carColor: 'Dark Blue',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Charles",
+                riderLastName: "Gonzalez",
+                riderTotalTripsDone: 0
+          },
+          {
+                riderFirstName: "Harper",
+                riderLastName: "Garcia",
+                riderTotalTripsDone: 25
+          },
+          {
+                riderFirstName: "Amelia",
+                riderLastName: "Moore",
+                riderTotalTripsDone: 8
+          }
+    ],
   },
   {
     id: 'BN2FG8',
@@ -114,6 +204,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Carlos Rodriguez',
     driverRating: 4.7,
     driverTripsCompleted: 18,
+    carBrand: 'Peugeot',
+    carModel: '308',
+    carColor: 'Grey',
+    luggageAllowance: "1 kite bag (w 2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Charlotte",
+                riderLastName: "Gonzalez",
+                riderTotalTripsDone: 1
+          },
+          {
+                riderFirstName: "James",
+                riderLastName: "Smith",
+                riderTotalTripsDone: 45
+          }
+    ],
   },
   {
     id: '1YKAMW',
@@ -133,6 +239,17 @@ export const mockTrips: Trip[] = [
     driverName: 'Emma Wilson',
     driverRating: 4.8,
     driverTripsCompleted: 27,
+    carBrand: 'Renault',
+    carModel: 'Megane',
+    carColor: 'White',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Thomas",
+                riderLastName: "Johnson",
+                riderTotalTripsDone: 31
+          }
+    ],
   },
   {
     id: 'WCQ01P',
@@ -152,6 +269,17 @@ export const mockTrips: Trip[] = [
     driverName: 'David Brown',
     driverRating: 4.9,
     driverTripsCompleted: 35,
+    carBrand: 'BMW',
+    carModel: 'X3',
+    carColor: 'Black',
+    luggageAllowance: "1 kite bag (w 2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Evelyn",
+                riderLastName: "Martinez",
+                riderTotalTripsDone: 30
+          }
+    ],
   },
   {
     id: 'TQ0R60',
@@ -171,6 +299,27 @@ export const mockTrips: Trip[] = [
     driverName: 'Maria Garcia',
     driverRating: 5.0,
     driverTripsCompleted: 42,
+    carBrand: 'Ford',
+    carModel: 'Focus',
+    carColor: 'Red',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Harper",
+                riderLastName: "Williams",
+                riderTotalTripsDone: 18
+          },
+          {
+                riderFirstName: "Sophia",
+                riderLastName: "Williams",
+                riderTotalTripsDone: 49
+          },
+          {
+                riderFirstName: "Alexander",
+                riderLastName: "Martinez",
+                riderTotalTripsDone: 31
+          }
+    ],
   },
   {
     id: 'QSDC7A',
@@ -190,6 +339,22 @@ export const mockTrips: Trip[] = [
     driverName: 'James Taylor',
     driverRating: 4.5,
     driverTripsCompleted: 15,
+    carBrand: 'Ford',
+    carModel: 'Kuga',
+    carColor: 'Silver',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Charlotte",
+                riderLastName: "Moore",
+                riderTotalTripsDone: 41
+          },
+          {
+                riderFirstName: "Charlotte",
+                riderLastName: "Jones",
+                riderTotalTripsDone: 21
+          }
+    ],
   },
   {
     id: '50AB7F',
@@ -209,6 +374,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Laura Anderson',
     driverRating: 4.6,
     driverTripsCompleted: 19,
+    carBrand: 'Volkswagen',
+    carModel: 'Touran',
+    carColor: 'White',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Ava",
+                riderLastName: "Gonzalez",
+                riderTotalTripsDone: 0
+          },
+          {
+                riderFirstName: "Charles",
+                riderLastName: "Martinez",
+                riderTotalTripsDone: 33
+          }
+    ],
   },
   {
     id: '8168Y2',
@@ -228,6 +409,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Michael Lee',
     driverRating: 4.7,
     driverTripsCompleted: 22,
+    carBrand: 'Fiat',
+    carModel: 'Tipo',
+    carColor: 'Grey',
+    luggageAllowance: "1 kite bag (w 2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Harper",
+                riderLastName: "Smith",
+                riderTotalTripsDone: 2
+          },
+          {
+                riderFirstName: "Olivia",
+                riderLastName: "Gonzalez",
+                riderTotalTripsDone: 31
+          }
+    ],
   },
   {
     id: 'FS5J45',
@@ -247,6 +444,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Sophie Martin',
     driverRating: 4.8,
     driverTripsCompleted: 28,
+    carBrand: 'Peugeot',
+    carModel: '208',
+    carColor: 'White',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Sophia",
+                riderLastName: "Moore",
+                riderTotalTripsDone: 3
+          },
+          {
+                riderFirstName: "Amelia",
+                riderLastName: "Wilson",
+                riderTotalTripsDone: 47
+          }
+    ],
   },
   {
     id: 'HJFKXB',
@@ -266,6 +479,27 @@ export const mockTrips: Trip[] = [
     driverName: 'Robert White',
     driverRating: 4.9,
     driverTripsCompleted: 33,
+    carBrand: 'Toyota',
+    carModel: 'RAV4',
+    carColor: 'Black',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "John",
+                riderLastName: "Hernandez",
+                riderTotalTripsDone: 36
+          },
+          {
+                riderFirstName: "Emma",
+                riderLastName: "Garcia",
+                riderTotalTripsDone: 16
+          },
+          {
+                riderFirstName: "Charlotte",
+                riderLastName: "Brown",
+                riderTotalTripsDone: 24
+          }
+    ],
   },
   {
     id: 'CIUPLA',
@@ -285,6 +519,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Anna Thompson',
     driverRating: 5.0,
     driverTripsCompleted: 47,
+    carBrand: 'Peugeot',
+    carModel: '2008',
+    carColor: 'Red',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Amelia",
+                riderLastName: "Garcia",
+                riderTotalTripsDone: 34
+          },
+          {
+                riderFirstName: "William",
+                riderLastName: "Martin",
+                riderTotalTripsDone: 44
+          }
+    ],
   },
   {
     id: 'SNSC19',
@@ -304,6 +554,32 @@ export const mockTrips: Trip[] = [
     driverName: 'Daniel Harris',
     driverRating: 4.5,
     driverTripsCompleted: 12,
+    carBrand: 'Fiat',
+    carModel: 'Tipo',
+    carColor: 'Silver',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "John",
+                riderLastName: "Smith",
+                riderTotalTripsDone: 11
+          },
+          {
+                riderFirstName: "Olivia",
+                riderLastName: "Williams",
+                riderTotalTripsDone: 35
+          },
+          {
+                riderFirstName: "Michael",
+                riderLastName: "Anderson",
+                riderTotalTripsDone: 31
+          },
+          {
+                riderFirstName: "Isabella",
+                riderLastName: "Anderson",
+                riderTotalTripsDone: 30
+          }
+    ],
   },
   {
     id: 'N7KCGJ',
@@ -323,6 +599,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Olivia Clark',
     driverRating: 4.6,
     driverTripsCompleted: 16,
+    carBrand: 'Peugeot',
+    carModel: '2008',
+    carColor: 'Dark Blue',
+    luggageAllowance: "1 kite bag (w 2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Joseph",
+                riderLastName: "Martin",
+                riderTotalTripsDone: 46
+          },
+          {
+                riderFirstName: "Charles",
+                riderLastName: "Martin",
+                riderTotalTripsDone: 34
+          }
+    ],
   },
   {
     id: 'I3SKH5',
@@ -342,6 +634,27 @@ export const mockTrips: Trip[] = [
     driverName: 'Thomas Lewis',
     driverRating: 4.7,
     driverTripsCompleted: 21,
+    carBrand: 'Ford',
+    carModel: 'Fiesta',
+    carColor: 'White',
+    luggageAllowance: "1 kite bag (w 2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Ava",
+                riderLastName: "Garcia",
+                riderTotalTripsDone: 1
+          },
+          {
+                riderFirstName: "Daniel",
+                riderLastName: "Miller",
+                riderTotalTripsDone: 40
+          },
+          {
+                riderFirstName: "James",
+                riderLastName: "Brown",
+                riderTotalTripsDone: 50
+          }
+    ],
   },
   {
     id: '4RW7RS',
@@ -361,6 +674,27 @@ export const mockTrips: Trip[] = [
     driverName: 'Isabella Walker',
     driverRating: 4.8,
     driverTripsCompleted: 26,
+    carBrand: 'Peugeot',
+    carModel: '2008',
+    carColor: 'White',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Emma",
+                riderLastName: "Wilson",
+                riderTotalTripsDone: 48
+          },
+          {
+                riderFirstName: "Michael",
+                riderLastName: "Jones",
+                riderTotalTripsDone: 6
+          },
+          {
+                riderFirstName: "Charlotte",
+                riderLastName: "Hernandez",
+                riderTotalTripsDone: 21
+          }
+    ],
   },
   {
     id: 'BSENBB',
@@ -380,6 +714,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Christopher Hall',
     driverRating: 4.9,
     driverTripsCompleted: 32,
+    carBrand: 'Volkswagen',
+    carModel: 'Tiguan',
+    carColor: 'Red',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "David",
+                riderLastName: "Taylor",
+                riderTotalTripsDone: 35
+          },
+          {
+                riderFirstName: "Emma",
+                riderLastName: "Jackson",
+                riderTotalTripsDone: 45
+          }
+    ],
   },
   {
     id: '1HTKLO',
@@ -399,6 +749,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Mia Young',
     driverRating: 5.0,
     driverTripsCompleted: 45,
+    carBrand: 'Seat',
+    carModel: 'Ibiza',
+    carColor: 'Black',
+    luggageAllowance: "1 kite bag (w 2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Amelia",
+                riderLastName: "Anderson",
+                riderTotalTripsDone: 6
+          },
+          {
+                riderFirstName: "Isabella",
+                riderLastName: "Wilson",
+                riderTotalTripsDone: 38
+          }
+    ],
   },
   {
     id: 'CY5A57',
@@ -418,6 +784,17 @@ export const mockTrips: Trip[] = [
     driverName: 'Matthew King',
     driverRating: 4.5,
     driverTripsCompleted: 14,
+    carBrand: 'Renault',
+    carModel: 'Captur',
+    carColor: 'Silver',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Harper",
+                riderLastName: "Garcia",
+                riderTotalTripsDone: 37
+          }
+    ],
   },
   {
     id: '3HSUDC',
@@ -437,6 +814,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Charlotte Wright',
     driverRating: 4.6,
     driverTripsCompleted: 17,
+    carBrand: 'Ford',
+    carModel: 'Focus',
+    carColor: 'Blue',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Amelia",
+                riderLastName: "Garcia",
+                riderTotalTripsDone: 42
+          },
+          {
+                riderFirstName: "John",
+                riderLastName: "Brown",
+                riderTotalTripsDone: 16
+          }
+    ],
   },
   {
     id: 'ULVUAI',
@@ -456,6 +849,27 @@ export const mockTrips: Trip[] = [
     driverName: 'Andrew Lopez',
     driverRating: 4.7,
     driverTripsCompleted: 20,
+    carBrand: 'Volkswagen',
+    carModel: 'Passat',
+    carColor: 'Grey',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Sophia",
+                riderLastName: "Jackson",
+                riderTotalTripsDone: 49
+          },
+          {
+                riderFirstName: "John",
+                riderLastName: "Rodriguez",
+                riderTotalTripsDone: 38
+          },
+          {
+                riderFirstName: "Michael",
+                riderLastName: "Thomas",
+                riderTotalTripsDone: 37
+          }
+    ],
   },
   {
     id: '1D8VSA',
@@ -475,6 +889,27 @@ export const mockTrips: Trip[] = [
     driverName: 'Amelia Hill',
     driverRating: 4.8,
     driverTripsCompleted: 25,
+    carBrand: 'Toyota',
+    carModel: 'C-HR',
+    carColor: 'White',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "William",
+                riderLastName: "Davis",
+                riderTotalTripsDone: 10
+          },
+          {
+                riderFirstName: "Joseph",
+                riderLastName: "Johnson",
+                riderTotalTripsDone: 9
+          },
+          {
+                riderFirstName: "Alexander",
+                riderLastName: "Moore",
+                riderTotalTripsDone: 29
+          }
+    ],
   },
   {
     id: 'TDUUHI',
@@ -494,6 +929,27 @@ export const mockTrips: Trip[] = [
     driverName: 'Joseph Green',
     driverRating: 4.9,
     driverTripsCompleted: 30,
+    carBrand: 'Ford',
+    carModel: 'Focus',
+    carColor: 'White',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "John",
+                riderLastName: "Taylor",
+                riderTotalTripsDone: 27
+          },
+          {
+                riderFirstName: "David",
+                riderLastName: "Garcia",
+                riderTotalTripsDone: 12
+          },
+          {
+                riderFirstName: "Emma",
+                riderLastName: "Jones",
+                riderTotalTripsDone: 1
+          }
+    ],
   },
   {
     id: 'Z8ZOCR',
@@ -513,6 +969,32 @@ export const mockTrips: Trip[] = [
     driverName: 'Harper Adams',
     driverRating: 5.0,
     driverTripsCompleted: 50,
+    carBrand: 'Volkswagen',
+    carModel: 'Touran',
+    carColor: 'Dark Blue',
+    luggageAllowance: "1 kite bag (w 2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "John",
+                riderLastName: "Miller",
+                riderTotalTripsDone: 35
+          },
+          {
+                riderFirstName: "Daniel",
+                riderLastName: "Jones",
+                riderTotalTripsDone: 19
+          },
+          {
+                riderFirstName: "Joseph",
+                riderLastName: "Hernandez",
+                riderTotalTripsDone: 12
+          },
+          {
+                riderFirstName: "William",
+                riderLastName: "Gonzalez",
+                riderTotalTripsDone: 2
+          }
+    ],
   },
   {
     id: '4JXU5L',
@@ -532,6 +1014,17 @@ export const mockTrips: Trip[] = [
     driverName: 'William Baker',
     driverRating: 4.5,
     driverTripsCompleted: 11,
+    carBrand: 'Toyota',
+    carModel: 'RAV4',
+    carColor: 'Blue',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "James",
+                riderLastName: "Jackson",
+                riderTotalTripsDone: 34
+          }
+    ],
   },
   {
     id: 'HWSAV4',
@@ -551,6 +1044,32 @@ export const mockTrips: Trip[] = [
     driverName: 'Evelyn Nelson',
     driverRating: 4.6,
     driverTripsCompleted: 13,
+    carBrand: 'Ford',
+    carModel: 'Fiesta',
+    carColor: 'Silver',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Daniel",
+                riderLastName: "Garcia",
+                riderTotalTripsDone: 26
+          },
+          {
+                riderFirstName: "David",
+                riderLastName: "Thomas",
+                riderTotalTripsDone: 42
+          },
+          {
+                riderFirstName: "Evelyn",
+                riderLastName: "Williams",
+                riderTotalTripsDone: 21
+          },
+          {
+                riderFirstName: "David",
+                riderLastName: "Gonzalez",
+                riderTotalTripsDone: 24
+          }
+    ],
   },
   {
     id: '5BI0N2',
@@ -570,6 +1089,17 @@ export const mockTrips: Trip[] = [
     driverName: 'Benjamin Carter',
     driverRating: 4.7,
     driverTripsCompleted: 24,
+    carBrand: 'Fiat',
+    carModel: 'Panda',
+    carColor: 'White',
+    luggageAllowance: "1 kite bag (w 2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Sophia",
+                riderLastName: "Brown",
+                riderTotalTripsDone: 15
+          }
+    ],
   },
   {
     id: 'Q4VKZO',
@@ -589,6 +1119,17 @@ export const mockTrips: Trip[] = [
     driverName: 'Abigail Mitchell',
     driverRating: 4.8,
     driverTripsCompleted: 29,
+    carBrand: 'BMW',
+    carModel: 'X3',
+    carColor: 'Silver',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Charlotte",
+                riderLastName: "Johnson",
+                riderTotalTripsDone: 19
+          }
+    ],
   },
   {
     id: 'VEC225',
@@ -608,6 +1149,27 @@ export const mockTrips: Trip[] = [
     driverName: 'Samuel Perez',
     driverRating: 4.9,
     driverTripsCompleted: 34,
+    carBrand: 'Ford',
+    carModel: 'Focus',
+    carColor: 'Red',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "John",
+                riderLastName: "Smith",
+                riderTotalTripsDone: 22
+          },
+          {
+                riderFirstName: "Emma",
+                riderLastName: "Thomas",
+                riderTotalTripsDone: 21
+          },
+          {
+                riderFirstName: "David",
+                riderLastName: "Moore",
+                riderTotalTripsDone: 18
+          }
+    ],
   },
   {
     id: 'DPLSU7',
@@ -627,6 +1189,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Emily Roberts',
     driverRating: 5.0,
     driverTripsCompleted: 48,
+    carBrand: 'Mercedes-Benz',
+    carModel: 'A-Class',
+    carColor: 'Blue',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "William",
+                riderLastName: "Gonzalez",
+                riderTotalTripsDone: 37
+          },
+          {
+                riderFirstName: "Thomas",
+                riderLastName: "Wilson",
+                riderTotalTripsDone: 1
+          }
+    ],
   },
   {
     id: 'EB5ILC',
@@ -646,6 +1224,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Nicholas Turner',
     driverRating: 4.5,
     driverTripsCompleted: 10,
+    carBrand: 'Volkswagen',
+    carModel: 'Touran',
+    carColor: 'White',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Ava",
+                riderLastName: "Miller",
+                riderTotalTripsDone: 49
+          },
+          {
+                riderFirstName: "Daniel",
+                riderLastName: "Davis",
+                riderTotalTripsDone: 28
+          }
+    ],
   },
   {
     id: 'LC8P49',
@@ -665,6 +1259,32 @@ export const mockTrips: Trip[] = [
     driverName: 'Sofia Phillips',
     driverRating: 4.6,
     driverTripsCompleted: 9,
+    carBrand: 'Toyota',
+    carModel: 'C-HR',
+    carColor: 'White',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "David",
+                riderLastName: "Johnson",
+                riderTotalTripsDone: 5
+          },
+          {
+                riderFirstName: "John",
+                riderLastName: "Anderson",
+                riderTotalTripsDone: 3
+          },
+          {
+                riderFirstName: "Olivia",
+                riderLastName: "Williams",
+                riderTotalTripsDone: 38
+          },
+          {
+                riderFirstName: "David",
+                riderLastName: "Moore",
+                riderTotalTripsDone: 50
+          }
+    ],
   },
   {
     id: 'GRWEAC',
@@ -684,6 +1304,17 @@ export const mockTrips: Trip[] = [
     driverName: 'Joshua Campbell',
     driverRating: 4.7,
     driverTripsCompleted: 8,
+    carBrand: 'Renault',
+    carModel: 'Megane',
+    carColor: 'Red',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "John",
+                riderLastName: "Garcia",
+                riderTotalTripsDone: 13
+          }
+    ],
   },
   {
     id: 'NMBC9C',
@@ -703,6 +1334,17 @@ export const mockTrips: Trip[] = [
     driverName: 'Aria Parker',
     driverRating: 4.8,
     driverTripsCompleted: 36,
+    carBrand: 'Mercedes-Benz',
+    carModel: 'A-Class',
+    carColor: 'Dark Blue',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Emma",
+                riderLastName: "Lopez",
+                riderTotalTripsDone: 32
+          }
+    ],
   },
   {
     id: 'KATVHR',
@@ -722,6 +1364,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Ryan Evans',
     driverRating: 4.9,
     driverTripsCompleted: 38,
+    carBrand: 'Toyota',
+    carModel: 'Corolla',
+    carColor: 'Grey',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Charlotte",
+                riderLastName: "Williams",
+                riderTotalTripsDone: 50
+          },
+          {
+                riderFirstName: "Joseph",
+                riderLastName: "Brown",
+                riderTotalTripsDone: 9
+          }
+    ],
   },
   {
     id: 'IAMA65',
@@ -741,6 +1399,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Lily Edwards',
     driverRating: 5.0,
     driverTripsCompleted: 52,
+    carBrand: 'Volkswagen',
+    carModel: 'T6',
+    carColor: 'Silver',
+    luggageAllowance: "1 kite bag (w 2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Alexander",
+                riderLastName: "Johnson",
+                riderTotalTripsDone: 37
+          },
+          {
+                riderFirstName: "Charles",
+                riderLastName: "Thomas",
+                riderTotalTripsDone: 34
+          }
+    ],
   },
   {
     id: 'G80E2O',
@@ -760,6 +1434,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Nathan Collins',
     driverRating: 4.5,
     driverTripsCompleted: 7,
+    carBrand: 'Seat',
+    carModel: 'Ibiza',
+    carColor: 'Silver',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Sophia",
+                riderLastName: "Martinez",
+                riderTotalTripsDone: 25
+          },
+          {
+                riderFirstName: "Isabella",
+                riderLastName: "Taylor",
+                riderTotalTripsDone: 32
+          }
+    ],
   },
   {
     id: 'ZRU1FJ',
@@ -779,6 +1469,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Zoe Stewart',
     driverRating: 4.6,
     driverTripsCompleted: 6,
+    carBrand: 'BMW',
+    carModel: 'X3',
+    carColor: 'Grey',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Harper",
+                riderLastName: "Garcia",
+                riderTotalTripsDone: 43
+          },
+          {
+                riderFirstName: "Evelyn",
+                riderLastName: "Miller",
+                riderTotalTripsDone: 31
+          }
+    ],
   },
   {
     id: '7AR5NW',
@@ -798,6 +1504,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Jonathan Sanchez',
     driverRating: 4.7,
     driverTripsCompleted: 5,
+    carBrand: 'Audi',
+    carModel: 'A3',
+    carColor: 'Dark Blue',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "John",
+                riderLastName: "Martinez",
+                riderTotalTripsDone: 39
+          },
+          {
+                riderFirstName: "Emma",
+                riderLastName: "Taylor",
+                riderTotalTripsDone: 18
+          }
+    ],
   },
   {
     id: '5L2FZ8',
@@ -817,6 +1539,17 @@ export const mockTrips: Trip[] = [
     driverName: 'Chloe Morris',
     driverRating: 4.8,
     driverTripsCompleted: 39,
+    carBrand: 'Seat',
+    carModel: 'Ibiza',
+    carColor: 'White',
+    luggageAllowance: "1 kite bag (w 2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Sophia",
+                riderLastName: "Gonzalez",
+                riderTotalTripsDone: 33
+          }
+    ],
   },
   {
     id: 'V8XBMI',
@@ -836,6 +1569,32 @@ export const mockTrips: Trip[] = [
     driverName: 'Brandon Rogers',
     driverRating: 4.9,
     driverTripsCompleted: 41,
+    carBrand: 'Mercedes-Benz',
+    carModel: 'GLA',
+    carColor: 'Grey',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Mia",
+                riderLastName: "Lopez",
+                riderTotalTripsDone: 46
+          },
+          {
+                riderFirstName: "William",
+                riderLastName: "Gonzalez",
+                riderTotalTripsDone: 21
+          },
+          {
+                riderFirstName: "Charles",
+                riderLastName: "Jones",
+                riderTotalTripsDone: 31
+          },
+          {
+                riderFirstName: "Daniel",
+                riderLastName: "Thomas",
+                riderTotalTripsDone: 13
+          }
+    ],
   },
   {
     id: 'F8U41X',
@@ -855,6 +1614,17 @@ export const mockTrips: Trip[] = [
     driverName: 'Grace Reed',
     driverRating: 5.0,
     driverTripsCompleted: 55,
+    carBrand: 'Seat',
+    carModel: 'Ateca',
+    carColor: 'White',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "William",
+                riderLastName: "Williams",
+                riderTotalTripsDone: 19
+          }
+    ],
   },
   {
     id: 'SRXGD3',
@@ -874,6 +1644,32 @@ export const mockTrips: Trip[] = [
     driverName: 'Kevin Cook',
     driverRating: 4.5,
     driverTripsCompleted: 4,
+    carBrand: 'Audi',
+    carModel: 'Q5',
+    carColor: 'Red',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Joseph",
+                riderLastName: "Miller",
+                riderTotalTripsDone: 49
+          },
+          {
+                riderFirstName: "Harper",
+                riderLastName: "Jackson",
+                riderTotalTripsDone: 4
+          },
+          {
+                riderFirstName: "Daniel",
+                riderLastName: "Martin",
+                riderTotalTripsDone: 31
+          },
+          {
+                riderFirstName: "Evelyn",
+                riderLastName: "Johnson",
+                riderTotalTripsDone: 26
+          }
+    ],
   },
   {
     id: 'W1KQ4S',
@@ -893,6 +1689,17 @@ export const mockTrips: Trip[] = [
     driverName: 'Victor Romero',
     driverRating: 4.7,
     driverTripsCompleted: 19,
+    carBrand: 'Audi',
+    carModel: 'Q5',
+    carColor: 'White',
+    luggageAllowance: "1 kite bag (w 2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Harper",
+                riderLastName: "Smith",
+                riderTotalTripsDone: 19
+          }
+    ],
   },
   {
     id: '8XVKB0',
@@ -912,6 +1719,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Lena Ruiz',
     driverRating: 4.8,
     driverTripsCompleted: 27,
+    carBrand: 'Ford',
+    carModel: 'Fiesta',
+    carColor: 'Silver',
+    luggageAllowance: "1 kite bag (w 2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Joseph",
+                riderLastName: "Rodriguez",
+                riderTotalTripsDone: 42
+          },
+          {
+                riderFirstName: "John",
+                riderLastName: "Martin",
+                riderTotalTripsDone: 33
+          }
+    ],
   },
   {
     id: 'IJGJL1',
@@ -931,6 +1754,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Marco Vidal',
     driverRating: 4.6,
     driverTripsCompleted: 21,
+    carBrand: 'Fiat',
+    carModel: 'Tipo',
+    carColor: 'White',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Isabella",
+                riderLastName: "Jones",
+                riderTotalTripsDone: 8
+          },
+          {
+                riderFirstName: "James",
+                riderLastName: "Martinez",
+                riderTotalTripsDone: 2
+          }
+    ],
   },
   {
     id: '8OLPNR',
@@ -950,6 +1789,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Irene Lopez',
     driverRating: 4.9,
     driverTripsCompleted: 33,
+    carBrand: 'Fiat',
+    carModel: 'Tipo',
+    carColor: 'Grey',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Charles",
+                riderLastName: "Lopez",
+                riderTotalTripsDone: 11
+          },
+          {
+                riderFirstName: "Olivia",
+                riderLastName: "Martinez",
+                riderTotalTripsDone: 47
+          }
+    ],
   },
   {
     id: 'QDFM1Q',
@@ -969,6 +1824,32 @@ export const mockTrips: Trip[] = [
     driverName: 'Julien Bernard',
     driverRating: 4.7,
     driverTripsCompleted: 18,
+    carBrand: 'Peugeot',
+    carModel: '308',
+    carColor: 'Blue',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Michael",
+                riderLastName: "Williams",
+                riderTotalTripsDone: 34
+          },
+          {
+                riderFirstName: "David",
+                riderLastName: "Williams",
+                riderTotalTripsDone: 34
+          },
+          {
+                riderFirstName: "Joseph",
+                riderLastName: "Gonzalez",
+                riderTotalTripsDone: 21
+          },
+          {
+                riderFirstName: "Emma",
+                riderLastName: "Davis",
+                riderTotalTripsDone: 37
+          }
+    ],
   },
   {
     id: '48J3WA',
@@ -988,6 +1869,32 @@ export const mockTrips: Trip[] = [
     driverName: 'Nora Castillo',
     driverRating: 5.0,
     driverTripsCompleted: 40,
+    carBrand: 'Mercedes-Benz',
+    carModel: 'GLA',
+    carColor: 'Silver',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Harper",
+                riderLastName: "Lopez",
+                riderTotalTripsDone: 22
+          },
+          {
+                riderFirstName: "Michael",
+                riderLastName: "Wilson",
+                riderTotalTripsDone: 33
+          },
+          {
+                riderFirstName: "Daniel",
+                riderLastName: "Martinez",
+                riderTotalTripsDone: 42
+          },
+          {
+                riderFirstName: "Joseph",
+                riderLastName: "Johnson",
+                riderTotalTripsDone: 33
+          }
+    ],
   },
   {
     id: 'LB7JUK',
@@ -1007,6 +1914,27 @@ export const mockTrips: Trip[] = [
     driverName: 'Quentin Dubois',
     driverRating: 4.6,
     driverTripsCompleted: 17,
+    carBrand: 'Ford',
+    carModel: 'Kuga',
+    carColor: 'Grey',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "James",
+                riderLastName: "Martinez",
+                riderTotalTripsDone: 33
+          },
+          {
+                riderFirstName: "Joseph",
+                riderLastName: "Garcia",
+                riderTotalTripsDone: 5
+          },
+          {
+                riderFirstName: "Daniel",
+                riderLastName: "Garcia",
+                riderTotalTripsDone: 37
+          }
+    ],
   },
   {
     id: 'F1J95W',
@@ -1026,6 +1954,32 @@ export const mockTrips: Trip[] = [
     driverName: 'Clara Torres',
     driverRating: 4.8,
     driverTripsCompleted: 24,
+    carBrand: 'Audi',
+    carModel: 'A3',
+    carColor: 'Silver',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Michael",
+                riderLastName: "Lopez",
+                riderTotalTripsDone: 5
+          },
+          {
+                riderFirstName: "Ava",
+                riderLastName: "Miller",
+                riderTotalTripsDone: 40
+          },
+          {
+                riderFirstName: "Sophia",
+                riderLastName: "Brown",
+                riderTotalTripsDone: 21
+          },
+          {
+                riderFirstName: "James",
+                riderLastName: "Martin",
+                riderTotalTripsDone: 31
+          }
+    ],
   },
   {
     id: 'M2SJVZ',
@@ -1045,6 +1999,27 @@ export const mockTrips: Trip[] = [
     driverName: 'Sergi Vidal',
     driverRating: 4.7,
     driverTripsCompleted: 16,
+    carBrand: 'Fiat',
+    carModel: '500',
+    carColor: 'Grey',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "John",
+                riderLastName: "Smith",
+                riderTotalTripsDone: 16
+          },
+          {
+                riderFirstName: "Charlotte",
+                riderLastName: "Jones",
+                riderTotalTripsDone: 5
+          },
+          {
+                riderFirstName: "David",
+                riderLastName: "Moore",
+                riderTotalTripsDone: 36
+          }
+    ],
   },
   {
     id: '7H68KU',
@@ -1064,6 +2039,32 @@ export const mockTrips: Trip[] = [
     driverName: 'Paula Ferrer',
     driverRating: 4.9,
     driverTripsCompleted: 31,
+    carBrand: 'Ford',
+    carModel: 'Fiesta',
+    carColor: 'Grey',
+    luggageAllowance: "1 kite bag (w 2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "William",
+                riderLastName: "Hernandez",
+                riderTotalTripsDone: 6
+          },
+          {
+                riderFirstName: "Evelyn",
+                riderLastName: "Rodriguez",
+                riderTotalTripsDone: 34
+          },
+          {
+                riderFirstName: "William",
+                riderLastName: "Smith",
+                riderTotalTripsDone: 1
+          },
+          {
+                riderFirstName: "Michael",
+                riderLastName: "Martin",
+                riderTotalTripsDone: 32
+          }
+    ],
   },
   {
     id: '32OYR5',
@@ -1083,6 +2084,17 @@ export const mockTrips: Trip[] = [
     driverName: 'Raquel Gómez',
     driverRating: 4.6,
     driverTripsCompleted: 14,
+    carBrand: 'Volkswagen',
+    carModel: 'Passat',
+    carColor: 'Red',
+    luggageAllowance: "1 kite bag (w 2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "James",
+                riderLastName: "Jackson",
+                riderTotalTripsDone: 0
+          }
+    ],
   },
   {
     id: 'UTGL5H',
@@ -1102,6 +2114,27 @@ export const mockTrips: Trip[] = [
     driverName: 'Toni Navarro',
     driverRating: 4.8,
     driverTripsCompleted: 23,
+    carBrand: 'Volkswagen',
+    carModel: 'Passat',
+    carColor: 'Black',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "William",
+                riderLastName: "Williams",
+                riderTotalTripsDone: 38
+          },
+          {
+                riderFirstName: "Joseph",
+                riderLastName: "Smith",
+                riderTotalTripsDone: 46
+          },
+          {
+                riderFirstName: "William",
+                riderLastName: "Rodriguez",
+                riderTotalTripsDone: 48
+          }
+    ],
   },
   {
     id: 'JCAYM5',
@@ -1121,6 +2154,22 @@ export const mockTrips: Trip[] = [
     driverName: 'Diego Alvarez',
     driverRating: 4.7,
     driverTripsCompleted: 20,
+    carBrand: 'Seat',
+    carModel: 'Leon',
+    carColor: 'Grey',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Evelyn",
+                riderLastName: "Davis",
+                riderTotalTripsDone: 22
+          },
+          {
+                riderFirstName: "Charlotte",
+                riderLastName: "Jackson",
+                riderTotalTripsDone: 5
+          }
+    ],
   },
   {
     id: '6XKJ81',
@@ -1140,5 +2189,26 @@ export const mockTrips: Trip[] = [
     driverName: 'Hugo Marin',
     driverRating: 4.5,
     driverTripsCompleted: 12,
+    carBrand: 'Peugeot',
+    carModel: '208',
+    carColor: 'Blue',
+    luggageAllowance: "1 kite bag (w 1-2 kites inside)\n1 twintip boards\n1 small bags\nno board bags please!",
+    riders: [
+      {
+                riderFirstName: "Sophia",
+                riderLastName: "Martinez",
+                riderTotalTripsDone: 50
+          },
+          {
+                riderFirstName: "Charles",
+                riderLastName: "Martin",
+                riderTotalTripsDone: 0
+          },
+          {
+                riderFirstName: "Alexander",
+                riderLastName: "Jones",
+                riderTotalTripsDone: 29
+          }
+    ],
   },
 ];
