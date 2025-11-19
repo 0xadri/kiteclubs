@@ -91,7 +91,7 @@ const FeaturedRides = () => {
                       <p className="text-xs text-gray-500">⭐ {ride.rating}</p>
                     </div>
                   </div>
-                  <button className="bg-purple-500 hover:bg-purple-600 text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors duration-200" type="button">
+                  <button className="bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium py-2 px-4 rounded-lg transition-colors duration-200" type="button">
                     Book
                   </button>
                 </div>

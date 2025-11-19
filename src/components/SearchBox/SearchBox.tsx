@@ -100,7 +100,7 @@ const SearchBox = () => {
         <div className="flex flex-col md:items-center md:justify-center">
           <button
             type="submit"
-            className="w-full md:w-auto md:h-full bg-purple-500 hover:bg-purple-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl flex items-center justify-center cursor-pointer"
+            className="w-full md:w-auto md:h-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl flex items-center justify-center cursor-pointer"
           >
             <span role="img" aria-label="Search trips">
               🔍
