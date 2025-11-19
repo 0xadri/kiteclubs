@@ -7,9 +7,9 @@ import {
   getTripFilters,
 } from './utils';
 
-const Trips = () => {
+const Search = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  
+
   const filters = getTripFilters(searchParams);
 
   const handleSubmit = (newFilters: TripSearchParams) => {
@@ -25,4 +25,4 @@ const Trips = () => {
   );
 };
 
-export default Trips;
+export default Search;

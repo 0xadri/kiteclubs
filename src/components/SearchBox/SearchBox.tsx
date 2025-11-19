@@ -38,13 +38,13 @@ const SearchBox = () => {
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
-    
+
     const searchParams = new URLSearchParams();
-    
+
     const departure = (formData.get('departure') as string)?.trim();
     const destination = (formData.get('destination') as string)?.trim();
     const date = (formData.get('date') as string)?.trim();
-    
+
     if (departure) {
       searchParams.set('departure', departure);
     }
@@ -55,7 +55,7 @@ const SearchBox = () => {
       searchParams.set('date', date);
     }
 
-    navigate(`/trips?${searchParams.toString()}`);
+    navigate(`/search?${searchParams.toString()}`);
   }
 
   return (
@@ -74,7 +74,7 @@ const SearchBox = () => {
             className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-aqua-500 focus:border-transparent"
           />
         </div>
-        
+
         <div className="flex flex-col">
           <input
             id="to"
@@ -84,7 +84,7 @@ const SearchBox = () => {
             className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-aqua-500 focus:border-transparent"
           />
         </div>
-        
+
         <div className="flex flex-col relative w-full md:w-auto md:self-center">
           <div className="px-4 py-3 border border-gray-300 rounded-lg text-gray-900 font-medium bg-white pointer-events-none whitespace-nowrap">
             {dateDisplay}
@@ -101,7 +101,7 @@ const SearchBox = () => {
             className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
           />
         </div>
-        
+
         <div className="flex flex-col md:items-center md:justify-center">
           <button
             type="submit"

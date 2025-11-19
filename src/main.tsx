@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router';
 
 import App from './app/App.tsx';
 import Home from './pages/Home/Home';
-import Trips from './pages/Trips/Trips';
+import Search from './pages/Search/Search';
 import Trip from './pages/Trip/Trip';
 
 if (import.meta.env.DEV) {
@@ -21,7 +21,7 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
-          <Route path="trips" element={<Trips />} />
+          <Route path="search" element={<Search />} />
           <Route path="trips/:tripId" element={<Trip />} />
         </Route>
 
