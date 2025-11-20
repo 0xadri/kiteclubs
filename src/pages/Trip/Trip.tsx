@@ -122,9 +122,9 @@ const Trip = () => {
       </section>
 
       {/* Core Section */}
-      <main className="max-w-4xl mx-auto px-4 -mt-20 pb-20 relative z-20">
+      <main className="max-w-4xl mx-auto px-4 -mt-23 pb-20 relative z-20">
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-          <div className="p-6 md:p-8 space-y-8">
+          <div className="p-6 md:p-8 space-y-4">
             {/* Header: Driver Info & Car Details Side by Side */}
             <div className="flex items-center justify-between gap-4 flex-wrap">
               <div className="flex items-center gap-4">
@@ -193,83 +193,68 @@ const Trip = () => {
 
             {/* Details Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Pickup */}
-              <div className="space-y-2">
-                <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">
-                  Pickup Area
-                </h3>
-                <a
-                  href={googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-start gap-2 text-purple-600 hover:text-purple-700 transition-colors"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="mt-0.5 shrink-0"
-                  >
-                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                    <circle cx="12" cy="10" r="3" />
-                  </svg>
-                  <span className="group-hover:underline">
-                    {trip.vaguePickupPoint}
-                  </span>
-                </a>
-              </div>
-
-              {/* Luggage */}
+              {/* Left column: Luggage Allowance */}
               <div className="space-y-2">
                 <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">
                   Luggage Allowance
                 </h3>
-                <div className="flex items-start gap-2 text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="mt-0.5 shrink-0"
-                  >
-                    <path d="M6 20h0a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h0" />
-                    <path d="M8 18V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14" />
-                  </svg>
+                <div className="text-gray-600">
                   <p className="whitespace-pre-line">{trip.luggageAllowance}</p>
                 </div>
               </div>
 
-              {/* Riders */}
-              <div className="space-y-2">
-                <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">
-                  Riders Confirmed
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {trip.riders.map((rider, index) => (
-                    <div
-                      key={index}
-                      className="w-10 h-10 bg-linear-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-semibold text-sm shadow-sm border-2 border-white ring-1 ring-gray-100"
-                      title={`${rider.riderFirstName} ${rider.riderLastName}`}
+              {/* Right column: Pickup Area (top), Riders Confirmed (bottom) */}
+              <div className="flex flex-col gap-4">
+                <div className="space-y-2">
+                  <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">
+                    Pickup Area
+                  </h3>
+                  <a
+                    href={googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-start gap-2 text-purple-600 hover:text-purple-700 transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="mt-0.5 shrink-0"
                     >
-                      {rider.riderFirstName.charAt(0)}
-                    </div>
-                  ))}
-                  {trip.riders.length === 0 && (
-                    <span className="text-gray-400 italic">
-                      No riders yet. Be the first!
+                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <span className="group-hover:underline">
+                      {trip.vaguePickupPoint}
                     </span>
-                  )}
+                  </a>
+                </div>
+                <div className="space-y-2">
+                  <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">
+                    Riders Confirmed
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {trip.riders.map((rider, index) => (
+                      <div
+                        key={index}
+                        className="w-10 h-10 bg-linear-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-semibold text-sm shadow-sm border-2 border-white ring-1 ring-gray-100"
+                        title={`${rider.riderFirstName} ${rider.riderLastName}`}
+                      >
+                        {rider.riderFirstName.charAt(0)}
+                      </div>
+                    ))}
+                    {trip.riders.length === 0 && (
+                      <span className="text-gray-400 italic">
+                        No riders yet. Be the first!
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
