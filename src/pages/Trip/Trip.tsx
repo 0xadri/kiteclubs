@@ -127,7 +127,7 @@ const Trip = () => {
       <main className="max-w-4xl mx-auto px-4 -mt-23 pb-20 relative z-20">
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
           <div className="p-6 md:p-8 space-y-4">
-            {/* Header: Driver Details (left) & Car Details (right) side-by-side, car icon hidden on mobile */}
+            {/* Header: Driver Details (left) & Price/Seats (right) side-by-side */}
             <div className="flex flex-row items-center justify-between gap-4 w-full">
               {/* Driver Details */}
               <div className="flex items-center gap-4 flex-2 md:flex-1">
@@ -146,38 +146,19 @@ const Trip = () => {
                   </div>
                 </div>
               </div>
-              {/* Car Details (right aligned, car icon hidden on mobile) */}
-              <div className="flex items-center justify-end min-w-20 flex-1">
-                <div className="flex min-w-20 items-center">
-                  <div className="mr-4 hidden md:block">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="72"
-                      height="72"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="text-gray-500"
-                    >
-                      <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
-                      <circle cx="7" cy="17" r="2" />
-                      <path d="M9 17h6" />
-                      <circle cx="17" cy="17" r="2" />
-                    </svg>
-                  </div>
-                  <div className="flex flex-col text-left">
-                    <div className="flex gap-2 text-lg md:text-base text-gray-600 font-medium md:font-medium">
-                      <span>{trip.carBrand}</span>
-                      <span>{trip.carModel}</span>
-                    </div>
-                    <div className="text-base text-gray-500 font-normal mt-0">
-                      {trip.carColor}
-                    </div>
-                  </div>
-                </div>
+              {/* Price & Seats (right aligned) */}
+              <div className="flex flex-col items-end">
+                <span className="text-3xl font-bold text-purple-600">
+                  {currencySymbol}
+                  {trip.price}
+                </span>
+                <span
+                  className={`text-sm font-medium ${
+                    trip.seats === 1 ? 'text-red-600' : 'text-gray-500'
+                  }`}
+                >
+                  {trip.seats} seat{trip.seats !== 1 && 's'} left
+                </span>
               </div>
             </div>
 
@@ -271,20 +252,33 @@ const Trip = () => {
 
             <hr className="border-gray-100" />
 
-            {/* Footer: Price, Share, Book */}
+            {/* Footer: Car Details, Share, Book */}
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-              <div className="flex flex-col">
-                <span className="text-3xl font-bold text-purple-600">
-                  {currencySymbol}
-                  {trip.price}
-                </span>
-                <span
-                  className={`text-sm font-medium ${
-                    trip.seats === 1 ? 'text-red-600' : 'text-gray-500'
-                  }`}
+              {/* Car Details */}
+              <div className="bg-linear-to-br from-green-50 to-green-100 rounded-xl py-3 px-5 relative flex-1 md:flex-none md:min-w-[150px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-green-700 absolute top-5 right-5"
                 >
-                  {trip.seats} seat{trip.seats !== 1 && 's'} left
-                </span>
+                  <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                  <circle cx="7" cy="17" r="2" />
+                  <path d="M9 17h6" />
+                  <circle cx="17" cy="17" r="2" />
+                </svg>
+                <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-0">
+                  {trip.carBrand} {trip.carModel}
+                </h3>
+                <div className="text-sm text-gray-600 mt-1">
+                  {trip.carColor}
+                </div>
               </div>
 
               <div className="flex items-center gap-3">
