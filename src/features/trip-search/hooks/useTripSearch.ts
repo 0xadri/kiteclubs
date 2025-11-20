@@ -1,14 +1,18 @@
 import { CanceledError } from 'axios';
 import { useEffect, useState } from 'react';
 import { getTrips } from '../services/tripApi';
-import type { Trip, TripSearchParams, UseTripSearchResult } from '../types';
+import type {
+  EnrichedTrip,
+  TripSearchParams,
+  UseTripSearchResult,
+} from '../types';
 
 /**
  * Custom hook to handle trip searching with Axios, no React Query.
  * Manages loading, error, and data states manually.
  */
 export function useTripSearch(params: TripSearchParams): UseTripSearchResult {
-  const [trips, setTrips] = useState<Trip[]>([]);
+  const [trips, setTrips] = useState<EnrichedTrip[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 

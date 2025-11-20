@@ -1,5 +1,6 @@
 import { useParams } from 'react-router';
 import { mockUsers } from '../../features/trip-search/mocks/mockUsers';
+import { getUserStats } from '../../features/trip-search/utils/tripHelpers';
 
 function getMonthYear(dateStr: string): string {
   const date = new Date(dateStr);
@@ -8,7 +9,7 @@ function getMonthYear(dateStr: string): string {
 
 const User = () => {
   const { id } = useParams();
-  const user = mockUsers.find((u: any) => u.id === id);
+  const user = mockUsers.find((u) => u.id === id);
 
   if (!user) {
     return (
@@ -25,13 +26,12 @@ const User = () => {
     );
   }
 
-  const totalTripsOrganized = user.tripsOrganized.completed + user.tripsOrganized.cancelled;
-  const totalTripsJoined = user.tripsJoined.completed + user.tripsJoined.cancelled;
-  const completionRate = Math.round(
-    ((user.tripsOrganized.completed + user.tripsJoined.completed) /
-      (totalTripsOrganized + totalTripsJoined)) *
-      100
-  );
+  const stats = getUserStats(user.id);
+  const totalTripsOrganized =
+    stats.tripsOrganized.completed + stats.tripsOrganized.cancelled;
+  const totalTripsJoined =
+    stats.tripsJoined.completed + stats.tripsJoined.cancelled;
+  const completionRate = stats.completionRate;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -100,7 +100,6 @@ const User = () => {
                     completion rate
                   </span>
                 </div>
-
               </div>
             </div>
           </div>
@@ -115,88 +114,91 @@ const User = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {/* Trips Organized */}
               <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-xl p-5">
-                  <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-1">
-                    Trips Organized
-                  </h3>
-                  <div className="flex items-end gap-4">
-                    <div>
-                      <div className="text-2xl font-bold text-blue-700">
-                        {user.tripsOrganized.completed}
-                      </div>
-                      <div className="text-sm text-gray-600">Completed</div>
+                <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-1">
+                  Trips Organized
+                </h3>
+                <div className="flex items-end gap-4">
+                  <div>
+                    <div className="text-2xl font-bold text-blue-700">
+                      {stats.tripsOrganized.completed}
                     </div>
-                    {user.tripsOrganized.cancelled > 0 && (
-                      <>
-                        <div className="h-8 w-px bg-gray-300"></div>
-                        <div>
-                          <div className="text-xl font-semibold text-red-600">
-                            {user.tripsOrganized.cancelled}
-                          </div>
-                          <div className="text-sm text-gray-600">Cancelled</div>
-                        </div>
-                      </>
-                    )}
+                    <div className="text-sm text-gray-600">Completed</div>
                   </div>
-                </div>
-
-                {/* Trips Joined */}
-                <div className="bg-linear-to-br from-purple-50 to-purple-100 rounded-xl p-5">
-                  <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-1">
-                    Trips Joined
-                  </h3>
-                  <div className="flex items-end gap-4">
-                    <div>
-                      <div className="text-2xl font-bold text-purple-700">
-                        {user.tripsJoined.completed}
+                  {stats.tripsOrganized.cancelled > 0 && (
+                    <>
+                      <div className="h-8 w-px bg-gray-300"></div>
+                      <div>
+                        <div className="text-xl font-semibold text-red-600">
+                          {stats.tripsOrganized.cancelled}
+                        </div>
+                        <div className="text-sm text-gray-600">Cancelled</div>
                       </div>
-                      <div className="text-sm text-gray-600">Completed</div>
-                    </div>
-                    {user.tripsJoined.cancelled > 0 && (
-                      <>
-                        <div className="h-8 w-px bg-gray-300"></div>
-                        <div>
-                          <div className="text-xl font-semibold text-red-600">
-                            {user.tripsJoined.cancelled}
-                          </div>
-                          <div className="text-sm text-gray-600">Cancelled</div>
-                        </div>
-                      </>
-                    )}
-                  </div>
-                </div>
-
-                {/* Car Details */}
-                <div className="bg-linear-to-br from-green-50 to-green-100 rounded-xl p-5 relative">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="28"
-                    height="28"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-green-700 absolute top-5 right-5"
-                  >
-                    <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
-                    <circle cx="7" cy="17" r="2" />
-                    <path d="M9 17h6" />
-                    <circle cx="17" cy="17" r="2" />
-                  </svg>
-                  <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-1">
-                    {user.carDetails.brand} {user.carDetails.model}
-                  </h3>
-                  <div className="text-sm text-gray-600 mt-2">
-                    {user.carDetails.color} • {user.carDetails.year} • {user.carDetails.km}
-                  </div>
+                    </>
+                  )}
                 </div>
               </div>
 
+              {/* Trips Joined */}
+              <div className="bg-linear-to-br from-purple-50 to-purple-100 rounded-xl p-5">
+                <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-1">
+                  Trips Joined
+                </h3>
+                <div className="flex items-end gap-4">
+                  <div>
+                    <div className="text-2xl font-bold text-purple-700">
+                      {stats.tripsJoined.completed}
+                    </div>
+                    <div className="text-sm text-gray-600">Completed</div>
+                  </div>
+                  {stats.tripsJoined.cancelled > 0 && (
+                    <>
+                      <div className="h-8 w-px bg-gray-300"></div>
+                      <div>
+                        <div className="text-xl font-semibold text-red-600">
+                          {stats.tripsJoined.cancelled}
+                        </div>
+                        <div className="text-sm text-gray-600">Cancelled</div>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </div>
+
+              {/* Car Details */}
+              <div className="bg-linear-to-br from-green-50 to-green-100 rounded-xl p-5 relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-green-700 absolute top-5 right-5"
+                >
+                  <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                  <circle cx="7" cy="17" r="2" />
+                  <path d="M9 17h6" />
+                  <circle cx="17" cy="17" r="2" />
+                </svg>
+                <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-1">
+                  {user.carDetails.brand} {user.carDetails.model}
+                </h3>
+                <div className="text-sm text-gray-600 mt-2">
+                  {user.carDetails.color} • {user.carDetails.year} •{' '}
+                  {user.carDetails.km}
+                </div>
+              </div>
+            </div>
+
             {/* About Section */}
-            <div  className="-mt-1">
+            <div className="-mt-1">
               <h2 className="text-xl font-bold text-gray-900 mb-2">About</h2>
-              <p className="text-gray-600 leading-relaxed">{user.description}</p>
+              <p className="text-gray-600 leading-relaxed">
+                {user.description}
+              </p>
             </div>
 
             {/* Kitesurfing Skills */}
@@ -221,24 +223,24 @@ const User = () => {
               <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-2">
                 Languages
               </h3>
-                  <div className="flex items-start gap-2 text-gray-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="mt-0.5 shrink-0 text-purple-600"
-                    >
-                      <circle cx="12" cy="12" r="10" />
-                      <line x1="2" y1="12" x2="22" y2="12" />
-                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                    </svg>
-                    <span>Speaks {user.languages.join(', ')}</span>
+              <div className="flex items-start gap-2 text-gray-700">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="mt-0.5 shrink-0 text-purple-600"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+                <span>Speaks {user.languages.join(', ')}</span>
               </div>
             </div>
 
@@ -247,26 +249,26 @@ const User = () => {
               <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-2">
                 Location
               </h3>
-                  <div className="flex items-start gap-2 text-gray-700">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="mt-0.5 shrink-0 text-purple-600"
-                    >
-                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    <span>
-                      Lives in {user.homeBase.city}, {user.homeBase.country}
-                    </span>
-                  </div>
+              <div className="flex items-start gap-2 text-gray-700">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="mt-0.5 shrink-0 text-purple-600"
+                >
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>
+                  Lives in {user.homeBase.city}, {user.homeBase.country}
+                </span>
+              </div>
             </div>
           </div>
         </div>

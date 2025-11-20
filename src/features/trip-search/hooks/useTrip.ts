@@ -1,10 +1,10 @@
 import { CanceledError } from 'axios';
 import { useEffect, useState } from 'react';
 import { getTripById } from '../services/tripApi';
-import type { Trip } from '../types';
+import type { EnrichedTrip } from '../types';
 
 interface UseTripResult {
-  trip: Trip | null;
+  trip: EnrichedTrip | null;
   isLoading: boolean;
   error: string | null;
 }
@@ -13,7 +13,7 @@ interface UseTripResult {
  * Custom hook to fetch a single trip by ID.
  */
 export function useTrip(id: string | undefined): UseTripResult {
-  const [trip, setTrip] = useState<Trip | null>(null);
+  const [trip, setTrip] = useState<EnrichedTrip | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 

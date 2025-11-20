@@ -5,7 +5,6 @@ import {
   formatDateDisplay,
   formatDepartureTime,
   getCurrencySymbol,
-  getFirstName,
 } from '../../features/trip-search/components/utils';
 
 const Trip = () => {
@@ -44,7 +43,7 @@ const Trip = () => {
 
   const isDayTrip = trip.return && trip.startDate === trip.endDate;
   const currencySymbol = getCurrencySymbol(trip.priceCurrency);
-  const firstName = getFirstName(trip.driverName);
+  const driverFirstName = trip.driver?.firstName || 'Unknown';
   const formattedDepartureTime = formatDepartureTime(trip.departureTime);
   const dateDisplay = formatDateDisplay(trip.startDate);
 
@@ -132,10 +131,12 @@ const Trip = () => {
               {/* Driver Details */}
               <div className="flex items-center gap-4 flex-2 md:flex-1">
                 <div className="w-16 h-16 bg-linear-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-md">
-                  {trip.driverName.charAt(0)}
+                  {driverFirstName.charAt(0)}
                 </div>
                 <div>
-                  <p className="text-lg font-bold text-gray-900">{firstName}</p>
+                  <p className="text-lg font-bold text-gray-900">
+                    {driverFirstName}
+                  </p>
                   <div className="flex items-center gap-1 text-gray-600">
                     <span className="text-yellow-400">⭐</span>
                     <span className="font-medium">
@@ -235,9 +236,9 @@ const Trip = () => {
                       <div
                         key={index}
                         className="w-10 h-10 bg-linear-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-semibold text-sm shadow-sm border-2 border-white ring-1 ring-gray-100"
-                        title={`${rider.riderFirstName} ${rider.riderLastName}`}
+                        title={`${rider.firstName} ${rider.lastName}`}
                       >
-                        {rider.riderFirstName.charAt(0)}
+                        {rider.firstName.charAt(0)}
                       </div>
                     ))}
                     {trip.riders.length === 0 && (

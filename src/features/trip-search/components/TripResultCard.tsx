@@ -3,7 +3,6 @@ import type { TripResultCardProps } from '../types';
 import {
   formatDepartureTime,
   getCurrencySymbol,
-  getFirstName,
   truncateDescription,
 } from './utils';
 
@@ -11,7 +10,7 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
   const isDayTrip = trip.return && trip.startDate === trip.endDate;
   const currencySymbol = getCurrencySymbol(trip.priceCurrency);
   const truncatedDescription = truncateDescription(trip.description, 10);
-  const firstName = getFirstName(trip.driverName);
+  const driverFirstName = trip.driver?.firstName || 'Unknown';
   const formattedDepartureTime = formatDepartureTime(trip.departureTime);
 
   return (
@@ -47,13 +46,13 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
 
             <div className="flex items-start gap-8">
               {/* Driver Info */}
-              <div className="flex items-center gap-3 flex-shrink-0">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-semibold text-lg">
-                  {trip.driverName.charAt(0)}
+              <div className="flex items-center gap-3 shrink-0">
+                <div className="w-12 h-12 bg-linear-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-semibold text-lg">
+                  {driverFirstName.charAt(0)}
                 </div>
                 <div>
                   <p className="text-base font-medium text-gray-800">
-                    {firstName}
+                    {driverFirstName}
                   </p>
                   <p className="text-sm text-gray-500">
                     ⭐ {trip.driverRating.toFixed(1)} (

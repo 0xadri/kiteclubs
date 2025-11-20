@@ -1,5 +1,5 @@
 import axios from 'axios';
-import type { Trip, TripSearchParams } from '../types';
+import type { EnrichedTrip, TripSearchParams } from '../types';
 
 // Create reusable Axios instance
 const api = axios.create({
@@ -23,8 +23,8 @@ api.interceptors.response.use(
 export async function getTrips(
   params: TripSearchParams,
   signal?: AbortSignal,
-): Promise<Trip[]> {
-  const response = await api.get<Trip[]>('/trips', {
+): Promise<EnrichedTrip[]> {
+  const response = await api.get<EnrichedTrip[]>('/trips', {
     params,
     signal, // Axios v1+ supports AbortController
   });
@@ -38,8 +38,8 @@ export async function getTrips(
 export async function getTripById(
   id: string,
   signal?: AbortSignal,
-): Promise<Trip> {
-  const response = await api.get<Trip>(`/trips/${id}`, {
+): Promise<EnrichedTrip> {
+  const response = await api.get<EnrichedTrip>(`/trips/${id}`, {
     signal,
   });
 

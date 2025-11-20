@@ -1,6 +1,6 @@
 import { http, HttpResponse } from 'msw';
 
-import { mockTrips } from './mockTrips';
+import { getEnrichedTrips } from '../utils/tripHelpers';
 
 export const tripHandlers = [
   http.get('/api/trips', ({ request }) => {
@@ -9,19 +9,13 @@ export const tripHandlers = [
     const destination = url.searchParams.get('destination');
     const dateRange = url.searchParams.get('dateRange');
 
-    let filteredTrips = [...mockTrips];
+    const enrichedTrips = getEnrichedTrips({
+      departure: departure || undefined,
+      destination: destination || undefined,
+      status: 'upcoming', // Only show upcoming trips in search
+    });
 
-    if (departure) {
-      filteredTrips = filteredTrips.filter((trip) =>
-        trip.departure.toLowerCase().includes(departure.toLowerCase()),
-      );
-    }
-
-    if (destination) {
-      filteredTrips = filteredTrips.filter((trip) =>
-        trip.destination.toLowerCase().includes(destination.toLowerCase()),
-      );
-    }
+    let filteredTrips = enrichedTrips;
 
     if (dateRange) {
       const [rangeStart, rangeEnd] = dateRange.split(':');
@@ -44,7 +38,8 @@ export const tripHandlers = [
 
   http.get('/api/trips/:id', ({ params }) => {
     const { id } = params;
-    const trip = mockTrips.find((t) => t.id === id);
+    const enrichedTrips = getEnrichedTrips();
+    const trip = enrichedTrips.find((t) => t.id === id);
 
     if (!trip) {
       return new HttpResponse(null, { status: 404 });

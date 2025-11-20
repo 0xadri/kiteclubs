@@ -1,3 +1,24 @@
+export interface User {
+  id: string;
+  firstName: string;
+  lastName: string;
+  signedUpDate: string;
+  description: string;
+  languages: string[];
+  homeBase: { city: string; country: string };
+  carDetails: {
+    brand: string;
+    model: string;
+    color: string;
+    year: number;
+    km: string;
+  };
+  email: string;
+  phone: string;
+  tags: string[];
+  kitesurfSkills: string[];
+}
+
 export interface Trip {
   id: string;
   departure: string;
@@ -13,18 +34,10 @@ export interface Trip {
   description: string;
   vaguePickupPoint: string;
   seats: number;
-  driverName: string;
-  driverRating: number;
-  driverTripsCompleted: number;
-  carBrand: string;
-  carModel: string;
-  carColor: string;
+  driverId: string;
+  riderIds: string[];
   luggageAllowance: string[];
-  riders: {
-    riderFirstName: string;
-    riderLastName: string;
-    riderTotalTripsDone: number;
-  }[];
+  status: 'upcoming' | 'completed' | 'cancelled';
 }
 
 export interface TripSearchParams {
@@ -43,11 +56,21 @@ export interface TripResultsProp {
 }
 
 export interface UseTripSearchResult {
-  trips: Trip[];
+  trips: EnrichedTrip[];
   isLoading: boolean;
   error: string | null;
 }
 
 export interface TripResultCardProps {
-  trip: Trip;
+  trip: EnrichedTrip;
+}
+
+export interface EnrichedTrip extends Trip {
+  driver: User | undefined;
+  riders: User[];
+  driverRating: number;
+  driverTripsCompleted: number;
+  carBrand: string;
+  carModel: string;
+  carColor: string;
 }
