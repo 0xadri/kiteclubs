@@ -55,7 +55,7 @@ const Trip = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-blue-900 to-purple-400 px-4 pt-24 pb-32">
+      <section className="relative bg-linear-to-br from-blue-600 via-blue-900 to-purple-400 px-4 pt-24 pb-32">
         <div className="relative z-10 w-full max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
@@ -125,11 +125,10 @@ const Trip = () => {
       <main className="max-w-4xl mx-auto px-4 -mt-20 pb-20 relative z-20">
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
           <div className="p-6 md:p-8 space-y-8">
-
             {/* Header: Driver Info & Car Details Side by Side */}
             <div className="flex items-center justify-between gap-4 flex-wrap">
               <div className="flex items-center gap-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-md">
+                <div className="w-16 h-16 bg-linear-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-md">
                   {trip.driverName.charAt(0)}
                 </div>
                 <div>
@@ -144,34 +143,36 @@ const Trip = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center justify-end min-w-[80px]">
-                <div className="flex items-center min-w-20">
-                  <div className="flex flex-col mr-4 text-right">
+              <div className="flex items-center justify-end min-w-20">
+                <div className="flex min-w-20 items-center">
+                  <div className="mr-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="72"
+                      height="72"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-gray-500"
+                    >
+                      <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                      <circle cx="7" cy="17" r="2" />
+                      <path d="M9 17h6" />
+                      <circle cx="17" cy="17" r="2" />
+                    </svg>
+                  </div>
+                  <div className="flex flex-col text-left">
                     <div className="flex gap-2 text-base text-gray-600 font-medium">
                       <span>{trip.carBrand}</span>
                       <span>{trip.carModel}</span>
                     </div>
-                    <div className="text-sm text-gray-500 font-normal mt-0">
+                    <div className="text-sm text-gray-500 font-normal mt-1">
                       {trip.carColor}
                     </div>
                   </div>
-                                    <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="72"
-                    height="72"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="text-gray-500"
-                  >
-                    <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
-                    <circle cx="7" cy="17" r="2" />
-                    <path d="M9 17h6" />
-                    <circle cx="17" cy="17" r="2" />
-                  </svg>
                 </div>
               </div>
             </div>
@@ -213,7 +214,7 @@ const Trip = () => {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="mt-0.5 flex-shrink-0"
+                    className="mt-0.5 shrink-0"
                   >
                     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
                     <circle cx="12" cy="10" r="3" />
@@ -240,7 +241,7 @@ const Trip = () => {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="mt-0.5 flex-shrink-0"
+                    className="mt-0.5 shrink-0"
                   >
                     <path d="M6 20h0a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h0" />
                     <path d="M8 18V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14" />
@@ -258,7 +259,7 @@ const Trip = () => {
                   {trip.riders.map((rider, index) => (
                     <div
                       key={index}
-                      className="w-10 h-10 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-semibold text-sm shadow-sm border-2 border-white ring-1 ring-gray-100"
+                      className="w-10 h-10 bg-linear-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-semibold text-sm shadow-sm border-2 border-white ring-1 ring-gray-100"
                       title={`${rider.riderFirstName} ${rider.riderLastName}`}
                     >
                       {rider.riderFirstName.charAt(0)}
