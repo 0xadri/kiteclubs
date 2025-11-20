@@ -58,8 +58,13 @@ const Trip = () => {
       <section className="relative bg-linear-to-br from-blue-600 via-blue-900 to-purple-400 px-4 pt-24 pb-32">
         <div className="relative z-10 w-full max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-              <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2">
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+                {trip.departure} <span className="text-gray-400">🡒</span>{' '}
+                {trip.destination}
+              </h1>
+              <div className="flex flex-col md:flex-row md:items-center md:gap-6 mt-0">
+                {/* Date & Time Section */}
                 <div className="flex items-center gap-3 text-gray-500 font-medium">
                   <span className="flex items-center gap-1">
                     <svg
@@ -99,11 +104,8 @@ const Trip = () => {
                     {formattedDepartureTime}
                   </span>
                 </div>
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-                  {trip.departure} <span className="text-gray-400">🡒</span>{' '}
-                  {trip.destination}
-                </h1>
-                <div className="flex flex-wrap gap-2 mt-2">
+                {/* Tags Section */}
+                <div className="flex flex-wrap gap-4 md:ml-6 mt-4 md:mt-0">
                   {isDayTrip && (
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
                       Day Trip
@@ -125,9 +127,10 @@ const Trip = () => {
       <main className="max-w-4xl mx-auto px-4 -mt-23 pb-20 relative z-20">
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
           <div className="p-6 md:p-8 space-y-4">
-            {/* Header: Driver Info & Car Details Side by Side */}
-            <div className="flex items-center justify-between gap-4 flex-wrap">
-              <div className="flex items-center gap-4">
+            {/* Header: Driver Details (left) & Car Details (right) side-by-side, car icon hidden on mobile */}
+            <div className="flex flex-row items-center justify-between gap-4 w-full">
+              {/* Driver Details */}
+              <div className="flex items-center gap-4 flex-2 md:flex-1">
                 <div className="w-16 h-16 bg-linear-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-md">
                   {trip.driverName.charAt(0)}
                 </div>
@@ -143,9 +146,10 @@ const Trip = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center justify-end min-w-20">
+              {/* Car Details (right aligned, car icon hidden on mobile) */}
+              <div className="flex items-center justify-end min-w-20 flex-1">
                 <div className="flex min-w-20 items-center">
-                  <div className="mr-4">
+                  <div className="mr-4 hidden md:block">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="72"
@@ -165,11 +169,11 @@ const Trip = () => {
                     </svg>
                   </div>
                   <div className="flex flex-col text-left">
-                    <div className="flex gap-2 text-base text-gray-600 font-medium">
+                    <div className="flex gap-2 text-lg md:text-base text-gray-600 font-medium md:font-medium">
                       <span>{trip.carBrand}</span>
                       <span>{trip.carModel}</span>
                     </div>
-                    <div className="text-sm text-gray-500 font-normal mt-1">
+                    <div className="text-base text-gray-500 font-normal mt-0">
                       {trip.carColor}
                     </div>
                   </div>
