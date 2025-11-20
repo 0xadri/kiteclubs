@@ -70,9 +70,6 @@ export const formatDepartureTime = (timeString: string): string => {
   return timeString;
 };
 
-
-
-
 export const groupTrips = (trips: Trip[]) => {
   return trips
     .sort((a, b) => {

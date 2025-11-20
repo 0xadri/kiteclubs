@@ -5,7 +5,7 @@ const toPascalCase = (str: string): string => {
   return str
     .toLowerCase()
     .split(' ')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
 };
 
@@ -17,7 +17,8 @@ export const getTripFilters = (
     const [departure, destination] = params.tripRoute.split('-');
     return {
       departure: departure === 'ANYWHERE' ? '' : toPascalCase(departure || ''),
-      destination: destination === 'ANYWHERE' ? '' : toPascalCase(destination || ''),
+      destination:
+        destination === 'ANYWHERE' ? '' : toPascalCase(destination || ''),
       date: params.date || '',
     };
   }
@@ -52,4 +53,3 @@ export const buildSearchPath = (filters: TripSearchParams): string => {
 
   return `/search?${searchParams.toString()}`;
 };
-

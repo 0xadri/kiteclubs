@@ -11,17 +11,45 @@ const Footer: React.FC = () => {
               Connecting kitesurfers for epic sessions and shared adventures.
             </p>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-aqua-400 transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-aqua-400 transition-colors">How It Works</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-aqua-400 transition-colors">Safety</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-aqua-400 transition-colors">FAQ</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-aqua-400 transition-colors"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-aqua-400 transition-colors"
+                >
+                  How It Works
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-aqua-400 transition-colors"
+                >
+                  Safety
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-aqua-400 transition-colors"
+                >
+                  FAQ
+                </a>
+              </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Get Started</h4>
             <div className="space-y-3">
@@ -34,7 +62,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
           <p>&copy; 2025 Kite Clubs. All rights reserved.</p>
         </div>

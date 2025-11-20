@@ -1,19 +1,19 @@
 import { Link } from 'react-router';
 
 const Header = () => {
-
-
   return (
     <header className="fixed top-0 left-0 right-0 z-50  backdrop-blur-md border-b border-white/20">
       <nav className="max-w-7xl mx-auto flex items-center justify-between p-4">
         {/* Logo / Brand */}
-        <Link to="/" className="text-lg font-regular text-gray-800 tracking-wide hover:text-purple-600 cursor-pointer transition-colors">
+        <Link
+          to="/"
+          className="text-lg font-regular text-gray-800 tracking-wide hover:text-purple-600 cursor-pointer transition-colors"
+        >
           ✣
         </Link>
 
         {/* Right side: Time and Actions */}
         <div className="hidden md:flex items-center gap-6">
-
           {/* Publish a trip button */}
           <div className="relative">
             <div className="absolute -top-[3px] -left-[3px] -right-[3px] -bottom-[3px] bg-purple-600/40 blur-md rounded-2xl"></div>

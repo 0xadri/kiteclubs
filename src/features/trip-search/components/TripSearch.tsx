@@ -48,7 +48,11 @@ const TripSearch = ({ filters, handleSubmit }: TripSearchProps) => {
   return (
     <section className="relative bg-gradient-to-br from-blue-600 via-blue-900 to-purple-400 px-4 pt-24 pb-8">
       <div className="relative z-10 w-full max-w-6xl mx-auto">
-        <form role="search" onSubmit={onSubmit} className="w-full max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-6 md:p-8">
+        <form
+          role="search"
+          onSubmit={onSubmit}
+          className="w-full max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-6 md:p-8"
+        >
           <div className="grid grid-cols-1 md:grid-cols-[repeat(2,minmax(0,1fr))_auto_auto] gap-4">
             <div className="flex flex-col">
               <input

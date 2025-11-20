@@ -36,9 +36,7 @@ const HowItWorks = () => {
               <h3 className="text-xl font-semibold text-gray-800 mb-3">
                 {step.number}. {step.title}
               </h3>
-              <p className="text-gray-600">
-                {step.description}
-              </p>
+              <p className="text-gray-600">{step.description}</p>
             </div>
           ))}
         </div>

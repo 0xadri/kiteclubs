@@ -13,7 +13,10 @@ const SearchBox: React.FC = () => {
     <div className="w-full max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-6 md:p-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
         <div className="flex flex-col">
-          <label htmlFor="from" className="text-sm font-medium text-gray-700 mb-2">
+          <label
+            htmlFor="from"
+            className="text-sm font-medium text-gray-700 mb-2"
+          >
             From
           </label>
           <input
@@ -25,9 +28,12 @@ const SearchBox: React.FC = () => {
             className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-aqua-500 focus:border-transparent"
           />
         </div>
-        
+
         <div className="flex flex-col">
-          <label htmlFor="to" className="text-sm font-medium text-gray-700 mb-2">
+          <label
+            htmlFor="to"
+            className="text-sm font-medium text-gray-700 mb-2"
+          >
             To
           </label>
           <input
@@ -39,9 +45,12 @@ const SearchBox: React.FC = () => {
             className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-aqua-500 focus:border-transparent"
           />
         </div>
-        
+
         <div className="flex flex-col">
-          <label htmlFor="date" className="text-sm font-medium text-gray-700 mb-2">
+          <label
+            htmlFor="date"
+            className="text-sm font-medium text-gray-700 mb-2"
+          >
             Date
           </label>
           <input
@@ -53,7 +62,7 @@ const SearchBox: React.FC = () => {
           />
         </div>
       </div>
-      
+
       <button
         onClick={handleSearch}
         className="w-full bg-aqua-500 hover:bg-aqua-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"

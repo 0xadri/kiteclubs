@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
             Connect with kitesurfers heading to your favorite spots
           </p>
         </div>
-        
+
         <SearchBox />
       </div>
     </section>

@@ -1,7 +1,4 @@
-import type {
-  TripResultsProp,
-  UseTripSearchResult,
-} from '../types';
+import type { TripResultsProp, UseTripSearchResult } from '../types';
 import { useTripSearch } from '../hooks/useTripSearch';
 import { groupTrips, formatDateDisplay } from './utils';
 import TripResultCard from './TripResultCard';
@@ -30,7 +27,9 @@ const TripResults = ({ filters }: TripResultsProp) => {
         )}
         {!isLoading && !error && trips.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-xl text-gray-600">No trips found. Try adjusting your search.</p>
+            <p className="text-xl text-gray-600">
+              No trips found. Try adjusting your search.
+            </p>
           </div>
         )}
         {!isLoading && !error && trips.length > 0 && (

@@ -13,20 +13,54 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">How It Works</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">Safety</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">FAQ</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-purple-400 transition-colors"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-purple-400 transition-colors"
+                >
+                  How It Works
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-purple-400 transition-colors"
+                >
+                  Safety
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-purple-400 transition-colors"
+                >
+                  FAQ
+                </a>
+              </li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4">Get Started</h4>
             <div className="space-y-3">
-              <button className="w-full bg-purple-500 hover:bg-purple-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200" type="button">
+              <button
+                className="w-full bg-purple-500 hover:bg-purple-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200"
+                type="button"
+              >
                 Sign Up
               </button>
-              <button className="w-full bg-transparent border-2 border-white hover:bg-white hover:text-gray-800 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200" type="button">
+              <button
+                className="w-full bg-transparent border-2 border-white hover:bg-white hover:text-gray-800 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200"
+                type="button"
+              >
                 Log In
               </button>
             </div>

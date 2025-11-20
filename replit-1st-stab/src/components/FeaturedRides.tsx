@@ -51,10 +51,13 @@ const FeaturedRides: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
           Featured Upcoming Rides
         </h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {rides.map((ride) => (
-            <div key={ride.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200">
+            <div
+              key={ride.id}
+              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200"
+            >
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
                   <div>
@@ -62,34 +65,42 @@ const FeaturedRides: React.FC = () => {
                     <p className="font-semibold text-gray-800">{ride.from}</p>
                   </div>
                   <div className="text-right">
-                    <p className="text-2xl font-bold text-aqua-600">{ride.price}</p>
+                    <p className="text-2xl font-bold text-aqua-600">
+                      {ride.price}
+                    </p>
                     <p className="text-xs text-gray-500">per seat</p>
                   </div>
                 </div>
-                
+
                 <div className="mb-4">
                   <p className="text-sm text-gray-500">To</p>
                   <p className="font-semibold text-gray-800">{ride.to}</p>
                 </div>
-                
+
                 <div className="flex items-center justify-between mb-4 pb-4 border-b">
                   <div>
                     <p className="text-sm text-gray-500">Date</p>
-                    <p className="text-sm font-medium text-gray-700">{ride.date}</p>
+                    <p className="text-sm font-medium text-gray-700">
+                      {ride.date}
+                    </p>
                   </div>
                   <div className="text-right">
                     <p className="text-sm text-gray-500">Seats</p>
-                    <p className="text-sm font-medium text-gray-700">{ride.seats} left</p>
+                    <p className="text-sm font-medium text-gray-700">
+                      {ride.seats} left
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <div className="w-10 h-10 bg-gradient-to-br from-aqua-400 to-sand-400 rounded-full flex items-center justify-center text-white font-semibold mr-3">
                       {ride.driver.charAt(0)}
                     </div>
                     <div>
-                      <p className="text-sm font-medium text-gray-800">{ride.driver}</p>
+                      <p className="text-sm font-medium text-gray-800">
+                        {ride.driver}
+                      </p>
                       <p className="text-xs text-gray-500">⭐ {ride.rating}</p>
                     </div>
                   </div>
