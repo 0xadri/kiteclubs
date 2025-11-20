@@ -115,12 +115,12 @@ const User = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Trips Organized */}
               <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-xl p-5">
-                  <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-3">
+                  <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-1">
                     Trips Organized
                   </h3>
                   <div className="flex items-end gap-4">
                     <div>
-                      <div className="text-3xl font-bold text-blue-700">
+                      <div className="text-2xl font-bold text-blue-700">
                         {user.tripsOrganized.completed}
                       </div>
                       <div className="text-sm text-gray-600">Completed</div>
@@ -129,7 +129,7 @@ const User = () => {
                       <>
                         <div className="h-8 w-px bg-gray-300"></div>
                         <div>
-                          <div className="text-2xl font-semibold text-red-600">
+                          <div className="text-xl font-semibold text-red-600">
                             {user.tripsOrganized.cancelled}
                           </div>
                           <div className="text-sm text-gray-600">Cancelled</div>
@@ -141,12 +141,12 @@ const User = () => {
 
                 {/* Trips Joined */}
                 <div className="bg-linear-to-br from-purple-50 to-purple-100 rounded-xl p-5">
-                  <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-3">
+                  <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-1">
                     Trips Joined
                   </h3>
                   <div className="flex items-end gap-4">
                     <div>
-                      <div className="text-3xl font-bold text-purple-700">
+                      <div className="text-2xl font-bold text-purple-700">
                         {user.tripsJoined.completed}
                       </div>
                       <div className="text-sm text-gray-600">Completed</div>
@@ -155,7 +155,7 @@ const User = () => {
                       <>
                         <div className="h-8 w-px bg-gray-300"></div>
                         <div>
-                          <div className="text-2xl font-semibold text-red-600">
+                          <div className="text-xl font-semibold text-red-600">
                             {user.tripsJoined.cancelled}
                           </div>
                           <div className="text-sm text-gray-600">Cancelled</div>
