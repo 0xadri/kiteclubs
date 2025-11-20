@@ -111,20 +111,10 @@ const User = () => {
       <main className="max-w-4xl mx-auto px-4 -mt-16 pb-20 relative z-20">
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
           <div className="p-6 md:p-8 space-y-8">
-            {/* About Section */}
-            <div>
-              <h2 className="text-xl font-bold text-gray-900 mb-3">About</h2>
-              <p className="text-gray-600 leading-relaxed">{user.description}</p>
-            </div>
-
-            <hr className="border-gray-100" />
-
             {/* Trip Stats */}
-            <div>
-              <h2 className="text-xl font-bold text-gray-900 mb-4">Trip History</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {/* Trips Organized */}
-                <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-xl p-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Trips Organized */}
+              <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-xl p-5">
                   <h3 className="text-sm font-semibold text-gray-700 uppercase tracking-wider mb-3">
                     Trips Organized
                   </h3>
@@ -175,9 +165,29 @@ const User = () => {
                   </div>
                 </div>
               </div>
+
+            {/* About Section */}
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 mb-3">About</h2>
+              <p className="text-gray-600 leading-relaxed">{user.description}</p>
             </div>
 
-            <hr className="border-gray-100" />
+            {/* Kitesurfing Skills */}
+            <div>
+              <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-2">
+                Kitesurfing Skills
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {user.kitesurfSkills.map((skill: string, idx: number) => (
+                  <span
+                    key={idx}
+                    className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 border border-blue-200"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
 
             {/* Personal Details */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -272,25 +282,6 @@ const User = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <hr className="border-gray-100" />
-
-            {/* Kitesurfing Skills */}
-            <div>
-              <h2 className="text-xl font-bold text-gray-900 mb-4">
-                Kitesurfing Skills
-              </h2>
-              <div className="flex flex-wrap gap-2">
-                {user.kitesurfSkills.map((skill: string, idx: number) => (
-                  <span
-                    key={idx}
-                    className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 border border-blue-200"
-                  >
-                    {skill}
-                  </span>
-                ))}
               </div>
             </div>
           </div>
