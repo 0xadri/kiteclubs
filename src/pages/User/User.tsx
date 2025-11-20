@@ -47,16 +47,30 @@ const User = () => {
 
               {/* User Info */}
               <div className="flex-1 text-center md:text-left">
-                <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+                <h1 className="text-3xl md:text-3xl font-bold text-gray-900">
                   {user.firstName} {user.lastName.charAt(0)}.
                 </h1>
-                <p className="text-gray-500 mt-1">
-                  Member since {getMonthYear(user.signedUpDate)}
-                </p>
+                <div className="text-gray-500 mt-1 md:text-sm flex flex-wrap gap-2 justify-center md:justify-start items-center">
+                  <span>Member since {getMonthYear(user.signedUpDate)}</span>
+                  <span className="mx-1">•</span>
+                  <span>
+                    <span className="font-bold text-gray-900">
+                      {totalTripsOrganized + totalTripsJoined}
+                    </span>{' '}
+                    total trips
+                  </span>
+                  <span className="mx-1">•</span>
+                  <span>
+                    <span className="font-bold text-green-600">
+                      {completionRate}%
+                    </span>{' '}
+                    completion rate
+                  </span>
+                </div>
 
                 {/* Tags */}
                 {user.tags.length > 0 && (
-                  <div className="flex flex-wrap gap-2 justify-center md:justify-start mt-4">
+                  <div className="flex flex-wrap gap-2 justify-center md:justify-start mt-4 md:mt-3">
                     {user.tags.map((tag: string, idx: number) => (
                       <span
                         key={idx}
@@ -67,23 +81,6 @@ const User = () => {
                     ))}
                   </div>
                 )}
-
-                {/* Stats */}
-                <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-4 text-sm">
-                  <div className="flex items-center gap-1 text-gray-600">
-                    <span className="font-bold text-gray-900">
-                      {totalTripsOrganized + totalTripsJoined}
-                    </span>{' '}
-                    total trips
-                  </div>
-                  <span className="text-gray-400">•</span>
-                  <div className="flex items-center gap-1 text-gray-600">
-                    <span className="font-bold text-green-600">
-                      {completionRate}%
-                    </span>{' '}
-                    completion rate
-                  </div>
-                </div>
               </div>
             </div>
           </div>
