@@ -125,21 +125,46 @@ const Trip = () => {
       <main className="max-w-4xl mx-auto px-4 -mt-20 pb-20 relative z-20">
         <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
           <div className="p-6 md:p-8 space-y-8">
-            {/* Header: Driver Info */}
-            <div className="flex items-center gap-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-md">
-                {trip.driverName.charAt(0)}
-              </div>
-              <div>
-                <p className="text-lg font-bold text-gray-900">{firstName}</p>
-                <div className="flex items-center gap-1 text-gray-600">
-                  <span className="text-yellow-400">⭐</span>
-                  <span className="font-medium">
-                    {trip.driverRating.toFixed(1)}
-                  </span>
-                  <span className="text-gray-400">•</span>
-                  <span>{trip.driverTripsCompleted} rides</span>
+
+            {/* Header: Driver Info & Car Details Side by Side */}
+            <div className="flex items-center justify-between gap-4 flex-wrap">
+              <div className="flex items-center gap-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-md">
+                  {trip.driverName.charAt(0)}
                 </div>
+                <div>
+                  <p className="text-lg font-bold text-gray-900">{firstName}</p>
+                  <div className="flex items-center gap-1 text-gray-600">
+                    <span className="text-yellow-400">⭐</span>
+                    <span className="font-medium">
+                      {trip.driverRating.toFixed(1)}
+                    </span>
+                    <span className="text-gray-400">•</span>
+                    <span>{trip.driverTripsCompleted} rides</span>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-end min-w-[80px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="36"
+                  height="36"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-gray-600"
+                >
+                  <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                  <circle cx="7" cy="17" r="2" />
+                  <path d="M9 17h6" />
+                  <circle cx="17" cy="17" r="2" />
+                </svg>
+                <span className="ml-2 text-base text-gray-600 font-medium">
+                  {trip.carBrand} {trip.carModel} ({trip.carColor})
+                </span>
               </div>
             </div>
 
@@ -213,34 +238,6 @@ const Trip = () => {
                     <path d="M8 18V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14" />
                   </svg>
                   <p className="whitespace-pre-line">{trip.luggageAllowance}</p>
-                </div>
-              </div>
-
-              {/* Car */}
-              <div className="space-y-2">
-                <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">
-                  Car
-                </h3>
-                <div className="flex items-center gap-2 text-gray-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
-                    <circle cx="7" cy="17" r="2" />
-                    <path d="M9 17h6" />
-                    <circle cx="17" cy="17" r="2" />
-                  </svg>
-                  <span>
-                    {trip.carBrand} {trip.carModel} ({trip.carColor})
-                  </span>
                 </div>
               </div>
 
