@@ -198,9 +198,13 @@ const Trip = () => {
                 <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">
                   Luggage Allowance
                 </h3>
-                <div className="text-gray-600">
-                  <p className="whitespace-pre-line">{trip.luggageAllowance}</p>
-                </div>
+                <ul className="list-disc list-inside text-gray-600 space-y-1">
+                  {Array.isArray(trip.luggageAllowance)
+                    ? trip.luggageAllowance.map((item, idx) => (
+                        <li key={idx}>{item}</li>
+                      ))
+                    : <li>{trip.luggageAllowance}</li>}
+                </ul>
               </div>
 
               {/* Right column: Pickup Area (top), Riders Confirmed (bottom) */}

@@ -19,7 +19,7 @@ export interface Trip {
   carBrand: string;
   carModel: string;
   carColor: string;
-  luggageAllowance: string;
+  luggageAllowance: string[];
   riders: {
     riderFirstName: string;
     riderLastName: string;
