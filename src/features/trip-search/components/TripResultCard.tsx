@@ -40,7 +40,7 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
           </div>
 
           {/* Column 2: Main Content */}
-          <div className="space-y-2">
+          <div className="space-y-2 mb-3 md:mb-0">
             <h2 className="md:block text-2xl font-bold text-gray-900 pb-0 mb-3 md:mb-4">
               {trip.departure} 🡒 {trip.destination}
             </h2>
@@ -75,38 +75,41 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
           {/* Column 3: Price + Seats + Button */}
           <div className="flex flex-col gap-2 md:items-end md:justify-between pt-0 md:pl-6 md:border-l border-gray-200">
             {/* Mobile: Seats Left and Price on same line */}
-            <div className="flex items-baseline justify-between w-full md:hidden">
-              <div className="flex flex-col">
+            <div className="flex flex-row justify-between items-center w-full md:hidden">
+              <div className="flex flex-col items-start">
+                <p className="text-2xl font-bold text-purple-600">
+                  {currencySymbol}
+                  {trip.price}
+                </p>
                 <span
                   className={`text-sm text-gray-500 ${trip.seats === 1 ? 'text-red-600' : ''}`}
                 >
                   {trip.seats} seats left
                 </span>
               </div>
-              <p className="text-2xl font-bold text-purple-600">
-                {currencySymbol}
-                {trip.price}
-              </p>
+              <div className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors duration-200 text-base text-center cursor-pointer">
+                Book
+              </div>
             </div>
 
             {/* Desktop: Price at top */}
             <div className="hidden md:block text-center pb-0 mb-0">
-              <p className="text-2xl font-bold text-purple-600">
-                {currencySymbol}
-                {trip.price}
-              </p>
-            </div>
-
-            <div className="flex flex-col items-end gap-1.5 w-full">
-              {/* Desktop: Seats Left */}
-              <div className="hidden md:flex flex-col items-end">
+              <div className="flex flex-col items-end">
+                <p className="text-2xl font-bold text-purple-600">
+                  {currencySymbol}
+                  {trip.price}
+                </p>
                 <span
                   className={`text-sm text-gray-800 ${trip.seats === 1 ? 'text-red-600' : ''}`}
                 >
                   {trip.seats} seats left
                 </span>
               </div>
-              <div className="w-full md:w-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors duration-200 text-base text-center cursor-pointer">
+            </div>
+
+            <div className="flex flex-col items-end gap-1.5 w-full">
+              {/* Desktop: Seats Left moved above, so removed here */}
+              <div className="hidden md:block w-full md:w-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors duration-200 text-base text-center cursor-pointer">
                 Book
               </div>
             </div>
