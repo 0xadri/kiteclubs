@@ -199,11 +199,13 @@ const Trip = () => {
                   Luggage Allowance
                 </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
-                  {Array.isArray(trip.luggageAllowance)
-                    ? trip.luggageAllowance.map((item, idx) => (
-                        <li key={idx}>{item}</li>
-                      ))
-                    : <li>{trip.luggageAllowance}</li>}
+                  {Array.isArray(trip.luggageAllowance) ? (
+                    trip.luggageAllowance.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))
+                  ) : (
+                    <li>{trip.luggageAllowance}</li>
+                  )}
                 </ul>
               </div>
 

@@ -23,7 +23,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Audi',
     carModel: 'A4',
     carColor: 'Dark Blue',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Daniel',
@@ -54,7 +59,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Seat',
     carModel: 'Leon',
     carColor: 'Dark Blue',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Joseph',
@@ -90,7 +100,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Renault',
     carModel: 'Megane',
     carColor: 'Grey',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'David',
@@ -136,7 +151,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Peugeot',
     carModel: '308',
     carColor: 'Dark Blue',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Mia',
@@ -172,7 +192,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Mercedes-Benz',
     carModel: 'A-Class',
     carColor: 'Dark Blue',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Charles',
@@ -213,7 +238,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Peugeot',
     carModel: '308',
     carColor: 'Grey',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Charlotte',
@@ -249,7 +279,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Renault',
     carModel: 'Megane',
     carColor: 'White',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Thomas',
@@ -280,7 +315,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'BMW',
     carModel: 'X3',
     carColor: 'Black',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Evelyn',
@@ -311,7 +351,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Ford',
     carModel: 'Focus',
     carColor: 'Red',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Harper',
@@ -352,7 +397,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Ford',
     carModel: 'Kuga',
     carColor: 'Silver',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Charlotte',
@@ -388,7 +438,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Volkswagen',
     carModel: 'Touran',
     carColor: 'White',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Ava',
@@ -424,7 +479,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Fiat',
     carModel: 'Tipo',
     carColor: 'Grey',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Harper',
@@ -460,7 +520,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Peugeot',
     carModel: '208',
     carColor: 'White',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Sophia',
@@ -496,7 +561,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Toyota',
     carModel: 'RAV4',
     carColor: 'Black',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'John',
@@ -537,7 +607,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Peugeot',
     carModel: '2008',
     carColor: 'Red',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Amelia',
@@ -573,7 +648,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Fiat',
     carModel: 'Tipo',
     carColor: 'Silver',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'John',
@@ -619,7 +699,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Peugeot',
     carModel: '2008',
     carColor: 'Dark Blue',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Joseph',
@@ -655,7 +740,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Ford',
     carModel: 'Fiesta',
     carColor: 'White',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Ava',
@@ -696,7 +786,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Peugeot',
     carModel: '2008',
     carColor: 'White',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Emma',
@@ -737,7 +832,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Volkswagen',
     carModel: 'Tiguan',
     carColor: 'Red',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'David',
@@ -773,7 +873,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Seat',
     carModel: 'Ibiza',
     carColor: 'Black',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Amelia',
@@ -809,7 +914,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Renault',
     carModel: 'Captur',
     carColor: 'Silver',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Harper',
@@ -840,7 +950,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Ford',
     carModel: 'Focus',
     carColor: 'Blue',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Amelia',
@@ -876,7 +991,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Volkswagen',
     carModel: 'Passat',
     carColor: 'Grey',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Sophia',
@@ -917,7 +1037,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Toyota',
     carModel: 'C-HR',
     carColor: 'White',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'William',
@@ -958,7 +1083,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Ford',
     carModel: 'Focus',
     carColor: 'White',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'John',
@@ -999,7 +1129,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Volkswagen',
     carModel: 'Touran',
     carColor: 'Dark Blue',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'John',
@@ -1045,7 +1180,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Toyota',
     carModel: 'RAV4',
     carColor: 'Blue',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'James',
@@ -1076,7 +1216,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Ford',
     carModel: 'Fiesta',
     carColor: 'Silver',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Daniel',
@@ -1122,7 +1267,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Fiat',
     carModel: 'Panda',
     carColor: 'White',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Sophia',
@@ -1153,7 +1303,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'BMW',
     carModel: 'X3',
     carColor: 'Silver',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Charlotte',
@@ -1184,7 +1339,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Ford',
     carModel: 'Focus',
     carColor: 'Red',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'John',
@@ -1225,7 +1385,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Mercedes-Benz',
     carModel: 'A-Class',
     carColor: 'Blue',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'William',
@@ -1261,7 +1426,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Volkswagen',
     carModel: 'Touran',
     carColor: 'White',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Ava',
@@ -1297,7 +1467,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Toyota',
     carModel: 'C-HR',
     carColor: 'White',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'David',
@@ -1343,7 +1518,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Renault',
     carModel: 'Megane',
     carColor: 'Red',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'John',
@@ -1374,7 +1554,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Mercedes-Benz',
     carModel: 'A-Class',
     carColor: 'Dark Blue',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Emma',
@@ -1405,7 +1590,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Toyota',
     carModel: 'Corolla',
     carColor: 'Grey',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Charlotte',
@@ -1441,7 +1631,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Volkswagen',
     carModel: 'T6',
     carColor: 'Silver',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Alexander',
@@ -1477,7 +1672,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Seat',
     carModel: 'Ibiza',
     carColor: 'Silver',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Sophia',
@@ -1513,7 +1713,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'BMW',
     carModel: 'X3',
     carColor: 'Grey',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Harper',
@@ -1549,7 +1754,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Audi',
     carModel: 'A3',
     carColor: 'Dark Blue',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'John',
@@ -1585,7 +1795,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Seat',
     carModel: 'Ibiza',
     carColor: 'White',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Sophia',
@@ -1616,7 +1831,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Mercedes-Benz',
     carModel: 'GLA',
     carColor: 'Grey',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Mia',
@@ -1662,7 +1882,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Seat',
     carModel: 'Ateca',
     carColor: 'White',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'William',
@@ -1693,7 +1918,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Audi',
     carModel: 'Q5',
     carColor: 'Red',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Joseph',
@@ -1739,7 +1969,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Audi',
     carModel: 'Q5',
     carColor: 'White',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Harper',
@@ -1770,7 +2005,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Ford',
     carModel: 'Fiesta',
     carColor: 'Silver',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Joseph',
@@ -1806,7 +2046,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Fiat',
     carModel: 'Tipo',
     carColor: 'White',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Isabella',
@@ -1842,7 +2087,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Fiat',
     carModel: 'Tipo',
     carColor: 'Grey',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Charles',
@@ -1878,7 +2128,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Peugeot',
     carModel: '308',
     carColor: 'Blue',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Michael',
@@ -1924,7 +2179,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Mercedes-Benz',
     carModel: 'GLA',
     carColor: 'Silver',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Harper',
@@ -1970,7 +2230,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Ford',
     carModel: 'Kuga',
     carColor: 'Grey',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'James',
@@ -2011,7 +2276,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Audi',
     carModel: 'A3',
     carColor: 'Silver',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Michael',
@@ -2057,7 +2327,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Fiat',
     carModel: '500',
     carColor: 'Grey',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'John',
@@ -2098,7 +2373,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Ford',
     carModel: 'Fiesta',
     carColor: 'Grey',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'William',
@@ -2144,7 +2424,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Volkswagen',
     carModel: 'Passat',
     carColor: 'Red',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'James',
@@ -2175,7 +2460,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Volkswagen',
     carModel: 'Passat',
     carColor: 'Black',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'William',
@@ -2216,7 +2506,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Seat',
     carModel: 'Leon',
     carColor: 'Grey',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Evelyn',
@@ -2252,7 +2547,12 @@ export const mockTrips: Trip[] = [
     carBrand: 'Peugeot',
     carModel: '208',
     carColor: 'Blue',
-    luggageAllowance: ["1 kite bag (w 2 kites inside)","1 twintip boards","1 small bags","no board bags"],
+    luggageAllowance: [
+      '1 kite bag (w 2 kites inside)',
+      '1 twintip boards',
+      '1 small bags',
+      'no board bags',
+    ],
     riders: [
       {
         riderFirstName: 'Sophia',
