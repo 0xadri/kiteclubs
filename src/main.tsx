@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router';
 
 import App from './app/App.tsx';
+import User from './pages/User/User';
 import Home from './pages/Home/Home';
 import Search from './pages/Search/Search';
 import Trip from './pages/Trip/Trip';
@@ -26,6 +27,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="search" element={<Search />} />
           <Route path="search/:tripRoute/:date" element={<Search />} />
           <Route path="trip/:tripId" element={<Trip />} />
+          <Route path="user/:id" element={<User />} />
         </Route>
       </Routes>
     </BrowserRouter>
