@@ -6,6 +6,7 @@ import App from './app/App.tsx';
 import Home from './pages/Home/Home';
 import Search from './pages/Search/Search';
 import Trip from './pages/Trip/Trip';
+import ScrollToTop from './components/ScrollToTop';
 
 if (import.meta.env.DEV) {
   const { worker } = await import('./mocks/browser');
@@ -18,6 +19,7 @@ if (import.meta.env.DEV) {
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
@@ -25,19 +27,6 @@ createRoot(document.getElementById('root')!).render(
           <Route path="search/:tripRoute/:date" element={<Search />} />
           <Route path="trip/:tripId" element={<Trip />} />
         </Route>
-
-        {/* <Route path="about" element={<About />} />
-
-        <Route element={<AuthLayout />}>
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
-        </Route>
-
-        <Route path="concerts">
-          <Route index element={<ConcertsHome />} />
-          <Route path=":city" element={<City />} />
-          <Route path="trending" element={<Trending />} />
-        </Route> */}
       </Routes>
     </BrowserRouter>
   </StrictMode>,
