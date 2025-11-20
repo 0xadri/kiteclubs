@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useParams } from 'react-router';
+import { Link, useParams } from 'react-router';
 import { useTrip } from '../../features/trip-search/hooks/useTrip';
 import {
   formatDateDisplay,
@@ -129,7 +129,10 @@ const Trip = () => {
             {/* Header: Driver Details (left) & Price/Seats (right) side-by-side */}
             <div className="flex flex-row items-center justify-between gap-4 w-full">
               {/* Driver Details */}
-              <div className="flex items-center gap-4 flex-2 md:flex-1">
+              <Link
+                to={`/user/${trip.driver?.id}`}
+                className="flex items-center gap-4 flex-2 md:flex-1 hover:opacity-80 transition-opacity cursor-pointer"
+              >
                 <div className="w-16 h-16 bg-linear-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-md">
                   {driverFirstName.charAt(0)}
                 </div>
@@ -146,7 +149,7 @@ const Trip = () => {
                     <span>{trip.driverTripsCompleted} rides</span>
                   </div>
                 </div>
-              </div>
+              </Link>
               {/* Price & Seats (right aligned) */}
               <div className="flex flex-col items-end">
                 <span className="text-3xl font-bold text-purple-600">
@@ -233,13 +236,14 @@ const Trip = () => {
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {trip.riders.map((rider, index) => (
-                      <div
+                      <Link
                         key={index}
-                        className="w-10 h-10 bg-linear-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-semibold text-sm shadow-sm border-2 border-white ring-1 ring-gray-100"
+                        to={`/user/${rider.id}`}
+                        className="w-10 h-10 bg-linear-to-br from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-white font-semibold text-sm shadow-sm border-2 border-white ring-1 ring-gray-100 hover:opacity-80 transition-opacity cursor-pointer"
                         title={`${rider.firstName} ${rider.lastName}`}
                       >
                         {rider.firstName.charAt(0)}
-                      </div>
+                      </Link>
                     ))}
                     {trip.riders.length === 0 && (
                       <span className="text-gray-400 italic">
