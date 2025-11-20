@@ -12,7 +12,16 @@ export const mockUsers = [
     carDetails: { brand: "SEAT", model: "Leon", color: "Blue", year: 2022, km: "35K" },
     email: "carlos.martinez@email.com",
     phone: "+34 612 345 678",
-    tags: ["Superhost"]
+    tags: ["Superhost"],
+    kitesurfSkills: [
+      "Body Drag Upwind",
+      "Edging Upwind",
+      "Basic Jump (Small Pop)",
+      "Slide Turn",
+      "Toe-Side Riding",
+      "Heel-to-Toe Carve Transition",
+      "Surface 360"
+    ]
   },
   {
     id: "W1KQ4S",
@@ -27,7 +36,16 @@ export const mockUsers = [
     carDetails: { brand: "Volkswagen", model: "Golf", color: "White", year: 2021, km: "42K" },
     email: "anna.schneider@email.com",
     phone: "+34 698 123 456",
-    tags: ["Superguest"]
+    tags: ["Superguest"],
+    kitesurfSkills: [
+      "Body Drag Upwind",
+      "Edging Upwind",
+      "Basic Jump (Small Pop)",
+      "Slide Turn",
+      "Toe-Side Riding",
+      "Downloop Transition",
+      "Tail Grab (Small Jump)"
+    ]
   },
   {
     id: "A7B2C3",
@@ -42,7 +60,17 @@ export const mockUsers = [
     carDetails: { brand: "Renault", model: "Clio", color: "Red", year: 2023, km: "18K" },
     email: "lucia.fernandez@email.com",
     phone: "+34 634 567 890",
-    tags: ["Superhost", "Superguest"]
+    tags: ["Superhost", "Superguest"],
+    kitesurfSkills: [
+      "Body Drag Upwind",
+      "Edging Upwind",
+      "Basic Jump (Small Pop)",
+      "Slide Turn",
+      "Toe-Side Riding",
+      "Basic Backroll (Low Height)",
+      "Backroll Transition",
+      "Frontroll Transition"
+    ]
   },
   {
     id: "X9L2P7",
@@ -57,7 +85,17 @@ export const mockUsers = [
     carDetails: { brand: "Fiat", model: "500", color: "Black", year: 2020, km: "60K" },
     email: "marco.rossi@email.com",
     phone: "+34 600 123 456",
-    tags: ["Superguest"]
+    tags: ["Superguest"],
+    kitesurfSkills: [
+      "Body Drag Upwind",
+      "Edging Upwind",
+      "Basic Jump (Small Pop)",
+      "Slide Turn",
+      "Toe-Side Riding",
+      "Heel-to-Toe Carve Transition",
+      "Toe-to-Heel Carve Transition",
+      "Pendulum Jump"
+    ]
   },
   {
     id: "Q8F6Z1",
@@ -72,7 +110,14 @@ export const mockUsers = [
     carDetails: { brand: "Peugeot", model: "208", color: "Grey", year: 2022, km: "25K" },
     email: "sophie.dubois@email.com",
     phone: "+34 611 222 333",
-    tags: []
+    tags: [],
+    kitesurfSkills: [
+      "Body Drag Upwind",
+      "Edging Upwind",
+      "Basic Jump (Small Pop)",
+      "Slide Turn",
+      "Toe-Side Riding"
+    ]
   },
   {
     id: "M3T7V2",
@@ -87,7 +132,18 @@ export const mockUsers = [
     carDetails: { brand: "BMW", model: "X1", color: "Silver", year: 2021, km: "50K" },
     email: "joao.silva@email.com",
     phone: "+34 622 333 444",
-    tags: ["Superhost"]
+    tags: ["Superhost"],
+    kitesurfSkills: [
+      "Body Drag Upwind",
+      "Edging Upwind",
+      "Basic Jump (Small Pop)",
+      "Slide Turn",
+      "Toe-Side Riding",
+      "Basic Backroll (Low Height)",
+      "Backroll Tail Grab",
+      "Raley (Unhooked)",
+      "Frontroll to Blind"
+    ]
   },
   {
     id: "K5R8D4",
@@ -102,6 +158,16 @@ export const mockUsers = [
     carDetails: { brand: "Toyota", model: "Corolla", color: "Green", year: 2019, km: "100K+" },
     email: "irina.petrova@email.com",
     phone: "+34 655 444 555",
-    tags: ["Superguest"]
+    tags: ["Superguest"],
+    kitesurfSkills: [
+      "Body Drag Upwind",
+      "Edging Upwind",
+      "Basic Jump (Small Pop)",
+      "Slide Turn",
+      "Toe-Side Riding",
+      "Surface 360",
+      "Slim Chance",
+      "Handlepass (Air Pass)"
+    ]
   }
 ];
