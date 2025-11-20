@@ -86,7 +86,7 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
                   {trip.seats} seats left
                 </span>
               </div>
-              <div className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors duration-200 text-base text-center cursor-pointer">
+              <div className="bg-purple-600 text-white font-semibold py-3 px-4 rounded-xl text-base text-center cursor-pointer">
                 Book
               </div>
             </div>
@@ -108,7 +108,7 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
 
             <div className="flex flex-col items-end gap-1.5 w-full">
               {/* Desktop: Seats Left moved above, so removed here */}
-              <div className="hidden md:block w-full md:w-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-4 rounded-xl transition-colors duration-200 text-base text-center cursor-pointer">
+              <div className="hidden md:block w-full md:w-auto bg-purple-600 text-white font-semibold py-3 px-4 rounded-xl text-base text-center cursor-pointer">
                 Book
               </div>
             </div>

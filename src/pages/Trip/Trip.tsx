@@ -289,7 +289,7 @@ const Trip = () => {
               <div className="flex items-center gap-3">
                 <button
                   onClick={handleShare}
-                  className="flex items-center gap-2 px-4 py-3 rounded-xl border border-gray-200 text-gray-700 font-medium hover:bg-gray-50 hover:border-gray-300 transition-all active:scale-95"
+                  className="flex items-center gap-2 px-4 py-3 rounded-xl border border-gray-200 text-gray-700 font-medium hover:bg-gray-50 hover:border-gray-300 transition-all active:scale-95 cursor-pointer"
                 >
                   {isCopied ? (
                     <>
@@ -333,7 +333,7 @@ const Trip = () => {
                   )}
                 </button>
 
-                <button className="flex-1 md:flex-none bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-xl transition-colors shadow-lg hover:shadow-xl active:scale-95">
+                <button className="flex-1 md:flex-none bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-xl transition-colors shadow-lg hover:shadow-xl active:scale-95 cursor-pointer">
                   Book Ride
                 </button>
               </div>
