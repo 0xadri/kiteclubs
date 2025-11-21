@@ -18,10 +18,11 @@ Pitch: Frontend for Kite Clubs, the Web App connecting kitesurfers going on adve
 
 4. `.env` file expected to have [X] variable: `[VAR_NAME]` with value `value`
 
-### Formatting & Linting
+### Checking, Formatting & Linting
 
 - `npm run lint` – checks linting (Prettier errors included)
 - `npm run lint:fix` – auto-fixes lint and Prettier issues in one go
+- `npm run build 2>&1 | head -50` - Run a quick test to verify everything works
 
 ## Project Mgmt and Potential Improvements
 

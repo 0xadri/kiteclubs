@@ -70,7 +70,23 @@ export const formatDepartureTime = (timeString: string): string => {
   return timeString;
 };
 
-export const groupTrips = (trips: Trip[]) => {
+export const formatReturnTripETA = (returnTripETA: {
+  start: string;
+  end: string;
+}): string => {
+  const startTimeMatch = returnTripETA.start.match(/^(\d{2}):(\d{2})/);
+  const endTimeMatch = returnTripETA.end.match(/^(\d{2}):(\d{2})/);
+
+  if (startTimeMatch && endTimeMatch) {
+    const startTime = `${startTimeMatch[1]}:${startTimeMatch[2]}`;
+    const endTime = `${endTimeMatch[1]}:${endTimeMatch[2]}`;
+    return `${startTime} - ${endTime}`;
+  }
+
+  return `${returnTripETA.start} - ${returnTripETA.end}`;
+};
+
+export const groupTrips = <T extends Trip>(trips: T[]) => {
   return trips
     .sort((a, b) => {
       const dateComparison = a.startDate.localeCompare(b.startDate);
@@ -81,7 +97,7 @@ export const groupTrips = (trips: Trip[]) => {
       if (departureComparison !== 0) return departureComparison;
       return a.destination.localeCompare(b.destination);
     })
-    .reduce((acc: { date: string; trips: Trip[] }[], trip: Trip) => {
+    .reduce((acc: { date: string; trips: T[] }[], trip: T) => {
       const lastGroup = acc[acc.length - 1];
       if (lastGroup && lastGroup.date === trip.startDate) {
         lastGroup.trips.push(trip);

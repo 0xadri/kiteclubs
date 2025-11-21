@@ -33,7 +33,7 @@ export interface Trip {
   startDate: string;
   endDate: string;
   departureTime: string;
-  returnTripETA: string;
+  returnTripETA: { start: string; end: string };
   price: number;
   isReturnTrip: boolean;
   priceCurrency: string;
