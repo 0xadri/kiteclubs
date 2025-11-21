@@ -318,6 +318,9 @@ const Trip = () => {
                       {trip.vaguePickupPoint}
                     </span>
                   </a>
+                  <p className="text-xs text-gray-500 italic mt-2">
+                    Exact location will be shared with you once your booking is confirmed
+                  </p>
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">
