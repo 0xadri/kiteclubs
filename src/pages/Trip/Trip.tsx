@@ -46,10 +46,19 @@ const Trip = () => {
   const driverFirstName = trip.driver?.firstName || 'Unknown';
   const formattedDepartureTime = formatDepartureTime(trip.departureTime);
   const dateDisplay = formatDateDisplay(trip.startDate);
+  const isCancelled = trip.status === 'cancelled';
 
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
     trip.vaguePickupPoint,
   )}`;
+
+  const cancellationReasonText = {
+    weather: 'Due to unfavorable weather conditions',
+    vehicle_issue: 'Due to vehicle maintenance issues',
+    insufficient_riders: 'Due to insufficient riders',
+    driver_unavailable: 'Driver became unavailable',
+    safety_concerns: 'Due to safety concerns',
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -57,8 +66,35 @@ const Trip = () => {
       <section className="relative bg-linear-to-br from-blue-600 via-blue-900 to-purple-400 px-4 pt-24 pb-32">
         <div className="relative z-10 w-full max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8">
+            {isCancelled && (
+              <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+                <div className="flex items-center gap-2 text-red-800">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="15" y1="9" x2="9" y2="15" />
+                    <line x1="9" y1="9" x2="15" y2="15" />
+                  </svg>
+                  <span className="font-bold text-lg">Trip Cancelled</span>
+                </div>
+                {trip.cancellationReason && (
+                  <p className="mt-2 text-sm text-red-700">
+                    {cancellationReasonText[trip.cancellationReason]}
+                  </p>
+                )}
+              </div>
+            )}
             <div className="flex flex-col gap-2">
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+              <h1 className={`text-3xl md:text-4xl font-bold text-gray-900 ${isCancelled && 'line-through decoration-2'}`}>
                 {trip.departure} <span className="text-gray-400">🡒</span>{' '}
                 {trip.destination}
               </h1>
@@ -152,7 +188,7 @@ const Trip = () => {
               </Link>
               {/* Price & Seats (right aligned) */}
               <div className="flex flex-col items-end">
-                <span className="text-3xl font-bold text-purple-600">
+                <span className={`text-3xl font-bold text-purple-600 ${isCancelled && 'line-through decoration-2'}`}>
                   {currencySymbol}
                   {trip.price}
                 </span>
@@ -333,8 +369,15 @@ const Trip = () => {
                   )}
                 </button>
 
-                <button className="flex-1 md:flex-none bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-xl transition-colors shadow-lg hover:shadow-xl active:scale-95 cursor-pointer">
-                  Book Ride
+                <button 
+                  className={`flex-1 md:flex-none font-bold py-3 px-8 rounded-xl transition-colors shadow-lg text-white ${
+                    isCancelled 
+                      ? 'bg-gray-400 cursor-not-allowed' 
+                      : 'bg-purple-600 hover:bg-purple-700 hover:shadow-xl active:scale-95 cursor-pointer'
+                  }`}
+                  disabled={isCancelled}
+                >
+                  {isCancelled ? 'Trip Cancelled' : 'Book Ride'}
                 </button>
               </div>
             </div>
