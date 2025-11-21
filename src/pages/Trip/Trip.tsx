@@ -216,6 +216,15 @@ const Trip = () => {
               </p>
             </div>
 
+            {/* Special Request Message */}
+            {trip.specialRequestMsg && (
+              <div className="bg-blue-50/50 border-l-2 border-blue-400 rounded px-3 py-2 -mt-1">
+                <p className="text-xs text-gray-700">
+                  If you have a special request (i.e. extra detour or extra luggage), ask before you book.
+                </p>
+              </div>
+            )}
+
             {/* Details Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Left column: Luggage Allowance */}
