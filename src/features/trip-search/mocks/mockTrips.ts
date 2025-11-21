@@ -13,6 +13,10 @@ const STATUS_UPCOMING = 'upcoming';
 const STATUS_COMPLETED = 'completed';
 const STATUS_CANCELLED = 'cancelled';
 
+// Departure cities
+const DEP_BARCELONA = 'Barcelona';
+const DEP_TARIFA = 'Tarifa';
+
 // Pickup points - Barcelona
 const PICKUP_BCN_PLACA_CATALUNYA = 'Plaça Catalunya, Barcelona';
 const PICKUP_BCN_SANTS_STATION = 'Sants Station, Barcelona';
@@ -34,7 +38,7 @@ const PICKUP_TRF_OLD_TOWN = 'Tarifa Old Town';
 export const mockTrips: Trip[] = [
   {
     id: 'T7K9M2',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_PLACA_CATALUNYA,
     destination: 'Riumar',
     startDate: '2025-12-02',
@@ -56,7 +60,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'P3H8L5',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_SANTS_STATION,
     destination: 'Leucate',
     startDate: '2025-12-15',
@@ -78,7 +82,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'R6N2Q9',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_POBLESEC,
     destination: 'La Palme',
     startDate: '2026-01-05',
@@ -100,7 +104,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'Z8V4B1',
-    departure: 'Tarifa',
+    departure: DEP_TARIFA,
     vaguePickupPoint: PICKUP_TRF_OLD_TOWN,
     destination: 'Valdevaqueros (Tarifa)',
     startDate: '2025-11-25',
@@ -122,7 +126,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'F5D7C3',
-    departure: 'Tarifa',
+    departure: DEP_TARIFA,
     vaguePickupPoint: PICKUP_TRF_OLD_TOWN,
     destination: 'Playa de Los Lances (Tarifa)',
     startDate: '2025-12-05',
@@ -144,7 +148,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'J9W2E6',
-    departure: 'Tarifa',
+    departure: DEP_TARIFA,
     vaguePickupPoint: PICKUP_TRF_OLD_TOWN,
     destination: 'Los Caños de Meca (Cádiz)',
     startDate: '2026-01-14',
@@ -166,7 +170,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'Y4T1R8',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_POBLE_NOU,
     destination: 'Sant Pere Pescador',
     startDate: '2025-11-10',
@@ -187,7 +191,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'N3K6P2',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_SANTS_STATION,
     destination: 'Sant Pere Pescador',
     startDate: '2025-12-20',
@@ -208,7 +212,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'L7M9H4',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_ARC_TRIOMF,
     destination: 'Riumar',
     startDate: '2026-01-15',
@@ -229,7 +233,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'B2X5G8',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_PORT_OLIMPIC,
     destination: 'Empuriabrava',
     startDate: '2025-12-06',
@@ -250,7 +254,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'S6Q3V7',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_CAMP_NOU,
     destination: 'Malgrat',
     startDate: '2025-11-22',
@@ -271,7 +275,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'D8A1F4',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_PLACA_ESPANYA,
     destination: 'Barcares',
     startDate: '2025-12-18',
@@ -292,7 +296,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'C9Z4W1',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_GRACIA,
     destination: 'Leucate',
     startDate: '2025-12-08',
@@ -313,7 +317,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'U5E2K9',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_SANTS,
     destination: 'Barcares',
     startDate: '2025-12-12',
@@ -334,7 +338,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'G3J7N6',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_SANTS,
     destination: 'Riumar',
     startDate: '2025-11-30',
@@ -355,7 +359,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'H8P4R1',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_GRACIA,
     destination: 'Delta Ebro',
     startDate: '2025-11-28',
@@ -377,7 +381,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'V9K2M7',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_SANTS,
     destination: 'Sant Pere Pescador',
     startDate: '2025-12-03',
@@ -399,7 +403,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'Q5W8N3',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_EIXAMPLE_DRETA,
     destination: 'Leucate',
     startDate: '2025-12-10',
@@ -420,7 +424,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'T2L6E9',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_EIXAMPLE_ESQUERRA,
     destination: 'Delta Ebro',
     startDate: '2025-12-22',
@@ -442,7 +446,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'A3D7J4',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_EIXAMPLE_DRETA,
     destination: 'Sant Pere Pescador',
     startDate: '2026-01-08',
@@ -464,7 +468,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'F6C9B2',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_EIXAMPLE_ESQUERRA,
     destination: 'Leucate',
     startDate: '2026-01-20',
@@ -486,7 +490,7 @@ export const mockTrips: Trip[] = [
   },
   {
     id: 'N7R4S8',
-    departure: 'Barcelona',
+    departure: DEP_BARCELONA,
     vaguePickupPoint: PICKUP_BCN_POBLE_SEC,
     destination: 'Delta Ebro',
     startDate: '2026-02-05',
