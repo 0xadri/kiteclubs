@@ -8,6 +8,11 @@ const SMALL_BAG_BASIC = '1 small bag';
 const SMALL_BAG_FOOD = '1 small bag (for food & drink)';
 const NO_BOARD_BAG = '0 board bag';
 
+// Trip status
+const STATUS_UPCOMING = 'upcoming';
+const STATUS_COMPLETED = 'completed';
+const STATUS_CANCELLED = 'cancelled';
+
 export const mockTrips: Trip[] = [
   {
     id: 'T7K9M2',
@@ -28,7 +33,7 @@ export const mockTrips: Trip[] = [
     driverId: '4M5NJ8',
     riderIds: ['W1KQ4S'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_BASIC],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -50,7 +55,7 @@ export const mockTrips: Trip[] = [
     driverId: 'W1KQ4S',
     riderIds: ['X9L2P7', 'Q8F6Z1'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_BASIC],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -72,7 +77,7 @@ export const mockTrips: Trip[] = [
     driverId: 'A7B2C3',
     riderIds: ['4M5NJ8', 'M3T7V2', 'K5R8D4'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_BASIC],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: false,
   },
   {
@@ -94,7 +99,7 @@ export const mockTrips: Trip[] = [
     driverId: 'X9L2P7',
     riderIds: ['A7B2C3', 'W1KQ4S'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_BASIC],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -116,7 +121,7 @@ export const mockTrips: Trip[] = [
     driverId: 'M3T7V2',
     riderIds: ['Q8F6Z1', '4M5NJ8', 'K5R8D4'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_BASIC],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -138,7 +143,7 @@ export const mockTrips: Trip[] = [
     driverId: 'K5R8D4',
     riderIds: ['X9L2P7'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_BASIC],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -159,7 +164,7 @@ export const mockTrips: Trip[] = [
     driverId: '4M5NJ8',
     riderIds: ['W1KQ4S', 'A7B2C3', 'X9L2P7'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_BASIC],
-    status: 'completed',
+    status: STATUS_COMPLETED,
     specialRequestMsg: false,
   },
   {
@@ -180,7 +185,7 @@ export const mockTrips: Trip[] = [
     driverId: 'A7B2C3',
     riderIds: ['M3T7V2', 'Q8F6Z1'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -201,7 +206,7 @@ export const mockTrips: Trip[] = [
     driverId: 'W1KQ4S',
     riderIds: ['4M5NJ8', 'K5R8D4'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -222,7 +227,7 @@ export const mockTrips: Trip[] = [
     driverId: 'M3T7V2',
     riderIds: ['A7B2C3', 'X9L2P7'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: false,
   },
   {
@@ -243,7 +248,7 @@ export const mockTrips: Trip[] = [
     driverId: 'X9L2P7',
     riderIds: ['W1KQ4S', 'Q8F6Z1'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -264,7 +269,7 @@ export const mockTrips: Trip[] = [
     driverId: 'Q8F6Z1',
     riderIds: ['4M5NJ8', 'M3T7V2'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -285,7 +290,7 @@ export const mockTrips: Trip[] = [
     driverId: 'K5R8D4',
     riderIds: ['A7B2C3', 'W1KQ4S', 'X9L2P7'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -306,7 +311,7 @@ export const mockTrips: Trip[] = [
     driverId: '4M5NJ8',
     riderIds: [],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: false,
   },
   {
@@ -327,7 +332,7 @@ export const mockTrips: Trip[] = [
     driverId: 'A7B2C3',
     riderIds: ['W1KQ4S'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -349,7 +354,7 @@ export const mockTrips: Trip[] = [
     driverId: '4M5NJ8',
     riderIds: ['W1KQ4S'],
     luggageAllowance: [KITE_BAG_SINGLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -371,7 +376,7 @@ export const mockTrips: Trip[] = [
     driverId: 'M3T7V2',
     riderIds: [],
     luggageAllowance: [KITE_BAG_DOUBLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: false,
   },
   {
@@ -392,7 +397,7 @@ export const mockTrips: Trip[] = [
     driverId: 'A7B2C3',
     riderIds: ['X9L2P7', 'K5R8D4'],
     luggageAllowance: [KITE_BAG_DOUBLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -414,7 +419,7 @@ export const mockTrips: Trip[] = [
     driverId: 'W1KQ4S',
     riderIds: ['Q8F6Z1'],
     luggageAllowance: [KITE_BAG_DOUBLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -436,7 +441,7 @@ export const mockTrips: Trip[] = [
     driverId: 'X9L2P7',
     riderIds: ['M3T7V2'],
     luggageAllowance: [KITE_BAG_DOUBLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
   {
@@ -458,7 +463,7 @@ export const mockTrips: Trip[] = [
     driverId: 'K5R8D4',
     riderIds: ['4M5NJ8'],
     luggageAllowance: [KITE_BAG_DOUBLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: false,
   },
   {
@@ -480,7 +485,7 @@ export const mockTrips: Trip[] = [
     driverId: 'Q8F6Z1',
     riderIds: ['A7B2C3', 'W1KQ4S'],
     luggageAllowance: [KITE_BAG_DOUBLE, TWINTIP_BOARD, SMALL_BAG_FOOD, NO_BOARD_BAG],
-    status: 'upcoming',
+    status: STATUS_UPCOMING,
     specialRequestMsg: true,
   },
 ];
