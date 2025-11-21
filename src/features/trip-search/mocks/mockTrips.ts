@@ -13,6 +13,9 @@ const STATUS_UPCOMING = 'upcoming';
 const STATUS_COMPLETED = 'completed';
 const STATUS_CANCELLED = 'cancelled';
 
+// Currency
+const CRCY_EURO = 'euro';
+
 // Departure cities
 const DEP_BARCELONA = 'Barcelona';
 const DEP_TARIFA = 'Tarifa';
@@ -60,7 +63,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '21:30:00+02:00',
     price: 20,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Flat Lagoon Day Trip',
     description:
       "Aloha! I'm super excited to head to Riumar for some super flat water - it's always amazing to share this experience with other riders! Let's catch some epic wind together",
@@ -82,7 +85,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '22:15:00+02:00',
     price: 30,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Trip to Leucate',
     description:
       "Hey! Super stoked about this Leucate trip - it's going to be epic riding with fellow kiters!",
@@ -104,7 +107,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '20:45:00+02:00',
     price: 33,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'BCN to La Palme (Leucate Area)',
     description:
       'Ola! Super pumped for this La Palme adventure - nothing beats sharing the stoke with other riders!',
@@ -126,7 +129,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '23:20:00+01:00',
     price: 7,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Vamos a Valdevaqueros',
     description:
       "¡Hola! I'm really excited about this Valdevaqueros trip - it'll be amazing to ride with you all!",
@@ -148,7 +151,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '20:30:00+01:00',
     price: 6,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Winter kitesurfing at Los Lances beach',
     description:
       "Hey riders! Super excited for this winter session at Los Lances - let's make the most of it together!",
@@ -170,7 +173,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '22:00:00+01:00',
     price: 12,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'New year kitesurfing trip to Caños',
     description:
       "Happy New Year! Super stoked to start 2026 with this amazing trip to Caños - can't wait to share this adventure!",
@@ -192,7 +195,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '21:00:00+02:00',
     price: 22,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Epic Sant Pere Session',
     description: 'Great trip to Sant Pere for some awesome kitesurfing!',
     seats: 0,
@@ -213,7 +216,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '19:00:00+02:00',
     price: 25,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Sant Pere Day Trip',
     description: 'Beautiful day trip to Sant Pere Pescador!',
     seats: 0,
@@ -234,7 +237,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '22:30:00+02:00',
     price: 19,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Summer Kite Trip',
     description: 'Amazing summer session in Riumar! Flat water and good vibes!',
     seats: 0,
@@ -255,7 +258,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '20:00:00+02:00',
     price: 20,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Empuriabrava Weekend (Sant Pere Area)',
     description: 'Quick weekend trip to Empuriabrava! We\'ll hit a chiringuito for some tapas after riding!',
     seats: 0,
@@ -276,7 +279,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '21:30:00+02:00',
     price: 10,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Malgrat Kite Day',
     description: 'Day trip to Malgrat for kitesurfing!',
     seats: 0,
@@ -297,7 +300,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '23:00:00+02:00',
     price: 28,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Spring Barcares Session',
     description: 'Spring kitesurfing in Barcares! Let\'s send some huge jumps!',
     seats: 0,
@@ -318,7 +321,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '20:00:00+02:00',
     price: 28,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Leucate Adventure',
     description: 'Awesome trip to Leucate!',
     seats: 0,
@@ -339,7 +342,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '21:00:00+01:00',
     price: 31,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Cancelled: Bad Weather',
     description: 'Trip cancelled due to bad weather conditions.',
     seats: 4,
@@ -360,7 +363,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '22:00:00+01:00',
     price: 31,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Cancelled: Car Issues',
     description: 'Trip cancelled due to car maintenance issues.',
     seats: 3,
@@ -381,7 +384,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '20:30:00+01:00',
     price: 25,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Delta Ebro Wind Session',
     description:
       'Perfect day trip to Delta Ebro for some amazing kitesurfing! Great conditions expected.',
@@ -403,7 +406,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '21:00:00+01:00',
     price: 22,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Sant Pere Pescador Adventure',
     description:
       'Great spot for kitesurfing! Sant Pere Pescador offers excellent conditions for all levels.',
@@ -425,7 +428,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '22:00:00+01:00',
     price: 31,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Leucate Day Session',
     description: 'Classic trip to Leucate - one of the best spots in the area!',
     seats: 1,
@@ -446,7 +449,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '19:30:00+01:00',
     price: 23,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Winter Delta Ebro Trip',
     description:
       'Perfect winter conditions at Delta Ebro! Join us for an awesome kite session.',
@@ -468,7 +471,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '21:15:00+01:00',
     price: 19,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'New Year Sant Pere Session',
     description:
       'Start the new year with an epic kite session at Sant Pere Pescador!',
@@ -490,7 +493,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '22:30:00+01:00',
     price: 30,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Leucate Weekend',
     description:
       'Perfect weekend trip to Leucate! Great wind forecast and awesome company.',
@@ -512,7 +515,7 @@ export const mockTrips: Trip[] = [
     returnTripETA: '20:00:00+01:00',
     price: 22,
     return: true,
-    priceCurrency: 'euro',
+    priceCurrency: CRCY_EURO,
     title: 'Delta Ebro February Session',
     description:
       'Early spring conditions at Delta Ebro - let\'s gooo!',
