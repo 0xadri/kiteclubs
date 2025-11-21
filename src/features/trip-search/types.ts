@@ -38,31 +38,7 @@ export interface Trip {
   riderIds: string[];
   luggageAllowance: string[];
   status: 'upcoming' | 'completed' | 'cancelled';
-}
-
-export interface TripSearchParams {
-  departure?: string;
-  destination?: string;
-  date?: string;
-}
-
-export interface TripSearchProps {
-  filters: TripSearchParams;
-  handleSubmit: (filters: TripSearchParams) => void;
-}
-
-export interface TripResultsProp {
-  filters: TripSearchParams;
-}
-
-export interface UseTripSearchResult {
-  trips: EnrichedTrip[];
-  isLoading: boolean;
-  error: string | null;
-}
-
-export interface TripResultCardProps {
-  trip: EnrichedTrip;
+  specialRequestMsg: boolean;
 }
 
 export interface EnrichedTrip extends Trip {
@@ -74,3 +50,30 @@ export interface EnrichedTrip extends Trip {
   carModel: string;
   carColor: string;
 }
+
+export interface TripResultCardProps {
+  trip: EnrichedTrip;
+}
+
+export interface UseTripSearchResult {
+  trips: EnrichedTrip[];
+  isLoading: boolean;
+  error: string | null;
+}
+
+export interface TripSearchParams {
+  departure?: string;
+  destination?: string;
+  date?: string;
+}
+
+export interface TripResultsProp {
+  filters: TripSearchParams;
+}
+
+export interface TripSearchProps {
+  filters: TripSearchParams;
+  handleSubmit: (filters: TripSearchParams) => void;
+}
+
+
