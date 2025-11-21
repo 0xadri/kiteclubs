@@ -41,7 +41,7 @@ const Trip = () => {
     );
   }
 
-  const isDayTrip = trip.return && trip.startDate === trip.endDate;
+  const isDayTrip = trip.isReturnTrip && trip.startDate === trip.endDate;
   const currencySymbol = getCurrencySymbol(trip.priceCurrency);
   const driverFirstName = trip.driver?.firstName || 'Unknown';
   const formattedDepartureTime = formatDepartureTime(trip.departureTime);
@@ -110,7 +110,7 @@ const Trip = () => {
                       Day Trip
                     </span>
                   )}
-                  {trip.return && (
+                  {trip.isReturnTrip && (
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
                       Return
                     </span>

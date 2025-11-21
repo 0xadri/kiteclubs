@@ -28,7 +28,7 @@ export interface Trip {
   departureTime: string;
   returnTripETA: string;
   price: number;
-  return: boolean;
+  isReturnTrip: boolean;
   priceCurrency: string;
   title: string;
   description: string;

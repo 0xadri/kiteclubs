@@ -17,8 +17,8 @@ const STATUS_CANCELLED = 'cancelled';
 const CRCY_EURO = 'euro';
 
 // Is return trip
-const RTRN_TRUE = true;
-const RTRN_FALSE = false;
+const IS_RTRN_TRUE = true;
+const IS_RTRN_FALSE = false;
 
 // Special request message
 const SPEC_REQ_TRUE = true;
@@ -70,7 +70,7 @@ export const mockTrips: Trip[] = [
     departureTime: '07:30:00+02:00',
     returnTripETA: '21:30:00+02:00',
     price: 20,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Flat Lagoon Day Trip',
     description:
@@ -92,7 +92,7 @@ export const mockTrips: Trip[] = [
     departureTime: '10:00:00+02:00',
     returnTripETA: '22:15:00+02:00',
     price: 30,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Trip to Leucate',
     description:
@@ -114,7 +114,7 @@ export const mockTrips: Trip[] = [
     departureTime: '06:45:00+02:00',
     returnTripETA: '20:45:00+02:00',
     price: 33,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'BCN to La Palme (Leucate Area)',
     description:
@@ -136,7 +136,7 @@ export const mockTrips: Trip[] = [
     departureTime: '09:15:00+01:00',
     returnTripETA: '23:20:00+01:00',
     price: 7,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Vamos a Valdevaqueros',
     description:
@@ -158,7 +158,7 @@ export const mockTrips: Trip[] = [
     departureTime: '07:00:00+01:00',
     returnTripETA: '20:30:00+01:00',
     price: 6,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Winter kitesurfing at Los Lances beach',
     description:
@@ -180,7 +180,7 @@ export const mockTrips: Trip[] = [
     departureTime: '08:30:00+01:00',
     returnTripETA: '22:00:00+01:00',
     price: 12,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'New year kitesurfing trip to Caños',
     description:
@@ -202,7 +202,7 @@ export const mockTrips: Trip[] = [
     departureTime: '07:00:00+02:00',
     returnTripETA: '21:00:00+02:00',
     price: 22,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Epic Sant Pere Session',
     description: 'Great trip to Sant Pere for some awesome kitesurfing!',
@@ -223,7 +223,7 @@ export const mockTrips: Trip[] = [
     departureTime: '08:00:00+02:00',
     returnTripETA: '19:00:00+02:00',
     price: 25,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Sant Pere Day Trip',
     description: 'Beautiful day trip to Sant Pere Pescador!',
@@ -244,7 +244,7 @@ export const mockTrips: Trip[] = [
     departureTime: '06:30:00+02:00',
     returnTripETA: '22:30:00+02:00',
     price: 19,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Summer Kite Trip',
     description: 'Amazing summer session in Riumar! Flat water and good vibes!',
@@ -265,7 +265,7 @@ export const mockTrips: Trip[] = [
     departureTime: '09:00:00+02:00',
     returnTripETA: '20:00:00+02:00',
     price: 20,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Empuriabrava Weekend (Sant Pere Area)',
     description: 'Quick weekend trip to Empuriabrava! We\'ll hit a chiringuito for some tapas after riding!',
@@ -286,7 +286,7 @@ export const mockTrips: Trip[] = [
     departureTime: '07:30:00+02:00',
     returnTripETA: '21:30:00+02:00',
     price: 10,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Malgrat Kite Day',
     description: 'Day trip to Malgrat for kitesurfing!',
@@ -307,7 +307,7 @@ export const mockTrips: Trip[] = [
     departureTime: '06:00:00+02:00',
     returnTripETA: '23:00:00+02:00',
     price: 28,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Spring Barcares Session',
     description: 'Spring kitesurfing in Barcares! Let\'s send some huge jumps!',
@@ -328,7 +328,7 @@ export const mockTrips: Trip[] = [
     departureTime: '08:00:00+02:00',
     returnTripETA: '20:00:00+02:00',
     price: 28,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Leucate Adventure',
     description: 'Awesome trip to Leucate!',
@@ -349,7 +349,7 @@ export const mockTrips: Trip[] = [
     departureTime: '07:00:00+01:00',
     returnTripETA: '21:00:00+01:00',
     price: 31,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Cancelled: Bad Weather',
     description: 'Trip cancelled due to bad weather conditions.',
@@ -370,7 +370,7 @@ export const mockTrips: Trip[] = [
     departureTime: '06:00:00+01:00',
     returnTripETA: '22:00:00+01:00',
     price: 31,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Cancelled: Car Issues',
     description: 'Trip cancelled due to car maintenance issues.',
@@ -391,7 +391,7 @@ export const mockTrips: Trip[] = [
     departureTime: '08:00:00+01:00',
     returnTripETA: '20:30:00+01:00',
     price: 25,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Delta Ebro Wind Session',
     description:
@@ -413,7 +413,7 @@ export const mockTrips: Trip[] = [
     departureTime: '07:15:00+01:00',
     returnTripETA: '21:00:00+01:00',
     price: 22,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Sant Pere Pescador Adventure',
     description:
@@ -435,7 +435,7 @@ export const mockTrips: Trip[] = [
     departureTime: '09:30:00+01:00',
     returnTripETA: '22:00:00+01:00',
     price: 31,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Leucate Day Session',
     description: 'Classic trip to Leucate - one of the best spots in the area!',
@@ -456,7 +456,7 @@ export const mockTrips: Trip[] = [
     departureTime: '06:45:00+01:00',
     returnTripETA: '19:30:00+01:00',
     price: 23,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Winter Delta Ebro Trip',
     description:
@@ -478,7 +478,7 @@ export const mockTrips: Trip[] = [
     departureTime: '08:15:00+01:00',
     returnTripETA: '21:15:00+01:00',
     price: 19,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'New Year Sant Pere Session',
     description:
@@ -500,7 +500,7 @@ export const mockTrips: Trip[] = [
     departureTime: '10:00:00+01:00',
     returnTripETA: '22:30:00+01:00',
     price: 30,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Leucate Weekend',
     description:
@@ -522,7 +522,7 @@ export const mockTrips: Trip[] = [
     departureTime: '07:30:00+01:00',
     returnTripETA: '20:00:00+01:00',
     price: 22,
-    return: RTRN_TRUE,
+    isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
     title: 'Delta Ebro February Session',
     description:
