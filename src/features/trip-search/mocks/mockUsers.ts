@@ -27,6 +27,7 @@ export const mockUsers: User[] = [
       'Toe-Side Riding',
       'Heel-to-Toe Carve Transition',
       'Surface 360',
+      '3m+ jumps',
     ],
   },
   {
@@ -55,6 +56,7 @@ export const mockUsers: User[] = [
       'Toe-Side Riding',
       'Downloop Transition',
       'Tail Grab (Small Jump)',
+      '3m+ jumps',
     ],
   },
   {
@@ -84,6 +86,7 @@ export const mockUsers: User[] = [
       'Basic Backroll (Low Height)',
       'Backroll Transition',
       'Frontroll Transition',
+      '6m+ jumps',
     ],
   },
   {
@@ -113,6 +116,7 @@ export const mockUsers: User[] = [
       'Heel-to-Toe Carve Transition',
       'Toe-to-Heel Carve Transition',
       'Pendulum Jump',
+      '5m+ jumps',
     ],
   },
   {
@@ -139,6 +143,7 @@ export const mockUsers: User[] = [
       'Basic Jump (Small Pop)',
       'Slide Turn',
       'Toe-Side Riding',
+      '2m+ jumps',
     ],
   },
   {
@@ -169,6 +174,7 @@ export const mockUsers: User[] = [
       'Backroll Tail Grab',
       'Raley (Unhooked)',
       'Frontroll to Blind',
+      '15m+ jumps',
     ],
   },
   {
@@ -198,6 +204,7 @@ export const mockUsers: User[] = [
       'Surface 360',
       'Slim Chance',
       'Handlepass (Air Pass)',
+      '12m+ jumps',
     ],
   },
 ];
