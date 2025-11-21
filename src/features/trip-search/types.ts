@@ -40,6 +40,7 @@ export interface Trip {
   title: string;
   description: string;
   vaguePickupPoint: string;
+  exactPickupPoint: string;
   seats: number;
   driverId: string;
   riderIds: string[];
