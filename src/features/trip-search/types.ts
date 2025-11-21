@@ -38,8 +38,10 @@ export interface Trip {
   priceCurrency: string;
   title: string;
   description: string;
-  vaguePickupPoint: string;
-  exactPickupPoint: string;
+  pickupPoint: {
+    vague: string;
+    exact: string;
+  };
   seats: number;
   driverId: string;
   riderIds: string[];

@@ -70,8 +70,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'T7K9M2',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_PLACA_CATALUNYA,
-    exactPickupPoint: 'Plaça de Catalunya 1, 08002 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_PLACA_CATALUNYA,
+      exact: 'Plaça de Catalunya 1, 08002 Barcelona',
+    },
     destination: DEST_RIUMAR,
     startDate: '2025-12-02',
     endDate: '2025-12-02',
@@ -92,8 +94,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'P3H8L5',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_SANTS_STATION,
-    exactPickupPoint: 'Plaça dels Països Catalans, 08014 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_SANTS_STATION,
+      exact: 'Plaça dels Països Catalans, 08014 Barcelona',
+    },
     destination: DEST_LEUCATE,
     startDate: '2025-12-15',
     endDate: '2025-12-15',
@@ -114,8 +118,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'R6N2Q9',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_POBLESEC,
-    exactPickupPoint: 'Carrer Blai 17, 08004 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_POBLESEC,
+      exact: 'Carrer Blai 17, 08004 Barcelona',
+    },
     destination: DEST_LA_PALME,
     startDate: '2026-01-05',
     endDate: '2026-01-05',
@@ -136,8 +142,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'Z8V4B1',
     departure: DEP_TARIFA,
-    vaguePickupPoint: PICKUP_TRF_OLD_TOWN,
-    exactPickupPoint: 'Calle Sancho IV El Bravo 8, 11380 Tarifa',
+    pickupPoint: {
+      vague: PICKUP_TRF_OLD_TOWN,
+      exact: 'Calle Sancho IV El Bravo 8, 11380 Tarifa',
+    },
     destination: DEST_VALDEVAQUEROS,
     startDate: '2025-11-25',
     endDate: '2025-11-25',
@@ -158,8 +166,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'F5D7C3',
     departure: DEP_TARIFA,
-    vaguePickupPoint: PICKUP_TRF_OLD_TOWN,
-    exactPickupPoint: 'Plaza de Santa María 2, 11380 Tarifa',
+    pickupPoint: {
+      vague: PICKUP_TRF_OLD_TOWN,
+      exact: 'Plaza de Santa María 2, 11380 Tarifa',
+    },
     destination: DEST_LOS_LANCES,
     startDate: '2025-12-05',
     endDate: '2025-12-05',
@@ -180,8 +190,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'J9W2E6',
     departure: DEP_TARIFA,
-    vaguePickupPoint: PICKUP_TRF_OLD_TOWN,
-    exactPickupPoint: 'Calle Guzmán El Bueno 15, 11380 Tarifa',
+    pickupPoint: {
+      vague: PICKUP_TRF_OLD_TOWN,
+      exact: 'Calle Guzmán El Bueno 15, 11380 Tarifa',
+    },
     destination: DEST_LOS_CANOS,
     startDate: '2026-01-14',
     endDate: '2026-01-14',
@@ -202,8 +214,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'Y4T1R8',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_POBLE_NOU,
-    exactPickupPoint: 'Rambla del Poblenou 126, 08018 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_POBLE_NOU,
+      exact: 'Rambla del Poblenou 126, 08018 Barcelona',
+    },
     destination: DEST_SANT_PERE,
     startDate: '2025-11-10',
     endDate: '2025-11-10',
@@ -223,8 +237,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'N3K6P2',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_SANTS_STATION,
-    exactPickupPoint: 'Carrer de Tarragona 6, 08014 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_SANTS_STATION,
+      exact: 'Carrer de Tarragona 6, 08014 Barcelona',
+    },
     destination: DEST_SANT_PERE,
     startDate: '2025-12-20',
     endDate: '2025-12-20',
@@ -244,8 +260,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'L7M9H4',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_ARC_TRIOMF,
-    exactPickupPoint: 'Passeig de Lluís Companys, 08003 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_ARC_TRIOMF,
+      exact: 'Passeig de Lluís Companys, 08003 Barcelona',
+    },
     destination: DEST_RIUMAR,
     startDate: '2026-01-15',
     endDate: '2026-01-15',
@@ -265,8 +283,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'B2X5G8',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_PORT_OLIMPIC,
-    exactPickupPoint: 'Moll de la Marina 19, 08005 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_PORT_OLIMPIC,
+      exact: 'Moll de la Marina 19, 08005 Barcelona',
+    },
     destination: DEST_EMPURIABRAVA,
     startDate: '2025-12-06',
     endDate: '2025-12-06',
@@ -286,8 +306,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'S6Q3V7',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_CAMP_NOU,
-    exactPickupPoint: 'Carrer d\'Arístides Maillol, 08028 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_CAMP_NOU,
+      exact: 'Carrer d\'Arístides Maillol, 08028 Barcelona',
+    },
     destination: DEST_MALGRAT,
     startDate: '2025-11-22',
     endDate: '2025-11-22',
@@ -307,8 +329,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'D8A1F4',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_PLACA_ESPANYA,
-    exactPickupPoint: 'Plaça d\'Espanya, 08014 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_PLACA_ESPANYA,
+      exact: 'Plaça d\'Espanya, 08014 Barcelona',
+    },
     destination: DEST_BARCARES,
     startDate: '2025-12-18',
     endDate: '2025-12-18',
@@ -328,8 +352,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'C9Z4W1',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_GRACIA,
-    exactPickupPoint: 'Plaça del Sol 4, 08012 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_GRACIA,
+      exact: 'Plaça del Sol 4, 08012 Barcelona',
+    },
     destination: DEST_LEUCATE,
     startDate: '2025-12-08',
     endDate: '2025-12-08',
@@ -349,8 +375,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'U5E2K9',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_SANTS,
-    exactPickupPoint: 'Carrer de Sants 79, 08014 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_SANTS,
+      exact: 'Carrer de Sants 79, 08014 Barcelona',
+    },
     destination: DEST_BARCARES,
     startDate: '2025-12-12',
     endDate: '2025-12-12',
@@ -371,8 +399,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'G3J7N6',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_SANTS,
-    exactPickupPoint: 'Carrer de Vallespir 32, 08014 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_SANTS,
+      exact: 'Carrer de Vallespir 32, 08014 Barcelona',
+    },
     destination: DEST_RIUMAR,
     startDate: '2025-11-30',
     endDate: '2025-11-30',
@@ -393,8 +423,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'H8P4R1',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_GRACIA,
-    exactPickupPoint: 'Carrer de Verdi 28, 08012 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_GRACIA,
+      exact: 'Carrer de Verdi 28, 08012 Barcelona',
+    },
     destination: DEST_DELTA_EBRO,
     startDate: '2025-11-28',
     endDate: '2025-11-28',
@@ -415,8 +447,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'V9K2M7',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_SANTS,
-    exactPickupPoint: 'Carrer de Creu Coberta 104, 08014 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_SANTS,
+      exact: 'Carrer de Creu Coberta 104, 08014 Barcelona',
+    },
     destination: DEST_SANT_PERE,
     startDate: '2025-12-03',
     endDate: '2025-12-03',
@@ -437,8 +471,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'Q5W8N3',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_EIXAMPLE_DRETA,
-    exactPickupPoint: 'Carrer de Pau Claris 162, 08037 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_EIXAMPLE_DRETA,
+      exact: 'Carrer de Pau Claris 162, 08037 Barcelona',
+    },
     destination: DEST_LEUCATE,
     startDate: '2025-12-10',
     endDate: '2025-12-10',
@@ -458,8 +494,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'T2L6E9',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_EIXAMPLE_ESQUERRA,
-    exactPickupPoint: 'Carrer d\'Aragó 255, 08007 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_EIXAMPLE_ESQUERRA,
+      exact: 'Carrer d\'Aragó 255, 08007 Barcelona',
+    },
     destination: DEST_DELTA_EBRO,
     startDate: '2025-12-22',
     endDate: '2025-12-22',
@@ -480,8 +518,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'A3D7J4',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_EIXAMPLE_DRETA,
-    exactPickupPoint: 'Carrer de Balmes 221, 08006 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_EIXAMPLE_DRETA,
+      exact: 'Carrer de Balmes 221, 08006 Barcelona',
+    },
     destination: DEST_SANT_PERE,
     startDate: '2026-01-08',
     endDate: '2026-01-08',
@@ -502,8 +542,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'F6C9B2',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_EIXAMPLE_ESQUERRA,
-    exactPickupPoint: 'Carrer de Comte Borrell 89, 08015 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_EIXAMPLE_ESQUERRA,
+      exact: 'Carrer de Comte Borrell 89, 08015 Barcelona',
+    },
     destination: DEST_LEUCATE,
     startDate: '2026-01-20',
     endDate: '2026-01-20',
@@ -524,8 +566,10 @@ export const mockTrips: Trip[] = [
   {
     id: 'N7R4S8',
     departure: DEP_BARCELONA,
-    vaguePickupPoint: PICKUP_BCN_POBLE_SEC,
-    exactPickupPoint: 'Carrer de Margarit 1, 08004 Barcelona',
+    pickupPoint: {
+      vague: PICKUP_BCN_POBLE_SEC,
+      exact: 'Carrer de Margarit 1, 08004 Barcelona',
+    },
     destination: DEST_DELTA_EBRO,
     startDate: '2026-02-05',
     endDate: '2026-02-05',

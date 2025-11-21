@@ -51,7 +51,7 @@ const Trip = () => {
   const isCancelled = trip.status === 'cancelled';
 
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    trip.vaguePickupPoint,
+    trip.pickupPoint.vague,
   )}`;
 
   const cancellationReasonText = {
@@ -315,7 +315,7 @@ const Trip = () => {
                       <circle cx="12" cy="10" r="3" />
                     </svg>
                     <span className="group-hover:underline">
-                      {trip.vaguePickupPoint}
+                      {trip.pickupPoint.vague}
                     </span>
                   </a>
                   <p className="text-xs text-gray-500 italic mt-2">
