@@ -42,11 +42,11 @@ const Trip = () => {
     );
   }
 
-  const isDayTrip = trip.isReturnTrip && trip.startDate === trip.endDate;
+  const isDayTrip = trip.returnTrip.isReturn && trip.startDate === trip.endDate;
   const currencySymbol = getCurrencySymbol(trip.priceCurrency);
   const driverFirstName = trip.driver?.firstName || 'Unknown';
   const formattedDepartureTime = formatDepartureTime(trip.departureTime);
-  const formattedReturnETA = formatReturnTripETA(trip.returnTripETA);
+  const formattedReturnETA = formatReturnTripETA(trip.returnTrip.eta);
   const dateDisplay = formatDateDisplay(trip.startDate);
   const isCancelled = trip.status === 'cancelled';
 
@@ -148,7 +148,7 @@ const Trip = () => {
                       Day Trip
                     </span>
                   )}
-                  {trip.isReturnTrip && (
+                  {trip.returnTrip.isReturn && (
                     <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
                       Return
                     </span>
@@ -219,7 +219,7 @@ const Trip = () => {
             </div>
 
             {/* Return ETA Info */}
-            {trip.isReturnTrip && (
+            {trip.returnTrip.isReturn && (
               <div className="bg-green-50/50 border-l-2 border-green-600 rounded px-3 py-2">
                 <p className="text-xs text-gray-700 flex items-center gap-2">
                   <svg

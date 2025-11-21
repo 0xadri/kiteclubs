@@ -7,7 +7,7 @@ import {
 } from './utils';
 
 const TripResultCard = ({ trip }: TripResultCardProps) => {
-  const isDayTrip = trip.isReturnTrip && trip.startDate === trip.endDate;
+  const isDayTrip = trip.returnTrip.isReturn && trip.startDate === trip.endDate;
   const currencySymbol = getCurrencySymbol(trip.priceCurrency);
   const truncatedDescription = truncateDescription(trip.description, 10);
   const driverFirstName = trip.driver?.firstName || 'Unknown';
@@ -30,7 +30,7 @@ const TripResultCard = ({ trip }: TripResultCardProps) => {
                   Day Trip
                 </span>
               )}
-              {trip.isReturnTrip && (
+              {trip.returnTrip.isReturn && (
                 <span className="inline-flex items-center px-3 py-1 mb-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
                   Return
                 </span>

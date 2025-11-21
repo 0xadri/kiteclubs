@@ -33,9 +33,8 @@ export interface Trip {
   startDate: string;
   endDate: string;
   departureTime: string;
-  returnTripETA: { start: string; end: string };
+  returnTrip: { isReturn: boolean; eta: { start: string; end: string } };
   price: number;
-  isReturnTrip: boolean;
   priceCurrency: string;
   title: string;
   description: string;
