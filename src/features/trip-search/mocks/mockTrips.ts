@@ -14,11 +14,11 @@ const STATUS_COMPLETED = 'completed';
 const STATUS_CANCELLED = 'cancelled';
 
 // Cancellation reasons
-const CANCEL_REASON_WEATHER = 'weather';
-const CANCEL_REASON_VEHICLE_ISSUE = 'vehicle_issue';
-const CANCEL_REASON_INSUFFICIENT_RIDERS = 'insufficient_riders';
-const CANCEL_REASON_DRIVER_UNAVAILABLE = 'driver_unavailable';
-const CANCEL_REASON_SAFETY_CONCERNS = 'safety_concerns';
+const CNCL_RSN_WEATHER = 'weather';
+const CNCL_RSN_VEHICLE_ISSUE = 'vehicle_issue';
+const CNCL_RSN_INSUFFICIENT_RIDERS = 'insufficient_riders';
+const CNCL_RSN_DRIVER_UNAVAILABLE = 'driver_unavailable';
+const CNCL_RSN_SAFETY_CONCERNS = 'safety_concerns';
 
 // Currency
 const CRCY_EURO = 'euro';
@@ -365,7 +365,7 @@ export const mockTrips: Trip[] = [
     riderIds: [],
     luggageAllowance: [LUG_KITE_BAG_SINGLE, LUG_TWINTIP_BOARD, LUG_SMALL_BAG_FOOD, LUG_NO_BOARD_BAG],
     status: STATUS_CANCELLED,
-    cancellationReason: CANCEL_REASON_WEATHER,
+    cancellationReason: CNCL_RSN_WEATHER,
     specialRequestMsg: SPEC_REQ_FALSE,
   },
   {
@@ -387,7 +387,7 @@ export const mockTrips: Trip[] = [
     riderIds: ['W1KQ4S'],
     luggageAllowance: [LUG_KITE_BAG_SINGLE, LUG_TWINTIP_BOARD, LUG_SMALL_BAG_FOOD, LUG_NO_BOARD_BAG],
     status: STATUS_CANCELLED,
-    cancellationReason: CANCEL_REASON_VEHICLE_ISSUE,
+    cancellationReason: CNCL_RSN_VEHICLE_ISSUE,
     specialRequestMsg: SPEC_REQ_TRUE,
   },
   {
