@@ -13,6 +13,13 @@ const STATUS_UPCOMING = 'upcoming';
 const STATUS_COMPLETED = 'completed';
 const STATUS_CANCELLED = 'cancelled';
 
+// Cancellation reasons
+const CANCEL_REASON_WEATHER = 'weather';
+const CANCEL_REASON_VEHICLE_ISSUE = 'vehicle_issue';
+const CANCEL_REASON_INSUFFICIENT_RIDERS = 'insufficient_riders';
+const CANCEL_REASON_DRIVER_UNAVAILABLE = 'driver_unavailable';
+const CANCEL_REASON_SAFETY_CONCERNS = 'safety_concerns';
+
 // Currency
 const CRCY_EURO = 'euro';
 
@@ -351,13 +358,14 @@ export const mockTrips: Trip[] = [
     price: 31,
     isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
-    title: 'Cancelled: Bad Weather',
-    description: 'Trip cancelled due to bad weather conditions.',
+    title: 'Kite and Croissant in Barcares',
+    description: 'Nothing beat the mad jumps of Barcares.',
     seats: 4,
     driverId: '4M5NJ8',
     riderIds: [],
     luggageAllowance: [LUG_KITE_BAG_SINGLE, LUG_TWINTIP_BOARD, LUG_SMALL_BAG_FOOD, LUG_NO_BOARD_BAG],
-    status: STATUS_UPCOMING,
+    status: STATUS_CANCELLED,
+    cancellationReason: CANCEL_REASON_WEATHER,
     specialRequestMsg: SPEC_REQ_FALSE,
   },
   {
@@ -372,13 +380,14 @@ export const mockTrips: Trip[] = [
     price: 31,
     isReturnTrip: IS_RTRN_TRUE,
     priceCurrency: CRCY_EURO,
-    title: 'Cancelled: Car Issues',
-    description: 'Trip cancelled due to car maintenance issues.',
+    title: 'Riumar Adventure',
+    description: 'Let\'s goooo.',
     seats: 3,
     driverId: 'A7B2C3',
     riderIds: ['W1KQ4S'],
     luggageAllowance: [LUG_KITE_BAG_SINGLE, LUG_TWINTIP_BOARD, LUG_SMALL_BAG_FOOD, LUG_NO_BOARD_BAG],
-    status: STATUS_UPCOMING,
+    status: STATUS_CANCELLED,
+    cancellationReason: CANCEL_REASON_VEHICLE_ISSUE,
     specialRequestMsg: SPEC_REQ_TRUE,
   },
   {

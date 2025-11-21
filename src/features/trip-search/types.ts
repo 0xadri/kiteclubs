@@ -19,6 +19,13 @@ export interface User {
   kitesurfSkills: string[];
 }
 
+export type CancellationReason =
+  | 'weather'
+  | 'vehicle_issue'
+  | 'insufficient_riders'
+  | 'driver_unavailable'
+  | 'safety_concerns';
+
 export interface Trip {
   id: string;
   departure: string;
@@ -38,6 +45,7 @@ export interface Trip {
   riderIds: string[];
   luggageAllowance: string[];
   status: 'upcoming' | 'completed' | 'cancelled';
+  cancellationReason?: CancellationReason;
   specialRequestMsg: boolean;
 }
 
